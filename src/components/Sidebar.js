@@ -12,7 +12,7 @@ export default function Sidebar() {
 			<StyledSidebarAside className="sidebar">
 				<div>
 					<div className="profilePicture">
-						<StyledSidebarImg src={require(`./images/linus.png`)} alt="Sondre" />
+						<StyledSidebarImg src={require(`./images/sondre3.png`)} alt="Sondre" />
 					</div>
 					<StyledSidebarNameH2 className="profileName">
 						Sondre Halvorsen

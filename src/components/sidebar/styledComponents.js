@@ -34,4 +34,5 @@ export const StyledSidebarImg = styled.img`
 	height: 100%;
 	width: auto;
 	border-radius: inherit;
+	/* transform: rotate(10deg); */
 `;
