@@ -1,17 +1,17 @@
 export const SidebarData = [
 	{
 		title: "Home",
-		icon: <i class="fa-regular fa-circle-user"></i>,
+		icon: <i class="fa-solid fa-user"></i>,
 		link: "/",
 	},
 	{
 		title: "Projects",
-		icon: <i class="fa-solid fa-code"></i>,
+		icon: <i class="fa-brands fa-github"></i>,
 		link: "/projects",
 	},
 	{
-		title: "Contact Me",
-		icon: <i class="fa-regular fa-address-book"></i>,
+		title: "Contact Info",
+		icon: <i class="fa-solid fa-share-nodes"></i>,
 		link: "/contact",
 	},
 ];
