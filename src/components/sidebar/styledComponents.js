@@ -8,7 +8,7 @@ export const StyledSidebarNameH2 = styled.h2`
 
 export const StyledSidebarAside = styled.aside`
 	position: fixed;
-	left: 0;
+	left: -1px;
 	top: 0;
 	bottom: 0;
 	/*Box model stuff*/

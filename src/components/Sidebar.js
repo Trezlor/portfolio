@@ -12,7 +12,7 @@ export default function Sidebar() {
 			<StyledSidebarAside className="sidebar">
 				<div>
 					<div className="profilePicture">
-						<StyledSidebarImg src={require(`./images/sondre3.png`)} alt="Sondre" />
+						<StyledSidebarImg src={require(`./images/sondre2.png`)} alt="Sondre" />
 					</div>
 					<StyledSidebarNameH2 className="profileName">
 						Sondre Halvorsen
@@ -20,20 +20,24 @@ export default function Sidebar() {
 					<ul className="sidebarList">
 						{SidebarData.map((val, key) => {
 							return (
-								<>
+								<div key={key + 1}>
 									<NavLink key={key} className="row" to={val.link}>
-										<div className="icon">{val.icon}</div>
-										<div className="title">{val.title}</div>
+										<li key={key + 2} className="icon">
+											{val.icon}
+										</li>
+										<li key={key + 3} className="title">
+											{val.title}
+										</li>
 									</NavLink>
-								</>
+								</div>
 							);
 						})}
 					</ul>
 				</div>
-				<li className="copyright">
-					<i class="fa-regular fa-copyright"></i>
+				<div className="copyright">
+					<i className="fa-regular fa-copyright"></i>
 					<h4>2022 - Sondre Halvorsen</h4>
-				</li>
+				</div>
 			</StyledSidebarAside>
 		</>
 	);

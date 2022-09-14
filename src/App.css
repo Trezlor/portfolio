@@ -3,12 +3,16 @@ html {
 	height: 100%;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	/*Box model stuff*/
-	margin: 0;
-	margin-left: 350px;
+	margin: 2.5vh 0 2.5vh 350px;
 	padding: 0;
-	background: linear-gradient(90deg, #52004e, #0b8793);
+	background: linear-gradient(90deg, #881882, #0b8793);
 	/*Typography stuff*/
 	font-family: "Roboto Mono", monospace;
 	/*Miscellaneous*/
@@ -21,20 +25,21 @@ body {
 	align-items: center;
 	justify-content: center;
 	font-weight: 300;
+	margin-bottom: 20px;
 }
 
 .copyright i {
 	font-size: 16px;
+	height: 100%;
+	margin-right: 10px;
 }
 
 h1 {
 	/*Box model stuff*/
-	margin: 0;
-	padding: 0;
+	text-align: center;
 }
 
 h4 {
-	margin-left: -10px;
 	padding: 0;
 	font-weight: inherit;
 }
@@ -55,10 +60,12 @@ h4 {
 	padding-block: 20px;
 }
 
-i {
+.page-container i {
 	/*Typography stuff*/
 	font-size: 25px;
 	width: 32px;
+	text-align: center;
+	margin-right: 10px;
 }
 
 .contact-container-1,
@@ -104,16 +111,6 @@ i {
 	font-size: 20px;
 	text-decoration: none;
 	color: white;
-}
-
-.contact-info i {
-	/*Box model stuff*/
-	margin-right: 10px;
-}
-
-ul {
-	/*Box model stuff*/
-	margin: 0;
 }
 
 .profilePicture {

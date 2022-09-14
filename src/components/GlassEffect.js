@@ -3,7 +3,7 @@ export default function GlassEffect() {
 		<>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "133px",
 					height: "91px",
@@ -15,7 +15,7 @@ export default function GlassEffect() {
 			></div>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "179px",
 					height: "120px",
@@ -27,7 +27,7 @@ export default function GlassEffect() {
 			></div>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "200px",
 					height: "95px",
@@ -39,7 +39,7 @@ export default function GlassEffect() {
 			></div>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "55px",
 					height: "142px",
@@ -51,7 +51,7 @@ export default function GlassEffect() {
 			></div>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "114px",
 					height: "59px",
@@ -63,7 +63,7 @@ export default function GlassEffect() {
 			></div>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "133px",
 					height: "126px",
@@ -75,7 +75,7 @@ export default function GlassEffect() {
 			></div>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "121px",
 					height: "60px",
@@ -87,7 +87,7 @@ export default function GlassEffect() {
 			></div>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "190px",
 					height: "72px",
@@ -99,7 +99,7 @@ export default function GlassEffect() {
 			></div>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "162px",
 					height: "158px",
@@ -111,7 +111,7 @@ export default function GlassEffect() {
 			></div>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "52px",
 					height: "53px",
@@ -123,7 +123,7 @@ export default function GlassEffect() {
 			></div>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "70px",
 					height: "136px",
@@ -135,19 +135,19 @@ export default function GlassEffect() {
 			></div>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "172px",
 					height: "180px",
-					top: "146px",
-					left: "1235px",
-					transform: "rotate(0.506722turn)",
+					top: "56px",
+					left: "205px",
+					transform: "rotate(0.206722turn)",
 					opacity: "0.387",
 				}}
 			></div>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "155px",
 					height: "61px",
@@ -159,7 +159,7 @@ export default function GlassEffect() {
 			></div>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "185px",
 					height: "152px",
@@ -171,7 +171,7 @@ export default function GlassEffect() {
 			></div>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "124px",
 					height: "110px",
@@ -183,7 +183,7 @@ export default function GlassEffect() {
 			></div>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "141px",
 					height: "60px",
@@ -195,7 +195,7 @@ export default function GlassEffect() {
 			></div>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "170px",
 					height: "104px",
@@ -207,7 +207,7 @@ export default function GlassEffect() {
 			></div>
 			<div
 				data-v-053f5fce=""
-				class="glass"
+				className="glass"
 				style={{
 					width: "129px",
 					height: "176px",
