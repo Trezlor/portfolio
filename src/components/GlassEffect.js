@@ -1,9 +1,10 @@
+import { Glass } from "./glassEffect/styledComponents";
+
 export default function GlassEffect() {
 	return (
 		<>
-			<div
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "133px",
 					height: "91px",
@@ -12,10 +13,9 @@ export default function GlassEffect() {
 					transform: "rotate(0.441451turn)",
 					opacity: "0.151287",
 				}}
-			></div>
-			<div
+			></Glass>
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "179px",
 					height: "120px",
@@ -24,10 +24,9 @@ export default function GlassEffect() {
 					transform: "rotate(0.557493turn)",
 					opacity: "0.1585",
 				}}
-			></div>
-			<div
+			></Glass>
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "200px",
 					height: "95px",
@@ -36,10 +35,9 @@ export default function GlassEffect() {
 					transform: "rotate(0.141322turn)",
 					opacity: "0.1575",
 				}}
-			></div>
-			<div
+			></Glass>
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "55px",
 					height: "142px",
@@ -48,10 +46,9 @@ export default function GlassEffect() {
 					transform: "rotate(0.933674turn)",
 					opacity: "0.097625",
 				}}
-			></div>
-			<div
+			></Glass>
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "114px",
 					height: "59px",
@@ -60,10 +57,9 @@ export default function GlassEffect() {
 					transform: "rotate(0.911411turn)",
 					opacity: "0.084075",
 				}}
-			></div>
-			<div
+			></Glass>
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "133px",
 					height: "126px",
@@ -72,10 +68,9 @@ export default function GlassEffect() {
 					transform: "rotate(0.0497948turn)",
 					opacity: "0.159475",
 				}}
-			></div>
-			<div
+			></Glass>
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "121px",
 					height: "60px",
@@ -84,10 +79,9 @@ export default function GlassEffect() {
 					transform: "rotate(0.0332315turn)",
 					opacity: "0.09075",
 				}}
-			></div>
-			<div
+			></Glass>
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "190px",
 					height: "72px",
@@ -96,10 +90,9 @@ export default function GlassEffect() {
 					transform: "rotate(0.11034turn)",
 					opacity: "0.171",
 				}}
-			></div>
-			<div
+			></Glass>
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "162px",
 					height: "158px",
@@ -108,10 +101,9 @@ export default function GlassEffect() {
 					transform: "rotate(0.65498turn)",
 					opacity: "0.31995",
 				}}
-			></div>
-			<div
+			></Glass>
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "52px",
 					height: "53px",
@@ -120,10 +112,9 @@ export default function GlassEffect() {
 					transform: "rotate(0.954462turn)",
 					opacity: "0.03445",
 				}}
-			></div>
-			<div
+			></Glass>
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "70px",
 					height: "136px",
@@ -132,10 +123,9 @@ export default function GlassEffect() {
 					transform: "rotate(0.0402045turn)",
 					opacity: "0.119",
 				}}
-			></div>
-			<div
+			></Glass>
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "172px",
 					height: "180px",
@@ -144,10 +134,9 @@ export default function GlassEffect() {
 					transform: "rotate(0.206722turn)",
 					opacity: "0.387",
 				}}
-			></div>
-			<div
+			></Glass>
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "155px",
 					height: "61px",
@@ -156,10 +145,9 @@ export default function GlassEffect() {
 					transform: "rotate(0.120069turn)",
 					opacity: "0.118188",
 				}}
-			></div>
-			<div
+			></Glass>
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "185px",
 					height: "152px",
@@ -168,10 +156,9 @@ export default function GlassEffect() {
 					transform: "rotate(0.456684turn)",
 					opacity: "0.3515",
 				}}
-			></div>
-			<div
+			></Glass>
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "124px",
 					height: "110px",
@@ -180,10 +167,9 @@ export default function GlassEffect() {
 					transform: "rotate(0.293801turn)",
 					opacity: "0.1705",
 				}}
-			></div>
-			<div
+			></Glass>
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "141px",
 					height: "60px",
@@ -192,10 +178,9 @@ export default function GlassEffect() {
 					transform: "rotate(0.633567turn)",
 					opacity: "0.10575",
 				}}
-			></div>
-			<div
+			></Glass>
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "170px",
 					height: "104px",
@@ -204,10 +189,9 @@ export default function GlassEffect() {
 					transform: "rotate(0.419058turn)",
 					opacity: "0.151",
 				}}
-			></div>
-			<div
+			></Glass>
+			<Glass
 				data-v-053f5fce=""
-				className="glass"
 				style={{
 					width: "129px",
 					height: "176px",
@@ -216,7 +200,7 @@ export default function GlassEffect() {
 					transform: "rotate(0.833164turn)",
 					opacity: "0.1538",
 				}}
-			></div>
+			></Glass>
 		</>
 	);
 }
