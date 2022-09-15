@@ -7,62 +7,33 @@ const loadPage = keyframes`
 100% {opacity: 1; transform: translateY(0px) skewY(0deg) skewX(0deg); filter: blur(0px);}
 `;
 
-export const Aside = styled.aside`
+export const Nav = styled.nav`
 	/*Display stuff*/
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	/*Positioning stuff*/
 	position: fixed;
-	left: -1px;
-	top: 0;
-	bottom: 0;
+	left: 0;
+	right: 0;
+	top: -1px;
 	/*Box model stuff*/
-	width: 350px;
-	height: 95vh;
+	width: 90vw;
+	height: 30vh;
 	margin: auto;
+	background-color: black;
 	border: 1px solid rgba(255, 255, 255, 0.3);
-	border-bottom-right-radius: 28px;
-	border-top-right-radius: 28px;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
 	background: linear-gradient(135deg, rgba(94, 94, 94, 0.15), rgba(255, 255, 255, 0.3));
 	/*Miscellaneous*/
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
-	display: none;
 
 	@media ${deviceSize.mobileL} {
-		display: flex;
+		display: none;
 	}
-`;
-
-export const ImgContainer = styled.div`
-	/*Box model stuff*/
-	width: 250px;
-	height: 250px;
-	margin: 50px auto 40px;
-	border-radius: 50%;
-	/*Miscellaneous*/
-	box-shadow: 5px 5px 20px black;
-`;
-
-export const Img = styled.img`
-	/*Box model stuff*/
-	width: auto;
-	height: 100%;
-	border-radius: inherit;
-	/*Manipulations stuff*/
-	transform: rotate(5deg);
-`;
-
-export const Name = styled.h2`
-	/*Box model stuff*/
-	margin-bottom: 50px;
-	/*Typography stuff*/
-	font-family: "Inter", sans-serif;
-	font-size: 32px;
-	text-align: center;
-	text-shadow: 0px 3px 3px black;
 `;
 
 export const Category = styled(NavLink)`
@@ -74,6 +45,7 @@ export const Category = styled(NavLink)`
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: center;
 	/*Box model stuff*/
 	width: 100%;
 	height: 50px;
@@ -123,11 +95,18 @@ export const Category = styled(NavLink)`
 	}
 `;
 
+export const Flex = styled.div`
+	width: 100%;
+	margin-inline: auto;
+	padding-inline: auto;
+`;
+
 export const CategoryIcon = styled.li`
 	/*Display stuff*/
 	display: grid;
-	flex: 30%;
+	flex: 40%;
 	/*Typography stuff*/
+	padding-left: auto;
 	font-size: 25px;
 	/*Miscellaneous*/
 	place-items: center;
@@ -136,7 +115,7 @@ export const CategoryIcon = styled.li`
 export const CategoryTitle = styled.li`
 	/*Display stuff*/
 	display: flex;
-	flex: 70%;
+	flex: 60%;
 	align-items: center;
 	/*Box model stuff*/
 	height: 100%;

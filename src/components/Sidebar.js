@@ -3,7 +3,7 @@ import * as S from "./sidebar/styledComponents";
 
 export default function Sidebar() {
 	return (
-		<>
+		<nav>
 			<S.Aside>
 				<div>
 					<S.ImgContainer>
@@ -32,6 +32,6 @@ export default function Sidebar() {
 					<S.YearName>2022 - Sondre Halvorsen</S.YearName>
 				</S.CopyrightContainer>
 			</S.Aside>
-		</>
+		</nav>
 	);
 }

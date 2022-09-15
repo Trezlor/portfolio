@@ -1,3 +1,12 @@
+html {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to left top, #a71ea0, #0b8793);
+	background-repeat: no-repeat;
+	background-size: 400%;
+	overflow: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -10,7 +19,6 @@
 body {
 	/*Box model stuff*/
 	margin: 2.5vh 0 2.5vh 350px;
-	background: linear-gradient(90deg, #881882, #0b8793);
 	/*Typography stuff*/
 	font-family: "Roboto Mono", monospace;
 	/*Miscellaneous*/
@@ -19,4 +27,10 @@ body {
 }
 
 div {
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		margin: 0;
+	}
 }

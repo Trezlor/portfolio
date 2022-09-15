@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { deviceSize } from "../../../components/deviceSize";
 
 export const MainContainer = styled.div`
 	/*Display stuff*/
@@ -7,7 +8,7 @@ export const MainContainer = styled.div`
 	justify-content: space-around;
 	/*Positioning stuff*/
 	position: absolute;
-	left: 350px;
+	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
@@ -16,9 +17,13 @@ export const MainContainer = styled.div`
 	height: fit-content;
 	margin: auto;
 	padding: 20px 0 10px 20px;
-	border-left: 1px solid white;
 	/*Miscellaneous*/
 	gap: 20px;
+
+	@media ${deviceSize.mobileL} {
+		left: 350px;
+		border-left: 1px solid white;
+	}
 `;
 
 export const ContactContainer = styled.div`
@@ -26,7 +31,7 @@ export const ContactContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	/*Box model stuff*/
-	width: 350px;
+	width: 320px;
 	margin: auto;
 	/*Miscellaneous*/
 `;

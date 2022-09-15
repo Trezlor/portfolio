@@ -8,11 +8,11 @@ export default function HomePage() {
 				<S.HeadlineH3>
 					- Frontend developer student
 					<br />
-					<span style={{ "margin-left": "22px" }}>from Norway</span>
+					<span style={{ marginLeft: "22px" }}>from Norway</span>
 				</S.HeadlineH3>
 				<S.HeadlineH2>
 					Curious and interested in <br />
-					learning new things <span style={{ "font-size": "32px" }}>&#x270A;</span>
+					learning new things <span style={{ fontSize: "32px" }}>&#x270A;</span>
 				</S.HeadlineH2>
 			</S.HeadlineContainer>
 		</>
