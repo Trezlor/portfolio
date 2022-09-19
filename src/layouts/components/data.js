@@ -1,4 +1,4 @@
-export const SidebarData = [
+export const Data = [
 	{
 		title: "Home",
 		icon: <i className="fa-solid fa-user"></i>,

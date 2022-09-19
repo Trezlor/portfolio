@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { deviceSize } from "../../../components/deviceSize";
+import { deviceSize } from "../../components/deviceSize";
 
 export const MainContainer = styled.div`
 	/*Display stuff*/
@@ -20,7 +20,7 @@ export const MainContainer = styled.div`
 	/*Miscellaneous*/
 	gap: 20px;
 
-	@media ${deviceSize.mobileL} {
+	@media ${deviceSize.laptop} {
 		left: 350px;
 		border-left: 1px solid white;
 	}

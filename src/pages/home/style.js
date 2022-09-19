@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { deviceSize } from "../../../components/deviceSize";
+import { deviceSize } from "../../components/deviceSize";
 
 export const HeadlineContainer = styled.main`
 	/*Display stuff*/
@@ -8,11 +8,11 @@ export const HeadlineContainer = styled.main`
 	/*Box model stuff*/
 	width: 275px;
 	margin-top: 35vh;
-	/*Miscellaneous*/
 	margin-inline: auto;
+	/*Miscellaneous*/
 	gap: 10px;
 
-	@media ${deviceSize.mobileL} {
+	@media ${deviceSize.laptop} {
 		width: fit-content;
 	}
 `;
@@ -20,7 +20,7 @@ export const HeadlineContainer = styled.main`
 export const HeadlineH1 = styled.h1`
 	font-size: 36px;
 
-	@media ${deviceSize.mobileL} {
+	@media ${deviceSize.laptop} {
 		/*Typography stuff*/
 		font-size: 70px;
 	}
@@ -29,7 +29,7 @@ export const HeadlineH1 = styled.h1`
 export const HeadlineH2 = styled.h2`
 	font-size: 18px;
 
-	@media ${deviceSize.mobileL} {
+	@media ${deviceSize.laptop} {
 		/*Typography stuff*/
 		font-size: 28px;
 	}
@@ -38,7 +38,7 @@ export const HeadlineH2 = styled.h2`
 export const HeadlineH3 = styled.h3`
 	font-size: 14px;
 
-	@media ${deviceSize.mobileL} {
+	@media ${deviceSize.laptop} {
 		/*Typography stuff*/
 		font-size: 20px;
 	}

@@ -1,4 +1,4 @@
-import * as S from "./homePage/styledComponents";
+import * as S from "./style";
 
 export default function HomePage() {
 	return (

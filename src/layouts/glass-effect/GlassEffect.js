@@ -1,4 +1,4 @@
-import { Glass } from "./glassEffect/styledComponents";
+import { Glass } from "./style";
 
 export default function GlassEffect() {
 	return (
@@ -119,8 +119,8 @@ export default function GlassEffect() {
 					width: "70px",
 					height: "136px",
 					top: "155px",
-					left: "971px",
-					transform: "rotate(0.0402045turn)",
+					left: "1001px",
+					transform: "rotate(0.1702045turn)",
 					opacity: "0.119",
 				}}
 			></Glass>

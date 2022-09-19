@@ -1,4 +1,4 @@
-import * as S from "./contactPage/styledComponents";
+import * as S from "./style";
 
 export default function ContactPage() {
 	return (
