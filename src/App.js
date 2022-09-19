@@ -1,5 +1,5 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
+import "./assets/global.css";
 import GlassEffect from "./layouts/glass-effect/GlassEffect";
 import Navbar from "./layouts/nav-bar/Navbar";
 import Sidebar from "./layouts/side-bar/Sidebar";
