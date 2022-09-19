@@ -1,5 +1,5 @@
-import { Data } from "../components/data";
-import * as S from "./style";
+import * as S from "../components/navigationStyle";
+import { Data } from "../utils/navigationData";
 
 export default function Sidebar() {
 	return (
@@ -7,7 +7,7 @@ export default function Sidebar() {
 			<S.Aside>
 				<div>
 					<S.ImgContainer>
-						<S.Img src={require(`../../components/images/sondre.png`)} alt="Sondre" />
+						<S.Img src={require(`../../assets/images/sondre.png`)} alt="Sondre" />
 					</S.ImgContainer>
 					<S.Name>Sondre Halvorsen</S.Name>
 					<ul>
@@ -29,7 +29,7 @@ export default function Sidebar() {
 				</div>
 				<S.CopyrightContainer>
 					<S.CopyrightIcon className="fa-regular fa-copyright"></S.CopyrightIcon>
-					<S.YearName>2022 - Sondre Halvorsen</S.YearName>
+					<S.CopyrightYearName>2022 - Sondre Halvorsen</S.CopyrightYearName>
 				</S.CopyrightContainer>
 			</S.Aside>
 		</nav>

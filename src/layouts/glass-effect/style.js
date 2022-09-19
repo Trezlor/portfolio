@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { deviceSize } from "../../components/deviceSize";
+import { deviceSize } from "../../utils/deviceSize";
 
 export const Glass = styled.div`
 	/*Positioning stuff*/
