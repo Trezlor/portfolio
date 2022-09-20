@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
-import * as S from "../components/navigationStyle";
-import { Data } from "../utils/navigationData";
+import * as S from "../components/style";
+import { Data } from "../utils/data";
+import * as C from "./style";
 
 /**
  * __function(s):__
@@ -32,7 +33,7 @@ export default function Navbar() {
 
 	return (
 		<>
-			<S.Nav showNav={showNav} ref={Navbar}>
+			<C.Nav showNav={showNav} ref={Navbar}>
 				<ul>
 					{Data.map((val, key) => {
 						return (
@@ -53,11 +54,11 @@ export default function Navbar() {
 					<S.CopyrightIcon className="fa-regular fa-copyright"></S.CopyrightIcon>
 					<S.CopyrightYearName>2022 - Sondre Halvorsen</S.CopyrightYearName>
 				</S.CopyrightContainer>
-				<S.DropDown showNav={showNav} onClick={toggleNavbar}>
+				<C.DropDown showNav={showNav} onClick={toggleNavbar}>
 					<span className="lines line--1"></span>
 					<span className="lines line--2"></span>
-				</S.DropDown>
-			</S.Nav>
+				</C.DropDown>
+			</C.Nav>
 		</>
 	);
 }

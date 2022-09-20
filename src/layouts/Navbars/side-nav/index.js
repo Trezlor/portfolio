@@ -1,15 +1,17 @@
-import * as S from "../components/navigationStyle";
-import { Data } from "../utils/navigationData";
+import * as S from "../components/style";
+import * as C from "./style";
+
+import { Data } from "../utils/data";
 
 export default function Sidebar() {
 	return (
 		<nav>
-			<S.Aside>
+			<C.Aside>
 				<div>
-					<S.ImgContainer>
-						<S.Img src={require(`../../assets/images/sondre.png`)} alt="Sondre" />
-					</S.ImgContainer>
-					<S.Name>Sondre Halvorsen</S.Name>
+					<C.ImgContainer>
+						<C.Img src={require(`../../../assets/images/sondre.png`)} alt="Sondre" />
+					</C.ImgContainer>
+					<C.Name>Sondre Halvorsen</C.Name>
 					<ul>
 						{Data.map((val, key) => {
 							return (
@@ -31,7 +33,7 @@ export default function Sidebar() {
 					<S.CopyrightIcon className="fa-regular fa-copyright"></S.CopyrightIcon>
 					<S.CopyrightYearName>2022 - Sondre Halvorsen</S.CopyrightYearName>
 				</S.CopyrightContainer>
-			</S.Aside>
+			</C.Aside>
 		</nav>
 	);
 }
