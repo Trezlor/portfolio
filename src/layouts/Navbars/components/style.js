@@ -35,9 +35,9 @@ export const Category = styled(NavLink)`
 		/*Box model stuff*/
 		background: linear-gradient(
 			90deg,
-			rgba(0, 0, 0, 0.2),
-			rgba(150, 150, 150, 0.2),
-			rgba(0, 0, 0, 0.2)
+			rgba(0, 0, 0, 0),
+			rgba(150, 150, 150, 0.5),
+			rgba(0, 0, 0, 0)
 		);
 		/*Typography stuff*/
 		color: rgb(255, 255, 255);
@@ -52,9 +52,9 @@ export const Category = styled(NavLink)`
 		/*Box model stuff*/
 		background: linear-gradient(
 			90deg,
-			rgba(0, 0, 0, 0.2),
-			rgba(150, 150, 150, 0.2),
-			rgba(0, 0, 0, 0.2)
+			rgba(0, 0, 0, 0),
+			rgba(150, 150, 150, 0.5),
+			rgba(0, 0, 0, 0)
 		);
 		/*Typography stuff*/
 		color: rgb(255, 255, 255);
@@ -69,23 +69,18 @@ export const Category = styled(NavLink)`
 export const CategoryIcon = styled.li`
 	/*Display stuff*/
 	display: grid;
-	flex: 40%;
+	flex: 35%;
 	/*Typography stuff*/
-	font-size: 25px;
+	font-size: 20px;
 	/*Miscellaneous*/
 	place-items: end;
 	margin-right: 20px;
-
-	@media ${deviceSize.laptop} {
-		/*Display stuff*/
-		flex: 30%;
-	}
 `;
 
 export const CategoryTitle = styled.li`
 	/*Display stuff*/
 	display: flex;
-	flex: 60%;
+	flex: 65%;
 	align-items: center;
 	/*Box model stuff*/
 	height: 100%;
@@ -95,11 +90,6 @@ export const CategoryTitle = styled.li`
 	&:hover {
 		/*Box model stuff*/
 		padding-left: 10px;
-	}
-
-	@media ${deviceSize.laptop} {
-		/*Display stuff*/
-		flex: 70%;
 	}
 `;
 

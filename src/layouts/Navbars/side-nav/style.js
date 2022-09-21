@@ -34,8 +34,8 @@ export const ImgContainer = styled.div`
 	/*Box model stuff*/
 	width: 250px;
 	height: 250px;
-	margin: 50px auto 40px;
-	border-radius: 50%;
+	margin: 50px auto 20px;
+	border-radius: 12px;
 	/*Miscellaneous*/
 	box-shadow: 5px 5px 20px black;
 `;
@@ -45,8 +45,6 @@ export const Img = styled.img`
 	width: auto;
 	height: 100%;
 	border-radius: inherit;
-	/*Manipulations stuff*/
-	transform: rotate(5deg);
 `;
 
 export const Name = styled.h2`

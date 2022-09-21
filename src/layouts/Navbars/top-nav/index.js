@@ -37,14 +37,10 @@ export default function Navbar() {
 				<ul>
 					{Data.map((val, key) => {
 						return (
-							<div key={key + 1}>
-								<S.Category onClick={autoClose} key={key} to={val.link}>
-									<S.CategoryIcon key={key + 2} className="icon">
-										{val.icon}
-									</S.CategoryIcon>
-									<S.CategoryTitle key={key + 3} className="title">
-										{val.title}
-									</S.CategoryTitle>
+							<div key={key}>
+								<S.Category onClick={autoClose} to={val.link}>
+									<S.CategoryIcon className="icon">{val.icon}</S.CategoryIcon>
+									<S.CategoryTitle className="title">{val.title}</S.CategoryTitle>
 								</S.Category>
 							</div>
 						);
