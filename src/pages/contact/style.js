@@ -13,7 +13,7 @@ export const MainContainer = styled.div`
 	top: 0;
 	bottom: 0;
 	/*Box model stuff*/
-	width: 350px;
+	width: 575px;
 	height: fit-content;
 	margin: auto;
 	padding: 20px 0 10px 20px;
@@ -31,18 +31,22 @@ export const ContactContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	/*Box model stuff*/
-	width: 320px;
+	width: inherit;
 	margin: auto;
 	/*Miscellaneous*/
 `;
 
 export const ContactIcon = styled.i`
 	/*Box model stuff*/
-	width: 32px;
-	margin-right: 10px;
+	width: 55px;
+	margin-right: 20px;
 	/*Typography stuff*/
 	font-size: 25px;
 	text-align: center;
+
+	@media ${deviceSize.laptop} {
+		font-size: 45px;
+	}
 `;
 
 export const ContactInfoH3 = styled.h3`
@@ -66,6 +70,10 @@ export const ContactInfoH3 = styled.h3`
 		/*Miscellaneous*/
 		cursor: pointer;
 	}
+
+	@media ${deviceSize.laptop} {
+		font-size: 40px;
+	}
 `;
 
 export const ContactInfoA = styled.a`
@@ -88,5 +96,9 @@ export const ContactInfoA = styled.a`
 		text-decoration: underline;
 		/*Miscellaneous*/
 		cursor: pointer;
+	}
+
+	@media ${deviceSize.laptop} {
+		font-size: 40px;
 	}
 `;

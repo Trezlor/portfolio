@@ -15,7 +15,7 @@ export default function ContactPage() {
 				<S.ContactInfoA
 					href="https://github.com/SondreHal"
 					target="_blank"
-					rel="noreferrer"
+					rel="noreferrer noopener"
 				>
 					<S.ContactIcon className="fa-brands fa-github"></S.ContactIcon>
 					GitHub
@@ -23,7 +23,7 @@ export default function ContactPage() {
 				<S.ContactInfoA
 					href="https://www.linkedin.com/in/sondre-halvorsen-74a453241/"
 					target="_blank"
-					rel="noreferrer"
+					rel="noreferrer noopener"
 				>
 					<S.ContactIcon className="fa-brands fa-linkedin"></S.ContactIcon>
 					LinkedIn
@@ -33,7 +33,7 @@ export default function ContactPage() {
 				<S.ContactInfoA
 					href="https://discordapp.com/users/212315187124895744"
 					target="_blank"
-					rel="noreferrer"
+					rel="noreferrer noopener"
 				>
 					<S.ContactIcon className="fa-brands fa-discord"></S.ContactIcon>
 					Discord

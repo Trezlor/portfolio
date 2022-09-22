@@ -25,13 +25,13 @@ export const Projects = [
 	},
 	{
 		title: "Vacation advertisement",
-		image: "vacation-ad.png",
+		image: "japan-ad.png",
 		link: "https://sondrehal.github.io/feriedestinasjon/",
 		github: "https://github.com/SondreHal/feriedestinasjon",
 	},
 	{
 		title: "Eightball",
-		image: "eight-ball.png",
+		image: "eightball.png",
 		link: "https://sondrehal.github.io/eightball/",
 		github: "https://github.com/SondreHal/eightball",
 	},
@@ -43,7 +43,7 @@ export const Projects = [
 	},
 	{
 		title: "Registration form",
-		image: "sign-up.png",
+		image: "register.png",
 		link: "https://sondrehal.github.io/register/",
 		github: "https://github.com/SondreHal/register",
 	},

@@ -36,7 +36,7 @@ export const Category = styled(NavLink)`
 		background: linear-gradient(
 			90deg,
 			rgba(0, 0, 0, 0),
-			rgba(150, 150, 150, 0.5),
+			rgba(150, 150, 150, 0.2),
 			rgba(0, 0, 0, 0)
 		);
 		/*Typography stuff*/
@@ -53,7 +53,7 @@ export const Category = styled(NavLink)`
 		background: linear-gradient(
 			90deg,
 			rgba(0, 0, 0, 0),
-			rgba(150, 150, 150, 0.5),
+			rgba(150, 150, 150, 0.2),
 			rgba(0, 0, 0, 0)
 		);
 		/*Typography stuff*/
