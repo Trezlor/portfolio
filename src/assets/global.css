@@ -7,6 +7,9 @@
 	box-sizing: border-box;
 }
 
+div {
+}
+
 body {
 	/*Box model stuff*/
 	height: 100%;
