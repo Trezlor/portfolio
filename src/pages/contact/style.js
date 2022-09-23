@@ -59,6 +59,8 @@ export const ContactInfoH3 = styled.h3`
 	/*Typography stuff*/
 	font-size: 20px;
 	font-weight: 400;
+	/*Miscellaneous*/
+	user-select: none;
 
 	@media ${deviceSize.laptop} {
 		/*Typography stuff*/
@@ -85,6 +87,8 @@ export const ContactInfoA = styled.a`
 	font-size: 20px;
 	font-weight: 400;
 	color: white;
+	/*Miscellaneous*/
+	user-select: none;
 
 	@media ${deviceSize.laptop} {
 		/*Typography stuff*/
@@ -92,14 +96,14 @@ export const ContactInfoA = styled.a`
 		text-decoration: none;
 		/*Manipulations stuff*/
 		transition: padding 0.3s;
-	}
 
-	&:hover {
-		/*Box model stuff*/
-		padding-left: 20px;
-		/*Typography stuff*/
-		text-decoration: underline;
-		/*Miscellaneous*/
-		cursor: pointer;
+		&:hover {
+			/*Box model stuff*/
+			padding-left: 20px;
+			/*Typography stuff*/
+			text-decoration: underline;
+			/*Miscellaneous*/
+			cursor: pointer;
+		}
 	}
 `;
