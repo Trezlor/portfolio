@@ -6,18 +6,15 @@ export const HeadlineContainer = styled.main`
 	display: flex;
 	flex-direction: column;
 	/*Box model stuff*/
-	width: 275px;
+	width: fit-content;
 	margin-top: 35vh;
-	margin-inline: auto;
 	/*Miscellaneous*/
+	margin-inline: auto;
 	gap: 10px;
-
-	@media ${deviceSize.laptop} {
-		width: fit-content;
-	}
 `;
 
 export const HeadlineH1 = styled.h1`
+	/*Typography stuff*/
 	font-size: 36px;
 
 	@media ${deviceSize.laptop} {
@@ -27,6 +24,7 @@ export const HeadlineH1 = styled.h1`
 `;
 
 export const HeadlineH2 = styled.h2`
+	/*Typography stuff*/
 	font-size: 18px;
 
 	@media ${deviceSize.laptop} {
@@ -36,6 +34,9 @@ export const HeadlineH2 = styled.h2`
 `;
 
 export const HeadlineH3 = styled.h3`
+	/*Box model stuff*/
+	margin-left: 4px;
+	/*Typography stuff*/
 	font-size: 14px;
 
 	@media ${deviceSize.laptop} {

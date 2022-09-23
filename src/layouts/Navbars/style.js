@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
-import { deviceSize } from "../../../utils/deviceSize";
+import { deviceSize } from "../../utils/deviceSize";
 
 const loadPage = keyframes`
 0% {opacity: 0; transform: translateY(-10px) skewY(5deg) skewX(5deg); filter: blur(5px);}

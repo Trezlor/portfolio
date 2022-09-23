@@ -3,7 +3,6 @@ import { deviceSize } from "../../../utils/deviceSize";
 
 export const Aside = styled.aside`
 	/*Display stuff*/
-	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	/*Positioning stuff*/
@@ -24,9 +23,14 @@ export const Aside = styled.aside`
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
 	display: none;
+	z-index: 2;
 
 	@media ${deviceSize.laptop} {
 		display: flex;
+	}
+
+	@media ${deviceSize.custom} {
+		display: none;
 	}
 `;
 

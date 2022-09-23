@@ -14,6 +14,16 @@ export default function ProjectsPage() {
 		<>
 			<S.Container>
 				<Carousel
+					style={
+						!size
+							? {
+									// border: "1px solid black",
+							  }
+							: {
+									// border: "1px solid black",
+									height: "100%",
+							  }
+					}
 					animation="fade"
 					speed={1000}
 					wrapAround={true}
@@ -33,6 +43,7 @@ export default function ProjectsPage() {
 									pagingDotsStyle: {
 										fill: "white",
 										margin: "0 16px 12px",
+										transform: "scale(2)",
 									},
 							  }
 							: {
@@ -54,7 +65,7 @@ export default function ProjectsPage() {
 									},
 									pagingDotsStyle: {
 										fill: "white",
-										margin: "0 16px 12px",
+										margin: "0 12px 12px",
 									},
 							  }
 					}

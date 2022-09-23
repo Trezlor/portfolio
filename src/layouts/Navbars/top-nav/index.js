@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import * as S from "../components/style";
+import * as S from "../style";
 import { Data } from "../utils/data";
 import * as C from "./style";
 
@@ -53,6 +53,7 @@ export default function Navbar() {
 				<C.DropDown showNav={showNav} onClick={toggleNavbar}>
 					<span className="lines line--1"></span>
 					<span className="lines line--2"></span>
+					<span className="lines line--3"></span>
 				</C.DropDown>
 			</C.Nav>
 		</>

@@ -15,7 +15,7 @@ export const Nav = styled.nav`
 	transition: 0.4s;
 	transform: translateY(${(props) => (props.showNav ? "0" : "-100%")});
 	/*Box model stuff*/
-	width: 90vw;
+	width: 100vw;
 	height: fit-content;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 12px;
@@ -45,7 +45,7 @@ export const DropDown = styled.button`
 	margin: auto;
 	transition: 0.4s;
 	border: 1px solid rgba(255, 255, 255, 0.3);
-	border-radius: 0 0 24px 24px;
+	border-radius: 0 0 8px 8px;
 	background: linear-gradient(135deg, rgba(94, 94, 94, 0.15), rgba(255, 255, 255, 0.2));
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
@@ -62,16 +62,21 @@ export const DropDown = styled.button`
 		left: 0;
 		right: 0;
 		margin: auto;
+		box-shadow: 0px 0px 1px black;
 	}
 
 	.line--1 {
-		transform: translateX(${(props) => (props.showNav ? "0" : "6px")})
-			rotate(${(props) => (props.showNav ? "-135deg" : "-45deg")});
+		transform: translateY(${(props) => (props.showNav ? "0" : "6px")})
+			rotate(${(props) => (props.showNav ? "405deg" : "0")});
 	}
 
 	.line--2 {
-		transform: translateX(${(props) => (props.showNav ? "0" : "-6px")})
-			rotate(${(props) => (props.showNav ? "135deg" : "45deg")});
+		width: ${(props) => (props.showNav ? "0%" : "")};
+	}
+
+	.line--3 {
+		transform: translateY(${(props) => (props.showNav ? "0" : "-6px")})
+			rotate(${(props) => (props.showNav ? "495deg" : "0")});
 	}
 
 	@media ${deviceSize.laptop} {

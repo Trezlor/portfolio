@@ -1,4 +1,4 @@
-import * as S from "../components/style";
+import * as S from "../style";
 import * as C from "./style";
 
 import { Data } from "../utils/data";
