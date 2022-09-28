@@ -58,5 +58,5 @@ export const Name = styled.h2`
 	font-family: "Inter", sans-serif;
 	font-size: 32px;
 	text-align: center;
-	text-shadow: 0px 3px 3px black;
+	text-shadow: 0px 3px 10px grey;
 `;

@@ -16,6 +16,7 @@ export const Glass = styled.div`
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
 	display: none;
+	box-shadow: 0 0 60px grey;
 
 	@media ${deviceSize.laptop} {
 		display: block;

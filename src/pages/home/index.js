@@ -18,6 +18,32 @@ export default function HomePage() {
 					learning new things <span style={{ fontSize: "32px" }}>&#x270A;</span>
 				</S.HeadlineH2>
 			</S.HeadlineContainer>
+			<S.HeadlineSection>
+				<S.HeadlineH1>About me</S.HeadlineH1>
+				<S.GridDiv>
+					<S.FlexDiv>
+						<S.HeadlineH2 style={{ gridArea: "experiences" }}>Experiences</S.HeadlineH2>
+						<S.HeadlineP>
+							hoihoihoihoi hoihoi hoihoihoi hoihoihoihoi hoihoihoihoi hoihoi
+							hoihoihoihoihoihoi
+						</S.HeadlineP>
+					</S.FlexDiv>
+					<S.FlexDiv>
+						<S.HeadlineH2 style={{ gridArea: "interests" }}>Interests</S.HeadlineH2>
+						<S.HeadlineP>
+							hoihoihoihoi hoihoi hoihoihoi hoihoihoihoi hoihoihoihoi hoihoi
+							hoihoihoihoihoihoi
+						</S.HeadlineP>
+					</S.FlexDiv>
+					<S.FlexDiv style={{ gridArea: "hobbies" }}>
+						<S.HeadlineH2>Hobbies</S.HeadlineH2>
+						<S.HeadlineP>
+							hoihoihoihoi hoihoi hoihoihoi hoihoihoihoi hoihoihoihoi hoihoi
+							hoihoihoihoihoihoi
+						</S.HeadlineP>
+					</S.FlexDiv>
+				</S.GridDiv>
+			</S.HeadlineSection>
 		</>
 	);
 }

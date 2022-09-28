@@ -7,14 +7,19 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 div {
 }
 
 body {
 	/*Box model stuff*/
 	height: 100%;
-	margin: 2.5vh 0 2.5vh 350px;
-	background: linear-gradient(to left top, rgb(167, 30, 160), #0b8793) fixed;
+	margin-left: 350px;
+	background: linear-gradient(to left top, rgb(42, 78, 177), #44b4ff) fixed;
+	/* background: linear-gradient(to left top, rgb(0, 10, 49), #156cdd) fixed; */
 	/*Typography stuff*/
 	font-family: "Roboto Mono", monospace;
 	color: white;
