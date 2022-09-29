@@ -42,7 +42,6 @@ html {
 
 body {
 	/*Box model stuff*/
-	margin-left: 350px;
 	background-color: var(--color-bg);
 	background-image: url(images/bg-texture.png);
 	/*Typography stuff*/
@@ -50,7 +49,6 @@ body {
 	color: var(--color-white);
 	/*Miscellaneous*/
 	line-height: 1.7;
-	/* overflow-x: hidden; */
 }
 
 /* GENERAL STYLES */
@@ -159,10 +157,6 @@ img {
 /* MEDIA QUERIES (TABLET DEVICES) */
 
 @media screen and (max-width: 1024px) {
-	body {
-		margin: 0;
-	}
-
 	.container {
 		width: var(--container-width-medium);
 	}

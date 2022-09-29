@@ -1,16 +1,17 @@
 import CV from "../../../../assets/cv.pdf";
+import * as s from "./style";
 
 export default function CTA() {
 	return (
 		<>
-			<div className="cta">
+			<s.Div_CTA>
 				<a href={CV} download className="btn">
 					Download CV
 				</a>
 				<a href="#contact" className="btn btn-primary">
 					Let's Talk
 				</a>
-			</div>
+			</s.Div_CTA>
 		</>
 	);
 }

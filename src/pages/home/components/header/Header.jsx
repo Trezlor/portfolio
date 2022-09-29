@@ -1,24 +1,24 @@
 import ME from "../../../../assets/images/sondre.png";
 import CTA from "./CTA";
+import HeaderSocials from "./HeaderSocials";
 import * as s from "./style";
 
 export default function Header() {
 	return (
 		<>
 			<s.Header>
-				<s.Header_Container className="container header__container">
+				<s.Header_Container className="container">
 					<h5>Hi, I'm</h5>
 					<h1>Sondre!</h1>
 					<h5 className="text-light">Frontend developer student</h5>
 					<CTA />
+					<HeaderSocials />
 
-					<div className="me">
+					<s.Div_Me>
 						<img src={ME} alt="Sondre Halvorsen" />
-					</div>
+					</s.Div_Me>
 
-					<a href="#contact" className="scroll__down">
-						Scroll Down
-					</a>
+					<s.ScrollDown href="#contact">Scroll Down</s.ScrollDown>
 				</s.Header_Container>
 			</s.Header>
 			{/* <s.Header>
