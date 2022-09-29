@@ -1,25 +1,26 @@
-import CV from "../../../../assets/cv.pdf";
-import * as s from "../../style";
+import ME from "../../../../assets/images/sondre.png";
+import CTA from "./CTA";
+import * as s from "./style";
 
 export default function Header() {
 	return (
 		<>
-			<header>
-				<div className="container header__container">
+			<s.Header>
+				<s.Header_Container className="container header__container">
 					<h5>Hi, I'm</h5>
 					<h1>Sondre!</h1>
 					<h5 className="text-light">Frontend developer student</h5>
-				</div>
+					<CTA />
 
-				<div className="cta">
-					<a href={CV} download className="btn">
-						Download CV
+					<div className="me">
+						<img src={ME} alt="Sondre Halvorsen" />
+					</div>
+
+					<a href="#contact" className="scroll__down">
+						Scroll Down
 					</a>
-					<a href="#contact" className="btn btn-primary">
-						Let's Talk
-					</a>
-				</div>
-			</header>
+				</s.Header_Container>
+			</s.Header>
 			{/* <s.Header>
 				<s.Header_H1>Hi, i'm Sondre!</s.Header_H1>
 				<div style={{ display: "flex" }}>
