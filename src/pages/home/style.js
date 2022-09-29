@@ -1,13 +1,16 @@
 import styled from "styled-components";
 import { deviceSize } from "../../utils/deviceSize";
 
-export const HeadlineContainer = styled.main`
+// Header
+
+export const Header = styled.main`
 	/*Display stuff*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	/*Box model stuff*/
 	width: fit-content;
+	font-family: "Roboto Mono", monospace;
 	height: 100vh;
 	/* border: 1px solid red; */
 	/*Miscellaneous*/
@@ -15,7 +18,7 @@ export const HeadlineContainer = styled.main`
 	gap: 10px;
 `;
 
-export const HeadlineH1 = styled.h1`
+export const Header_H1 = styled.h1`
 	/*Typography stuff*/
 	font-size: 2.1rem;
 
@@ -25,7 +28,7 @@ export const HeadlineH1 = styled.h1`
 	}
 `;
 
-export const HeadlineH2 = styled.h2`
+export const Header_H2 = styled.h2`
 	/*Typography stuff*/
 	font-size: 1.1rem;
 
@@ -35,7 +38,7 @@ export const HeadlineH2 = styled.h2`
 	}
 `;
 
-export const HeadlineH3 = styled.h3`
+export const Header_H3 = styled.h3`
 	/*Box model stuff*/
 	margin-left: 4px;
 	/*Typography stuff*/
@@ -47,26 +50,27 @@ export const HeadlineH3 = styled.h3`
 	}
 `;
 
-export const HeadlineSection = styled.section`
+export const Section = styled.section`
 	/*Display stuff*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	/*Box model stuff*/
-	padding-block: 20vh 60vh;
 	/* border: 1px solid red; */
 	/*Miscellaneous*/
-	margin-inline: auto;
+	margin-inline: 8rem auto 0;
 
-	h1 {
-		margin-bottom: 3rem;
+	div > div > h2,
+	div > div > h5 {
+		text-align: center;
+		color: var(--color-light);
 	}
 
 	@media ${deviceSize.laptop} {
 	}
 `;
 
-export const HeadlineP = styled.p`
+export const Paragraph = styled.p`
 	/*Typography stuff*/
 	font-size: 14px;
 	padding: 0.5rem;
@@ -78,12 +82,12 @@ export const HeadlineP = styled.p`
 	}
 `;
 
-export const GridDiv = styled.div`
+export const Grid_Div = styled.div`
 	display: grid;
 	/* border: 2px solid black; */
 	margin-inline: 2.5vw;
 	grid-gap: 1rem;
-	place-items: center;
+	place-items: top;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
 	grid-template-areas:
@@ -103,7 +107,7 @@ export const GridDiv = styled.div`
 	}
 `;
 
-export const FlexDiv = styled.div`
+export const Flex_Div = styled.div`
 	/* background-color: red; */
 	/* border: 2px solid black; */
 

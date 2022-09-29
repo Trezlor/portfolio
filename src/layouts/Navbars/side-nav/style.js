@@ -17,7 +17,7 @@ export const Aside = styled.aside`
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-bottom-right-radius: 28px;
 	border-top-right-radius: 28px;
-	background: linear-gradient(135deg, rgba(94, 94, 94, 0.15), rgba(255, 255, 255, 0.3));
+	background: linear-gradient(135deg, rgba(94, 94, 94, 0.15), rgba(255, 255, 255, 0.12));
 	/*Miscellaneous*/
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
@@ -25,12 +25,12 @@ export const Aside = styled.aside`
 	display: none;
 	z-index: 2;
 
-	@media ${deviceSize.laptop} {
-		display: flex;
+	@media ${deviceSize.tablet} {
+		display: none;
 	}
 
-	@media ${deviceSize.custom} {
-		display: none;
+	@media ${deviceSize.laptop} {
+		display: flex;
 	}
 `;
 
@@ -58,5 +58,4 @@ export const Name = styled.h2`
 	font-family: "Inter", sans-serif;
 	font-size: 32px;
 	text-align: center;
-	text-shadow: 0px 3px 10px grey;
 `;
