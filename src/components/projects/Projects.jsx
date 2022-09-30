@@ -1,9 +1,9 @@
 import Carousel from "nuka-carousel";
 import { useState } from "react";
 import * as S from "./style";
-import { Projects } from "./utils/data";
+import { ProjectsData } from "./utils/data";
 
-export default function ProjectsPage() {
+const Projects = () => {
 	let [size, setSize] = useState(Boolean(window.innerWidth <= 1024));
 
 	window.addEventListener("resize", () => {
@@ -12,7 +12,7 @@ export default function ProjectsPage() {
 
 	return (
 		<>
-			<S.Container>
+			<S.Container id="projects">
 				<Carousel
 					style={
 						!size
@@ -70,7 +70,7 @@ export default function ProjectsPage() {
 							  }
 					}
 				>
-					{Projects.map((val, key) => {
+					{ProjectsData.map((val, key) => {
 						return (
 							<S.Section key={key}>
 								<S.Title>{val.title}</S.Title>
@@ -101,4 +101,5 @@ export default function ProjectsPage() {
 			</S.Container>
 		</>
 	);
-}
+};
+export default Projects;

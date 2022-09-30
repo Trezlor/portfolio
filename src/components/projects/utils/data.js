@@ -1,4 +1,4 @@
-export const Projects = [
+export const ProjectsData = [
 	{
 		title: "To-do List",
 		image: "to-do-list.png",

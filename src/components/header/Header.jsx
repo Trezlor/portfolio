@@ -17,8 +17,6 @@ const Header = () => {
 					<s.Div_Me>
 						<img src={ME} alt="Sondre Halvorsen" />
 					</s.Div_Me>
-
-					<s.ScrollDown href="#contact">Scroll Down</s.ScrollDown>
 				</s.Header_Container>
 			</s.Header>
 			{/* <s.Header>

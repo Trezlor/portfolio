@@ -4,6 +4,7 @@ import Contact from "./components/contact/Contact";
 import Experience from "./components/experience/Experience";
 import Header from "./components/header/Header";
 import Navbar from "./components/nav/Nav";
+import Projects from "./components/projects/Projects";
 
 export default function App() {
 	return (
@@ -13,6 +14,7 @@ export default function App() {
 				<Navbar />
 				<About />
 				<Experience />
+				<Projects />
 				<Contact />
 			</>
 		</div>

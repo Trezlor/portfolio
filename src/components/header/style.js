@@ -69,17 +69,3 @@ export const Div_Me = styled.div`
 		/* bottom: unset; */
 	}
 `;
-
-// SCROLL DOWN
-export const ScrollDown = styled.a`
-	position: absolute;
-	right: 0;
-	bottom: 5rem;
-	transform: rotate(90deg);
-	font-weight: 300;
-	font-size: 0.9rem;
-
-	@media ${deviceSize.small} {
-		display: none;
-	}
-`;
