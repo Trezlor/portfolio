@@ -1,27 +1,20 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
 import "./assets/global.css";
-// import GlassEffect from "./layouts/glass-effect/GlassEffect";
-// import Sidebar from "./layouts/Navbars/side-nav/index";
-// import Navbar from "./layouts/Navbars/top-nav/index";
-import ContactPage from "./pages/contact";
-import HomePage from "./pages/home";
-import ProjectsPage from "./pages/projects";
+import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
+import Experience from "./components/experience/Experience";
+import Header from "./components/header/Header";
+import Navbar from "./components/nav/Nav";
 
 export default function App() {
 	return (
-		<HashRouter>
-			<div className="App">
-				<>
-					{/* <Navbar />
-					<Sidebar /> */}
-					<Routes>
-						<Route path="/" element={<HomePage />} />
-						<Route path="/projects" element={<ProjectsPage />} />
-						<Route path="/contact" element={<ContactPage />} />
-					</Routes>
-					{/* <GlassEffect /> */}
-				</>
-			</div>
-		</HashRouter>
+		<div className="App">
+			<>
+				<Header />
+				<Navbar />
+				<About />
+				<Experience />
+				<Contact />
+			</>
+		</div>
 	);
 }

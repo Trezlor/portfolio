@@ -1,9 +1,9 @@
-import ME from "../../../../assets/images/sondre.png";
+import ME from "../../assets/images/sondre.png";
 import CTA from "./CTA";
-import HeaderSocials from "./HeaderSocials";
+import HeaderSocials from "./Socials";
 import * as s from "./style";
 
-export default function Header() {
+const Header = () => {
 	return (
 		<>
 			<s.Header>
@@ -38,4 +38,5 @@ export default function Header() {
 			</s.Header> */}
 		</>
 	);
-}
+};
+export default Header;

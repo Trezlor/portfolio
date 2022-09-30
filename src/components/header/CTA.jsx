@@ -1,7 +1,7 @@
-import CV from "../../../../assets/cv.pdf";
+import CV from "../../assets/cv.pdf";
 import * as s from "./style";
 
-export default function CTA() {
+const CTA = () => {
 	return (
 		<>
 			<s.Div_CTA>
@@ -14,4 +14,6 @@ export default function CTA() {
 			</s.Div_CTA>
 		</>
 	);
-}
+};
+
+export default CTA;

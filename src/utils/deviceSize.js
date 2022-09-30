@@ -1,6 +1,6 @@
 const size = {
-	medium: "600px",
-	small: "1024px",
+	medium: "1024px",
+	small: "600px",
 };
 
 export const deviceSize = {
