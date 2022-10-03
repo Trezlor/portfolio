@@ -1,55 +1,48 @@
-import { useState } from "react";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook, BiMessageDetail } from "react-icons/bi";
 import { BsPencil } from "react-icons/bs";
 
 import React from "react";
+import { Link } from "react-scroll";
+import HeaderSocials from "./Socials";
 import * as s from "./style";
 
 const Navbar = () => {
-	const [activeNav, setActiveNav] = useState("#");
 	return (
 		<>
 			<s.Nav>
-				<s.Nav_A
-					href="#"
-					onClick={() => setActiveNav("#")}
-					className={activeNav === "#" ? "active" : ""}
-				>
-					<AiOutlineHome />
-				</s.Nav_A>
-				<s.Nav_A
-					href="#about"
-					onClick={() => setActiveNav("#about")}
-					className={activeNav === "#about" ? "active" : ""}
-				>
-					<AiOutlineUser />
-				</s.Nav_A>
-				<s.Nav_A
-					href="#experience"
-					onClick={() => setActiveNav("#experience")}
-					className={activeNav === "#experience" ? "active" : ""}
-				>
-					<BiBook />
-				</s.Nav_A>
-				<s.Nav_A
-					href="#projects"
-					onClick={() => setActiveNav("#projects")}
-					className={activeNav === "#projects" ? "active" : ""}
-				>
-					<BsPencil />
-				</s.Nav_A>
-				<s.Nav_A
-					href="#contact"
-					onClick={() => setActiveNav("#contact")}
-					className={activeNav === "#contact" ? "active" : ""}
-				>
-					<BiMessageDetail />
-				</s.Nav_A>
+				<s.Nav_Li>
+					<Link to="home" spy={true} smooth={true} offset={0} duration={400}>
+						<AiOutlineHome />
+					</Link>
+				</s.Nav_Li>
+
+				<s.Nav_Li>
+					<Link to="about" spy={true} smooth={true} offset={0} duration={400}>
+						<AiOutlineUser />
+					</Link>
+				</s.Nav_Li>
+
+				<s.Nav_Li>
+					<Link to="experience" spy={true} smooth={true} offset={0} duration={400}>
+						<BiBook />
+					</Link>
+				</s.Nav_Li>
+
+				<s.Nav_Li>
+					<Link to="projects" spy={true} smooth={true} offset={0} duration={400}>
+						<BsPencil />
+					</Link>
+				</s.Nav_Li>
+
+				<s.Nav_Li>
+					<Link to="contact" spy={true} smooth={true} offset={0} duration={400}>
+						<BiMessageDetail />
+					</Link>
+				</s.Nav_Li>
 			</s.Nav>
-			<s.ScrollDown href="#contact" onClick={() => setActiveNav("#contact")}>
-				Scroll Down
-			</s.ScrollDown>
+			<HeaderSocials />
+			<s.ScrollDown href="#contact">Scroll Down</s.ScrollDown>
 		</>
 	);
 };

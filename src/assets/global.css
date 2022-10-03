@@ -43,7 +43,7 @@ html {
 body {
 	/*Box model stuff*/
 	background-color: var(--color-bg);
-	background-image: url(images/bg-texture.png);
+	background-image: url(images/bg-texture3.png);
 	/*Typography stuff*/
 	font-family: "Poppins", sans-serif;
 	color: var(--color-white);
@@ -70,13 +70,22 @@ h5 {
 
 h1 {
 	/*Typography stuff*/
-	font-size: 2.5rem;
+	font-size: 3.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 0.9rem;
 }
 
 section {
 	/*Box model stuff*/
 	margin-top: 8rem;
 	height: 100vh;
+	padding-top: 5rem;
 }
 
 section > h2,
@@ -148,11 +157,6 @@ img {
 	width: 100%;
 	/*Miscellaneous*/
 	object-fit: cover;
-}
-
-.slider-list {
-	/*Box model stuff*/
-	height: 100%;
 }
 
 /* MEDIA QUERIES (TABLET DEVICES) */

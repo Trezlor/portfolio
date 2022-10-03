@@ -6,14 +6,6 @@ export const Header = styled.main`
 	height: 100vh;
 	padding-top: 7rem;
 	overflow: hidden;
-
-	@media ${deviceSize.medium} {
-		height: 68vh;
-	}
-
-	@media ${deviceSize.small} {
-		height: 100vh;
-	}
 `;
 
 export const Header_Container = styled.div`
@@ -28,28 +20,6 @@ export const Div_CTA = styled.div`
 	display: flex;
 	gap: 1.2rem;
 	justify-content: center;
-`;
-
-// SOCIALS
-export const Div_Socials = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 0.8rem;
-	position: absolute;
-	left: 0;
-	bottom: 3rem;
-
-	&:after {
-		content: "";
-		width: 1px;
-		height: 2rem;
-		background: var(--color-primary);
-	}
-
-	@media ${deviceSize.small} {
-		display: none;
-	}
 `;
 
 // ME

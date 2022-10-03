@@ -12,12 +12,6 @@ export const ProjectsData = [
 		github: "https://github.com/SondreHal/password-generator",
 	},
 	{
-		title: "Basketball Scoreboard",
-		image: "basketball.png",
-		link: "https://sondrehal.github.io/basketball/",
-		github: "https://github.com/SondreHal/basketball",
-	},
-	{
 		title: "Unit Converter",
 		image: "unit-converter.png",
 		link: "https://sondrehal.github.io/unit-converter/",

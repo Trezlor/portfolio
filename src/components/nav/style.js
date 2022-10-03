@@ -23,6 +23,29 @@ export const Nav = styled.nav`
 	}
 `;
 
+export const Nav_Li = styled.li`
+	> * {
+		background: transparent;
+		padding: 0.9rem;
+		border-radius: 50%;
+		display: flex;
+		color: var(--color-light);
+		font-size: 1.1rem;
+	}
+	> :hover {
+		background: rgba(0, 0, 0, 0.2);
+	}
+	> .active {
+		background: var(--color-bg);
+		color: var(--color-white);
+	}
+
+	@media ${deviceSize.medium} {
+	}
+
+	@media ${deviceSize.small} {
+	}
+`;
 export const Nav_A = styled.a`
 	background: transparent;
 	padding: 0.9rem;
@@ -44,6 +67,28 @@ export const Nav_A = styled.a`
 	}
 
 	@media ${deviceSize.small} {
+	}
+`;
+
+// SOCIALS
+export const Div_Socials = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.8rem;
+	position: absolute;
+	left: 2rem;
+	bottom: 3rem;
+
+	&:after {
+		content: "";
+		width: 1px;
+		height: 2rem;
+		background: var(--color-primary);
+	}
+
+	@media ${deviceSize.small} {
+		display: none;
 	}
 `;
 
