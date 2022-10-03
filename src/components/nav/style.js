@@ -31,6 +31,7 @@ export const Nav_Li = styled.li`
 		display: flex;
 		color: var(--color-light);
 		font-size: 1.1rem;
+		cursor: pointer;
 	}
 	> :hover {
 		background: rgba(0, 0, 0, 0.2);

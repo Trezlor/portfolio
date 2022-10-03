@@ -26,6 +26,6 @@ export const Image = styled.img`
 export const LinkContainer = styled.div`
 	display: flex;
 	gap: 50px;
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 	justify-content: center;
 `;

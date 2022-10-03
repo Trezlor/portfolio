@@ -1,9 +1,9 @@
 export const ProjectsData = [
 	{
-		title: "To-do List",
-		image: "to-do-list.png",
-		link: "https://sondrehal.github.io/to-do/",
-		github: "https://github.com/SondreHal/to-do",
+		title: "Vacation Ad",
+		image: "japan-ad.png",
+		link: "https://sondrehal.github.io/feriedestinasjon/",
+		github: "https://github.com/SondreHal/feriedestinasjon",
 	},
 	{
 		title: "Password Generator",
@@ -12,16 +12,22 @@ export const ProjectsData = [
 		github: "https://github.com/SondreHal/password-generator",
 	},
 	{
+		title: "To-do List",
+		image: "to-do-list.png",
+		link: "https://sondrehal.github.io/to-do/",
+		github: "https://github.com/SondreHal/to-do",
+	},
+	{
 		title: "Unit Converter",
 		image: "unit-converter.png",
 		link: "https://sondrehal.github.io/unit-converter/",
 		github: "https://github.com/SondreHal/unit-converter",
 	},
 	{
-		title: "Vacation Ad",
-		image: "japan-ad.png",
-		link: "https://sondrehal.github.io/feriedestinasjon/",
-		github: "https://github.com/SondreHal/feriedestinasjon",
+		title: "Registration form",
+		image: "register.png",
+		link: "https://sondrehal.github.io/register/",
+		github: "https://github.com/SondreHal/register",
 	},
 	{
 		title: "Eightball",
@@ -34,12 +40,6 @@ export const ProjectsData = [
 		image: "collatz.png",
 		link: "https://sondrehal.github.io/collatz/",
 		github: "https://github.com/SondreHal/collatz",
-	},
-	{
-		title: "Registration form",
-		image: "register.png",
-		link: "https://sondrehal.github.io/register/",
-		github: "https://github.com/SondreHal/register",
 	},
 	{
 		title: "Random Pokemon Card",
