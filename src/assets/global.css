@@ -43,7 +43,7 @@ html {
 body {
 	/*Box model stuff*/
 	background-color: var(--color-bg);
-	background-image: url(images/bg-texture3.png);
+	background-image: url(images/bg-texture.png);
 	/*Typography stuff*/
 	font-family: "Poppins", sans-serif;
 	color: var(--color-white);
@@ -84,7 +84,7 @@ h5 {
 section {
 	/*Box model stuff*/
 	margin-top: 8rem;
-	height: 100vh;
+	min-height: 100vh;
 	padding-top: 5rem;
 }
 
@@ -167,7 +167,8 @@ img {
 	}
 
 	section {
-		margin-top: 6rem;
+		margin-top: 5rem;
+		padding-top: 1rem;
 	}
 }
 

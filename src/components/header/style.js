@@ -3,9 +3,13 @@ import { deviceSize } from "../../utils/deviceSize";
 
 // HEADER
 export const Header = styled.main`
-	height: 100vh;
+	min-height: 100vh;
 	padding-top: 7rem;
 	overflow: hidden;
+
+	@media ${deviceSize.small} {
+		padding-top: 1rem;
+	}
 `;
 
 export const Header_Container = styled.div`
@@ -27,9 +31,10 @@ export const Div_Me = styled.div`
 	background: linear-gradient(var(--color-primary), transparent);
 	width: 22rem;
 	height: 30rem;
-	position: absolute;
-	left: calc(50% - 11rem);
+	/* position: absolute;
+	left: calc(50% - 11rem); */
 	/* bottom: 0; */
+	margin-inline: auto;
 	margin-top: 4rem;
 	border-radius: 12rem 12rem 0 0;
 	overflow: hidden;

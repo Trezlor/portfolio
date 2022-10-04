@@ -12,31 +12,31 @@ const Navbar = () => {
 		<>
 			<s.Nav>
 				<s.Nav_Li>
-					<Link to="home" spy={true} smooth={true} offset={0} duration={400}>
+					<Link to="home" spy={true} smooth={true} offset={-200} duration={400}>
 						<AiOutlineHome />
 					</Link>
 				</s.Nav_Li>
 
 				<s.Nav_Li>
-					<Link to="about" spy={true} smooth={true} offset={0} duration={400}>
+					<Link to="about" spy={true} smooth={true} offset={-200} duration={400}>
 						<AiOutlineUser />
 					</Link>
 				</s.Nav_Li>
 
 				<s.Nav_Li>
-					<Link to="experience" spy={true} smooth={true} offset={0} duration={400}>
+					<Link to="experience" spy={true} smooth={true} offset={-200} duration={400}>
 						<BiBook />
 					</Link>
 				</s.Nav_Li>
 
 				<s.Nav_Li>
-					<Link to="projects" spy={true} smooth={true} offset={0} duration={400}>
+					<Link to="projects" spy={true} smooth={true} offset={-200} duration={400}>
 						<BsPencil />
 					</Link>
 				</s.Nav_Li>
 
 				<s.Nav_Li>
-					<Link to="contact" spy={true} smooth={true} offset={0} duration={400}>
+					<Link to="contact" spy={true} smooth={true} offset={-200} duration={400}>
 						<BiMessageDetail />
 					</Link>
 				</s.Nav_Li>

@@ -3,29 +3,48 @@ import { deviceSize } from "../../utils/deviceSize";
 
 export const Title = styled.h3`
 	text-align: center;
-	margin-top: 50px;
-
-	@media ${deviceSize.laptop} {
-		margin-top: 0;
-	}
+	margin-bottom: 2rem;
 `;
 
 export const Image = styled.img`
-	width: 40%;
+	width: 100%;
 	margin: 0 auto 1rem;
+	border: 0.2rem solid var(--color-primary-variant);
+	border-radius: 0.5rem;
+`;
 
-	@media ${deviceSize.medium} {
-		width: 60%;
-	}
+export const ProjectInfoContainer = styled.div`
+	background-color: var(--color-bg-variant);
+	padding: 2rem 4rem;
+	border-radius: 1rem;
+	width: fit-content;
+	margin: 0 auto 3rem;
 
 	@media ${deviceSize.small} {
-		width: 80%;
+		padding: 1rem 2rem;
 	}
 `;
 
 export const LinkContainer = styled.div`
 	display: flex;
 	gap: 50px;
-	margin-bottom: 3rem;
 	justify-content: center;
+
+	@media ${deviceSize.small} {
+		gap: 10px;
+	}
+`;
+
+export const SwiperWrapper = styled.h3`
+	> * {
+		width: 50rem;
+
+		@media ${deviceSize.medium} {
+			width: 35rem;
+		}
+
+		@media ${deviceSize.small} {
+			width: 20rem;
+		}
+	}
 `;
