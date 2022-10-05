@@ -1,109 +1,66 @@
 import styled from "styled-components";
 import { deviceSize } from "../../utils/deviceSize";
 
-export const MainContainer = styled.div`
-	/*Display stuff*/
-	display: flex;
-	flex-direction: column;
-	/*Positioning stuff*/
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	/*Box model stuff*/
-	width: fit-content;
-	height: fit-content;
-	margin: auto;
-	/*Miscellaneous*/
-	gap: 20px;
+export const Container = styled.div`
+	width: 58%;
+	display: grid;
+	grid-template-columns: 30% 58%;
+	gap: 12%;
 
-	@media ${deviceSize.laptop} {
-		/*Positioning stuff*/
-		left: 350px;
-		right: 20px;
-		/*Box model stuff*/
-		width: 575px;
-		padding: 30px 0 20px 20px;
-		border-left: 1px solid white;
+	@media ${deviceSize.medium} {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	@media ${deviceSize.small} {
+		width: var(--container-width-small);
 	}
 `;
 
-export const ContactContainer = styled.div`
-	/*Display stuff*/
+export const ContactOptions = styled.div`
 	display: flex;
 	flex-direction: column;
-	/*Box model stuff*/
-	width: inherit;
+	gap: 1.2rem;
 `;
 
-export const ContactIcon = styled.i`
-	/*Box model stuff*/
-	width: 55px;
-	margin-right: 20px;
-	/*Typography stuff*/
-	font-size: 25px;
+export const ContactOption = styled.article`
+	background-color: var(--color-bg-variant);
+	padding: 1.2rem;
+	border-radius: 1.2rem;
 	text-align: center;
-	/*Miscellaneous*/
-	vertical-align: middle;
-
-	@media ${deviceSize.laptop} {
-		/*Typography stuff*/
-		font-size: 45px;
-	}
-`;
-
-export const ContactInfoH3 = styled.h3`
-	/*Box model stuff*/
-	padding-bottom: 10px;
-	/*Typography stuff*/
-	font-size: 20px;
-	font-weight: 400;
-	/*Miscellaneous*/
-	user-select: none;
-
-	@media ${deviceSize.laptop} {
-		/*Typography stuff*/
-		font-size: 40px;
-
-		/*Manipulations stuff*/
-		transition: padding 0.3s;
-	}
+	border: 1px solid transparent;
+	transition: var(--transition);
 
 	&:hover {
-		/*Box model stuff*/
-		padding-left: 20px;
-		/*Typography stuff*/
-		text-decoration: underline;
-		/*Miscellaneous*/
-		cursor: pointer;
+		background-color: transparent;
+		border-color: var(--color-primary-variant);
+	}
+
+	& .icon {
+		font-size: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	& a {
+		margin-top: 0.7rem;
+		display: inline-block;
+		font-size: 0.8rem;
 	}
 `;
 
-export const ContactInfoA = styled.a`
-	/*Box model stuff*/
-	padding-bottom: 10px;
-	/*Typography stuff*/
-	font-size: 20px;
-	font-weight: 400;
-	color: white;
-	/*Miscellaneous*/
-	user-select: none;
+export const Form = styled.form`
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
 
-	@media ${deviceSize.laptop} {
-		/*Typography stuff*/
-		font-size: 40px;
-		text-decoration: none;
-		/*Manipulations stuff*/
-		transition: padding 0.3s;
-
-		&:hover {
-			/*Box model stuff*/
-			padding-left: 20px;
-			/*Typography stuff*/
-			text-decoration: underline;
-			/*Miscellaneous*/
-			cursor: pointer;
-		}
+	& input,
+	textarea {
+		width: 100%;
+		padding: 1.5rem;
+		border-radius: 0.5rem;
+		background-color: transparent;
+		border: 2px solid var(--color-primary-variant);
+		resize: none;
+		color: var(--color-white);
 	}
 `;

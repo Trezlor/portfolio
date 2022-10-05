@@ -1,107 +1,117 @@
 import styled from "styled-components";
+import { deviceSize } from "../../utils/deviceSize";
 
-export const Image = styled.img`
-	width: auto;
-	height: 25rem;
-	border-radius: 1rem;
+export const Content = styled.div`
+	& p {
+		margin: 2rem 0 2.6rem;
+		color: var(--color-light);
 
-	&.mediumImg {
-		display: none;
-	}
+		@media ${deviceSize.medium} {
+			margin: 1rem 0 1.5rem;
+		}
 
-	@media (max-width: 1360px) {
-		&.mediumImg {
-			display: block;
-			width: auto;
-			height: 33rem;
+		@media ${deviceSize.small} {
+			margin: 1.5rem 0;
 		}
 	}
-
-	@media (max-width: 1024px) {
-		&.mediumImg {
-			display: none;
-		}
-	}
-
-	@media (max-width: 1360px) {
-		&.largeImg {
-			display: none;
-		}
-	}
-`;
-
-export const Grid = styled.div`
-	display: grid;
-
-	grid-template-columns: auto max-content max-content max-content auto;
-	grid-template-rows: 35.2px max-content;
-	grid-template-areas:
-		". coding hobbies job ."
-		". text text text .";
-	text-align: center;
-	align-items: center;
-	row-gap: 2rem;
-
-	@media (max-width: 1360px) {
-		grid-template-columns: max-content max-content;
-		grid-template-rows: max-content max-content 1fr;
-		grid-template-areas:
-			"coding hobbies"
-			"job job"
-			"text text";
-		row-gap: 0.5rem;
-	}
-
-	@media (max-width: 1024px) {
-		grid-template-columns: auto max-content max-content max-content auto;
-		grid-template-rows: 35.2px max-content;
-		grid-template-areas:
-			". coding hobbies job ."
-			". text text text .";
+	@media ${deviceSize.small} {
 		text-align: center;
-		align-items: center;
-		row-gap: 2rem;
-		column-gap: 0.5rem;
 	}
 `;
 
-export const H3 = styled.h4`
-	background-color: var(--color-primary);
-	color: var(--color-bg);
-	padding-block: 0.5rem;
-	border-radius: 0.5rem;
-	width: 9rem;
-	height: fit-content;
-	margin: 0 auto;
+export const Container = styled.div`
+	display: grid;
+	grid-template-columns: 35% 50%;
+	gap: 15%;
 
-	&.active {
-		background-color: var(--color-bg);
-		color: var(--color-primary);
-		border: 1px solid var(--color-primary);
+	@media ${deviceSize.medium} {
+		grid-template-columns: 1fr;
+		gap: 0;
+	}
+`;
+
+export const AboutMe = styled.div`
+	width: 100%;
+	aspect-ratio: 1/1;
+	border-radius: 2rem;
+	background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+	display: grid;
+	place-items: center;
+
+	@media ${deviceSize.medium} {
+		width: 50%;
+		margin: 2rem auto 4rem;
 	}
 
-	&.job {
-		@media (max-width: 1360px) {
-			margin: 0 auto 0 0;
+	@media ${deviceSize.small} {
+		width: 65%;
+		margin: 0 auto 3rem;
+	}
+`;
+
+export const AboutMeImage = styled.div`
+	border-radius: 2rem;
+	overflow: hidden;
+	transform: rotate(10deg);
+	transition: var(--transition);
+
+	&:hover {
+		transform: rotate(0);
+		box-shadow: 0px 0px 20px var(--color-primary);
+	}
+`;
+
+export const AboutCards = styled.div`
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+
+	@media ${deviceSize.small} {
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+	}
+`;
+
+export const AboutCard = styled.article`
+	background-color: var(--color-bg-variant);
+	border: 1px solid transparent;
+	border-radius: 1rem;
+	padding: 2rem;
+	text-align: center;
+	transition: var(--transition);
+
+	&:hover {
+		background-color: var(--color-primary);
+		cursor: pointer;
+
+		& .icon {
+			transition: var(--transition);
+			color: var(--color-bg);
 		}
 	}
-`;
-export const P = styled.p`
-	background-color: var(--color-bg-variant);
-	grid-area: text;
-	width: 450px;
-	margin: 0 auto;
-	padding: 2rem 4rem;
-	line-height: 2;
-	border-radius: 1rem;
-	height: fit-content;
 
 	&.active {
-		background-color: var(--color-primary-variant);
+		background-color: transparent;
+		border-color: var(--color-primary-variant);
+		cursor: initial;
+
+		& .icon {
+			color: var(--color-primary);
+		}
 	}
 
-	@media (max-width: 1360px) {
-		width: 300px;
-		padding: 1rem 2rem;
+	& h5 {
+		font-size: 0.95rem;
+	}
+
+	& small {
+		font-size: 0.7rem;
+		color: var(--color-light);
+	}
+
+	& .icon {
+		color: var(--color-primary);
+		font-size: 1.4rem;
+		margin-bottom: 1rem;
 	}
 `;

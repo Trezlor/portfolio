@@ -1,19 +1,12 @@
-// import Carousel from "nuka-carousel";
-// import { useState } from "react";
 import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import * as s from "./style";
+import "./style.css";
+import * as s from "./style.js";
 import { ProjectsData } from "./utils/data";
 
 const Projects = () => {
-	// let [size, setSize] = useState(Boolean(window.innerWidth <= 1024));
-
-	// window.addEventListener("resize", () => {
-	// 	setSize(Boolean(window.innerWidth <= 1024));
-	// });
-
 	return (
 		<section id="projects">
 			<h5>My work</h5>

@@ -35,7 +35,7 @@ export const LinkContainer = styled.div`
 	}
 `;
 
-export const SwiperWrapper = styled.h3`
+export const SwiperWrapper = styled.div`
 	> * {
 		width: 50rem;
 
