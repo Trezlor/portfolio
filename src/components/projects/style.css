@@ -1,3 +1,31 @@
 .swiper-pagination-clickable .swiper-pagination-bullet {
 	background: var(--color-primary);
 }
+
+.swiper__container {
+	width: 100%;
+}
+
+.swiper-button-prev {
+	color: var(--color-primary);
+	position: absolute;
+	top: 75%;
+	left: 8rem;
+}
+
+.swiper-button-next {
+	color: var(--color-primary);
+	position: absolute;
+	top: 75%;
+	right: 8rem;
+}
+
+@media screen and (max-width: 1024px) {
+	.swiper-button-prev {
+		display: none;
+	}
+
+	.swiper-button-next {
+		display: none;
+	}
+}

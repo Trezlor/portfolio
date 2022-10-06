@@ -1,5 +1,7 @@
-import { Pagination } from "swiper";
+import { EffectCards, Navigation, Pagination } from "swiper";
 import "swiper/css";
+import "swiper/css/effect-cards";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./style.css";
@@ -15,8 +17,12 @@ const Projects = () => {
 			<s.SwiperWrapper>
 				<Swiper
 					className="container"
-					modules={[Pagination]}
+					modules={[Pagination, Navigation, EffectCards]}
 					spaceBetween={40}
+					navigation={true}
+					grabCursor={true}
+					effect={"cards"}
+					// loop={true}
 					slidesPerView={1}
 					pagination={{ clickable: true }}
 				>

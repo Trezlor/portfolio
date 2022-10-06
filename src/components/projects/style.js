@@ -4,12 +4,16 @@ import { deviceSize } from "../../utils/deviceSize";
 export const Title = styled.h3`
 	text-align: center;
 	margin-bottom: 2rem;
+
+	@media ${deviceSize.small} {
+		margin-bottom: 0.8rem;
+	}
 `;
 
 export const Image = styled.img`
-	width: 100%;
+	width: 85%;
 	margin: 0 auto 1rem;
-	border: 0.2rem solid var(--color-primary-variant);
+	border: var(--border) solid var(--color-primary);
 	border-radius: 0.5rem;
 `;
 
@@ -19,6 +23,7 @@ export const ProjectInfoContainer = styled.div`
 	border-radius: 1rem;
 	width: fit-content;
 	margin: 0 auto 3rem;
+	border: var(--border) solid var(--color-primary);
 
 	@media ${deviceSize.small} {
 		padding: 1rem 2rem;
@@ -31,20 +36,20 @@ export const LinkContainer = styled.div`
 	justify-content: center;
 
 	@media ${deviceSize.small} {
-		gap: 10px;
+		gap: 30px;
 	}
 `;
 
 export const SwiperWrapper = styled.div`
-	> * {
-		width: 50rem;
+	& .container {
+		width: 60rem;
 
 		@media ${deviceSize.medium} {
 			width: 35rem;
 		}
 
 		@media ${deviceSize.small} {
-			width: 20rem;
+			width: min(20rem, 100%);
 		}
 	}
 `;

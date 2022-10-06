@@ -1,5 +1,5 @@
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { BiBook, BiMessageDetail } from "react-icons/bi";
+import { BiMessageDetail } from "react-icons/bi";
 import { BsPencil } from "react-icons/bs";
 
 import React from "react";
@@ -20,12 +20,6 @@ const Navbar = () => {
 				<s.Nav_Li>
 					<Link to="about" spy={true} smooth={true} offset={0} duration={400}>
 						<AiOutlineUser />
-					</Link>
-				</s.Nav_Li>
-
-				<s.Nav_Li>
-					<Link to="experience" spy={true} smooth={true} offset={0} duration={400}>
-						<BiBook />
 					</Link>
 				</s.Nav_Li>
 

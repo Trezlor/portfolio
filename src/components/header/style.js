@@ -29,11 +29,15 @@ export const Div_CTA = styled.div`
 // ME
 export const Div_Me = styled.div`
 	background: linear-gradient(var(--color-primary), transparent);
-	width: 22rem;
-	height: 30rem;
+	width: min(22rem, 100%);
+	height: min(30rem, auto);
 	margin-inline: auto;
 	margin-top: 4rem;
-	border-radius: 12rem 12rem 0 0;
+	border-radius: 6rem 6rem 0 0;
 	overflow: hidden;
-	padding: 5rem 1.5rem 1.5rem 1.5rem;
+	padding: 3rem 1.5rem 1.5rem 1.5rem;
+
+	& img {
+		mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7));
+	}
 `;

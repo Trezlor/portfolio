@@ -1,5 +1,5 @@
 import emailjs from "emailjs-com";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { SiDiscord } from "react-icons/si";
@@ -25,6 +25,8 @@ const Contact = () => {
 		e.target.reset();
 	};
 
+	const [activeCopied, setActiveCopied] = useState("");
+
 	return (
 		<section id="contact">
 			<h5>Get in touch</h5>
@@ -35,7 +37,18 @@ const Contact = () => {
 					<s.ContactOption>
 						<FaPhoneAlt className="icon" />
 						<h4>Phone</h4>
-						<h5>+47 971 41 688</h5>
+						<h5
+							onClick={() => {
+								navigator.clipboard.writeText("+47 971 416 88");
+								setActiveCopied("copied");
+								setTimeout(() => {
+									setActiveCopied("");
+								}, 1500);
+							}}
+						>
+							+47 971 41 688
+						</h5>
+						<p className={activeCopied === "copied" ? "active" : ""}>Copied!</p>
 					</s.ContactOption>
 					<s.ContactOption>
 						<IoIosMail className="icon" />

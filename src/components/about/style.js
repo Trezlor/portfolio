@@ -5,6 +5,12 @@ export const Content = styled.div`
 	& p {
 		margin: 2rem 0 2.6rem;
 		color: var(--color-light);
+		transition: var(--transition);
+		display: none;
+
+		&.activeText {
+			display: block;
+		}
 
 		@media ${deviceSize.medium} {
 			margin: 1rem 0 1.5rem;
@@ -21,7 +27,7 @@ export const Content = styled.div`
 
 export const Container = styled.div`
 	display: grid;
-	grid-template-columns: 35% 50%;
+	grid-template-columns: 35% 1fr;
 	gap: 15%;
 
 	@media ${deviceSize.medium} {
@@ -63,7 +69,7 @@ export const AboutMeImage = styled.div`
 
 export const AboutCards = styled.div`
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(auto-fit, 200px);
 	gap: 1.5rem;
 
 	@media ${deviceSize.small} {
@@ -74,29 +80,36 @@ export const AboutCards = styled.div`
 
 export const AboutCard = styled.article`
 	background-color: var(--color-bg-variant);
-	border: 1px solid transparent;
 	border-radius: 1rem;
 	padding: 2rem;
 	text-align: center;
 	transition: var(--transition);
+	border: var(--border) solid var(--color-primary-variant);
 
 	&:hover {
 		background-color: var(--color-primary);
 		cursor: pointer;
 
 		& .icon {
-			transition: var(--transition);
+			color: var(--color-bg);
+		}
+
+		& small {
 			color: var(--color-bg);
 		}
 	}
 
 	&.active {
 		background-color: transparent;
-		border-color: var(--color-primary-variant);
+		border-color: var(--color-primary);
 		cursor: initial;
 
 		& .icon {
 			color: var(--color-primary);
+		}
+
+		& small {
+			color: var(--color-light);
 		}
 	}
 

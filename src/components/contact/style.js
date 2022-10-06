@@ -28,8 +28,9 @@ export const ContactOption = styled.article`
 	padding: 1.2rem;
 	border-radius: 1.2rem;
 	text-align: center;
-	border: 1px solid transparent;
+	border: var(--border) solid var(--color-primary);
 	transition: var(--transition);
+	position: relative;
 
 	&:hover {
 		background-color: transparent;
@@ -46,6 +47,37 @@ export const ContactOption = styled.article`
 		display: inline-block;
 		font-size: 0.8rem;
 	}
+
+	& h5 {
+		margin-top: 0.7rem;
+		font-size: 0.8rem;
+
+		color: var(--color-primary);
+		transition: var(--transition);
+
+		&:hover {
+			color: var(--color-white);
+			cursor: pointer;
+		}
+	}
+
+	& p {
+		padding: 0.5rem 1rem;
+		background-color: var(--color-primary);
+		width: fit-content;
+		border-radius: 0.25rem;
+		position: absolute;
+		left: 50%;
+		margin-top: 10px;
+		z-index: 1;
+		transform: translateX(-50%);
+		opacity: 0;
+		transition: var(--transition);
+
+		&.active {
+			opacity: 1;
+		}
+	}
 `;
 
 export const Form = styled.form`
@@ -59,8 +91,9 @@ export const Form = styled.form`
 		padding: 1.5rem;
 		border-radius: 0.5rem;
 		background-color: transparent;
-		border: 2px solid var(--color-primary-variant);
+		border: var(--border) solid var(--color-primary-variant);
 		resize: none;
+		font-size: 1rem;
 		color: var(--color-white);
 	}
 `;

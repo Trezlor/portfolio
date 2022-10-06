@@ -80,6 +80,7 @@ export const Div_Socials = styled.div`
 	position: absolute;
 	left: 2rem;
 	bottom: 3rem;
+	font-size: 1.5rem;
 
 	&:after {
 		content: "";
@@ -96,11 +97,11 @@ export const Div_Socials = styled.div`
 // SCROLL DOWN
 export const ScrollDown = styled.a`
 	position: absolute;
-	right: 0;
+	right: -1rem;
 	bottom: 5rem;
 	transform: rotate(90deg);
 	font-weight: 300;
-	font-size: 0.9rem;
+	font-size: 1.5rem;
 
 	@media ${deviceSize.small} {
 		display: none;

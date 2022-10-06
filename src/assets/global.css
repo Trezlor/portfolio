@@ -17,13 +17,18 @@
 :root {
 	/*Miscellaneous*/
 	--color-bg: #1f1f38;
+	--color-bg: #101d39;
 	--color-bg-variant: #2c2c6c;
+	--color-bg-variant: #001a33;
 	--color-primary: #4db5ff;
+	--color-primary: #0080ff;
 	--color-primary-variant: rgba(77, 181, 255, 0.4);
 	--color-white: #fff;
 	--color-light: rgba(255, 255, 255, 0.6);
 
 	--transition: all 400ms ease;
+
+	--border: 2px;
 
 	--container-width-large: 75%;
 	--container-width-medium: 86%;
@@ -43,7 +48,7 @@ html {
 body {
 	/*Box model stuff*/
 	background-color: var(--color-bg);
-	background-image: url(images/bg-texture.png);
+	/* background-image: url(images/bg-texture.png); */
 	/*Typography stuff*/
 	font-family: "Poppins", sans-serif;
 	color: var(--color-white);
