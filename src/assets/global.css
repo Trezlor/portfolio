@@ -17,12 +17,16 @@
 :root {
 	/*Miscellaneous*/
 	--color-bg: #1f1f38;
-	--color-bg: #101d39;
+	--color-bg: #5937a9;
+	--color-bg: #1d1d1d;
 	--color-bg-variant: #2c2c6c;
 	--color-bg-variant: #001a33;
+	--color-bg-variant: #474747;
 	--color-primary: #4db5ff;
 	--color-primary: #0080ff;
-	--color-primary-variant: rgba(77, 181, 255, 0.4);
+	--color-primary: #00ff4c;
+	--color-primary-variant: #4db5ff66;
+	--color-primary-variant: #00ff6266;
 	--color-white: #fff;
 	--color-light: rgba(255, 255, 255, 0.6);
 
@@ -47,8 +51,8 @@ html {
 
 body {
 	/*Box model stuff*/
-	background-color: var(--color-bg);
-	/* background-image: url(images/bg-texture.png); */
+	background: var(--color-bg);
+	background-image: url(images/bg-texture.png);
 	/*Typography stuff*/
 	font-family: "Poppins", sans-serif;
 	color: var(--color-white);

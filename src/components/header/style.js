@@ -33,11 +33,11 @@ export const Div_Me = styled.div`
 	height: min(30rem, auto);
 	margin-inline: auto;
 	margin-top: 4rem;
-	border-radius: 6rem 6rem 0 0;
+	border-radius: 0 10rem 0 0;
 	overflow: hidden;
 	padding: 3rem 1.5rem 1.5rem 1.5rem;
 
 	& img {
-		mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7));
+		/* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)); */
 	}
 `;

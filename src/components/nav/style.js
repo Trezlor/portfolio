@@ -98,7 +98,7 @@ export const Div_Socials = styled.div`
 export const ScrollDown = styled.a`
 	position: absolute;
 	right: -1rem;
-	bottom: 5rem;
+	bottom: 6rem;
 	transform: rotate(90deg);
 	font-weight: 300;
 	font-size: 1.5rem;

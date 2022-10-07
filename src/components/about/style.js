@@ -89,6 +89,7 @@ export const AboutCard = styled.article`
 	&:hover {
 		background-color: var(--color-primary);
 		cursor: pointer;
+		border-color: var(--color-bg-variant);
 
 		& .icon {
 			color: var(--color-bg);

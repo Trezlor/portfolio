@@ -9,7 +9,7 @@ const Header = () => {
 				<s.Header_Container className="container">
 					<h5>Hi, I'm</h5>
 					<h1>Sondre!</h1>
-					<h5 className="text-light">Frontend developer student</h5>
+					<h5 className="text-light">Frontend developer student from Norway!</h5>
 					<CTA />
 
 					<s.Div_Me>

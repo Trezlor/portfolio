@@ -12,7 +12,7 @@ export const Title = styled.h3`
 
 export const Image = styled.img`
 	width: 85%;
-	margin: 0 auto 1rem;
+	margin: 2rem auto 1rem;
 	border: var(--border) solid var(--color-primary);
 	border-radius: 0.5rem;
 `;
@@ -43,6 +43,8 @@ export const LinkContainer = styled.div`
 export const SwiperWrapper = styled.div`
 	& .container {
 		width: 60rem;
+		height: fit-content;
+		overflow: hidden;
 
 		@media ${deviceSize.medium} {
 			width: 35rem;
