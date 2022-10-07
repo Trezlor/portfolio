@@ -1,33 +1,43 @@
 .swiper-pagination-clickable .swiper-pagination-bullet {
+	/*Box model stuff*/
 	background: var(--color-primary);
 }
 
 .swiper__container {
+	/*Box model stuff*/
 	width: 100%;
 }
 
 .swiper-button-prev {
-	color: var(--color-primary);
+	/*Positioning stuff*/
 	position: absolute;
-	top: 218px;
 	left: 0;
+	top: 218px;
+	/*Box model stuff*/
 	padding: 2rem;
+	/*Typography stuff*/
+	color: var(--color-primary);
 }
 
 .swiper-button-next {
-	color: var(--color-primary);
+	/*Positioning stuff*/
 	position: absolute;
-	top: 218px;
 	right: 0;
+	top: 218px;
+	/*Box model stuff*/
 	padding: 2rem;
+	/*Typography stuff*/
+	color: var(--color-primary);
 }
 
 @media screen and (max-width: 1024px) {
 	.swiper-button-prev {
+		/*Display stuff*/
 		display: none;
 	}
 
 	.swiper-button-next {
+		/*Display stuff*/
 		display: none;
 	}
 }

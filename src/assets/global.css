@@ -8,24 +8,18 @@
 	padding: 0;
 	border: 0;
 	outline: 0;
+	/*Typography stuff*/
+	text-decoration: none;
 	/*Miscellaneous*/
 	box-sizing: border-box;
 	list-style: none;
-	text-decoration: none;
 }
 
 :root {
 	/*Miscellaneous*/
-	--color-bg: #1f1f38;
-	--color-bg: #5937a9;
 	--color-bg: #1d1d1d;
-	--color-bg-variant: #2c2c6c;
-	--color-bg-variant: #001a33;
 	--color-bg-variant: #474747;
-	--color-primary: #4db5ff;
-	--color-primary: #0080ff;
 	--color-primary: #00ff4c;
-	--color-primary-variant: #4db5ff66;
 	--color-primary-variant: #00ff6266;
 	--color-white: #fff;
 	--color-light: rgba(255, 255, 255, 0.6);
@@ -51,8 +45,8 @@ html {
 
 body {
 	/*Box model stuff*/
-	background: var(--color-bg);
 	background-image: url(images/bg-texture.png);
+	background: var(--color-bg);
 	/*Typography stuff*/
 	font-family: "Poppins", sans-serif;
 	color: var(--color-white);
@@ -83,17 +77,19 @@ h1 {
 }
 
 h2 {
+	/*Typography stuff*/
 	font-size: 2rem;
 }
 
 h5 {
+	/*Typography stuff*/
 	font-size: 0.9rem;
 }
 
 section {
 	/*Box model stuff*/
-	margin-top: 8rem;
 	min-height: 100vh;
+	margin-top: 8rem;
 	padding-top: 5rem;
 }
 
@@ -172,10 +168,12 @@ img {
 
 @media screen and (max-width: 1024px) {
 	.container {
+		/*Box model stuff*/
 		width: var(--container-width-medium);
 	}
 
 	section {
+		/*Box model stuff*/
 		margin-top: 5rem;
 		padding-top: 1rem;
 	}
@@ -185,10 +183,12 @@ img {
 
 @media screen and (max-width: 600px) {
 	.container {
+		/*Box model stuff*/
 		width: var(--container-width-small);
 	}
 
 	section > h2 {
+		/*Box model stuff*/
 		margin-bottom: 2rem;
 	}
 }

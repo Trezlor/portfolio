@@ -2,108 +2,120 @@ import styled from "styled-components";
 import { deviceSize } from "../../utils/deviceSize";
 
 export const Nav = styled.nav`
-	background: rgba(0, 0, 0, 0.3);
-	width: max-content;
+	/*Display stuff*/
 	display: block;
-	padding: 0.7rem 1.7rem;
-	z-index: 2;
+	display: flex;
+	/*Positioning stuff*/
 	position: fixed;
 	left: 50%;
-	transform: translateX(-50%);
 	bottom: 2rem;
-	display: flex;
-	gap: 0.8rem;
+	z-index: 2;
+	/*Box model stuff*/
+	width: max-content;
+	padding: 0.7rem 1.7rem;
 	border-radius: 3rem;
+	background: rgba(0, 0, 0, 0.3);
+	/*Manipulations stuff*/
+	transform: translateX(-50%);
+	/*Miscellaneous*/
+	gap: 0.8rem;
 	backdrop-filter: blur(15px);
-
-	@media ${deviceSize.medium} {
-	}
-
-	@media ${deviceSize.small} {
-	}
 `;
 
 export const Nav_Li = styled.li`
 	> * {
-		background: transparent;
+		/*Display stuff*/
+		display: flex;
+		/*Box model stuff*/
 		padding: 0.9rem;
 		border-radius: 50%;
-		display: flex;
-		color: var(--color-light);
+		background: transparent;
+		/*Typography stuff*/
 		font-size: 1.1rem;
+		color: var(--color-light);
+		/*Miscellaneous*/
 		cursor: pointer;
 	}
 	> :hover {
+		/*Box model stuff*/
 		background: rgba(0, 0, 0, 0.2);
 	}
 	> .active {
+		/*Box model stuff*/
 		background: var(--color-bg);
+		/*Typography stuff*/
 		color: var(--color-white);
 	}
-
-	@media ${deviceSize.medium} {
-	}
-
-	@media ${deviceSize.small} {
-	}
 `;
+
 export const Nav_A = styled.a`
-	background: transparent;
+	/*Display stuff*/
+	display: flex;
+	/*Box model stuff*/
 	padding: 0.9rem;
 	border-radius: 50%;
-	display: flex;
-	color: var(--color-light);
+	background: transparent;
+	/*Typography stuff*/
 	font-size: 1.1rem;
+	color: var(--color-light);
 
 	&:hover {
+		/*Box model stuff*/
 		background: rgba(0, 0, 0, 0.2);
 	}
 
 	&.active {
+		/*Box model stuff*/
 		background: var(--color-bg);
+		/*Typography stuff*/
 		color: var(--color-white);
-	}
-
-	@media ${deviceSize.medium} {
-	}
-
-	@media ${deviceSize.small} {
 	}
 `;
 
 // SOCIALS
 export const Div_Socials = styled.div`
+	/*Display stuff*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 0.8rem;
+	/*Positioning stuff*/
 	position: absolute;
 	left: 2rem;
 	bottom: 3rem;
+	/*Typography stuff*/
 	font-size: 1.5rem;
+	/*Miscellaneous*/
+	gap: 0.8rem;
 
 	&:after {
+		/*Display stuff*/
 		content: "";
+		/*Box model stuff*/
 		width: 1px;
 		height: 2rem;
 		background: var(--color-primary);
 	}
 
 	@media ${deviceSize.small} {
+		/*Display stuff*/
 		display: none;
 	}
 `;
 
 // SCROLL DOWN
 export const ScrollDown = styled.a`
+	/*Positioning stuff*/
 	position: absolute;
 	right: -1rem;
 	bottom: 6rem;
-	transform: rotate(90deg);
-	font-weight: 300;
+	/*Typography stuff*/
 	font-size: 1.5rem;
+	font-weight: 300;
+	/*Manipulations stuff*/
+	transform: rotate(90deg);
 
 	@media ${deviceSize.small} {
+		/*Display stuff*/
 		display: none;
 	}
 `;
