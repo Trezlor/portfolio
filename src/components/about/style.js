@@ -16,22 +16,6 @@ export const Content = styled.div`
 			/*Display stuff*/
 			display: flex;
 			flex-direction: column;
-
-			& .skill {
-				& .skill_bar_bg {
-					& div {
-						animation: extend 2s;
-					}
-					@keyframes pulseColorGreenMkt {
-						0% {
-							background-color: var(--c);
-						}
-						100% {
-							background-color: black;
-						}
-					}
-				}
-			}
 		}
 
 		& .skill_scale {
@@ -80,30 +64,74 @@ export const Content = styled.div`
 
 				& .skill_bar_html {
 					background: linear-gradient(90deg, #e44d26, #e47826);
-					width: 45%;
 					height: 100%;
+					width: 45%;
+
 					border-radius: inherit;
+					animation: extendHtml 1s;
 				}
 
 				& .skill_bar_css {
 					background: linear-gradient(90deg, #2965f1, #39bdff);
-					width: 55%;
 					height: 100%;
+					width: 55%;
+
 					border-radius: inherit;
+					animation: extendCss 1s;
 				}
 
 				& .skill_bar_js {
 					background: linear-gradient(90deg, #f7df1e, #ffeb52);
-					width: 35%;
 					height: 100%;
+					width: 35%;
+
 					border-radius: inherit;
+					animation: extendJs 1s;
 				}
 
 				& .skill_bar_react {
 					background: linear-gradient(90deg, #60d8f9, #95e8ff);
-					width: 55%;
 					height: 100%;
+					width: 55%;
+
 					border-radius: inherit;
+					animation: extendReact 1s;
+				}
+
+				@keyframes extendHtml {
+					0% {
+						width: 0%;
+					}
+					100% {
+						width: 45%;
+					}
+				}
+
+				@keyframes extendCss {
+					0% {
+						width: 0%;
+					}
+					100% {
+						width: 55%;
+					}
+				}
+
+				@keyframes extendJs {
+					0% {
+						width: 0%;
+					}
+					100% {
+						width: 35%;
+					}
+				}
+
+				@keyframes extendReact {
+					0% {
+						width: 0%;
+					}
+					100% {
+						width: 55%;
+					}
 				}
 			}
 		}

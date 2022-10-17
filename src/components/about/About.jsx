@@ -65,10 +65,9 @@ const About = () => {
 						{/* I have a big fascination with programming, and have been learning how to
 						code for about 6 months! I love a challenge and strive to learn new coding
 						skills. My current skills involves HTML, CSS, Javascript & React. */}
-						Jeg har stor fascinasjon for frontend programmering, er alltid lærevillig og
-						tar en utfordring på strak arm. Jeg er for det meste glad i css styling og å
-						jobbe med javascript, og syns alltid det er gøy å lære lettere måter å jobbe
-						på.
+						Jeg har stor fascinasjon for frontend programmering, er lærevillig og tar en
+						utfordring på strak arm. Jeg er for det meste glad i css styling og å jobbe
+						med javascript, og syns alltid det er gøy å lære lettere måter å jobbe på.
 					</p>
 					<p className={activeText === "hobbiesText" ? "activeText skills" : "skills"}>
 						{/* My biggest hobby is gaming, and has been ever since i was a kid. Some of the
@@ -76,9 +75,9 @@ const About = () => {
 						me many things, such as risk-taking, patience, problem solving,
 						concentration, critical thinking and the value of working together with
 						others. */}
-						Min hobby er gaming, og har vært det så lenge jeg kan huske. Noen av
-						spillene jeg liker å holde på med er League of Legends, Overwatch og
-						Valorant. Er også glad i hjernetrim og skrekk-spill.
+						På fritiden liker jeg å game, og har holdt på med det så lenge jeg kan
+						huske. Et par av spillene jeg liker å holde på med er League of Legends,
+						Overwatch og Valorant. Er også glad i hjernetrim og skrekk-spill.
 						<br />
 						Jeg har lært mye fra gaming, som risikotagning, tålmodighet, problemløsning,
 						være konsentrert, ha kritisk tenkning og forståelse for hvor bra det kan

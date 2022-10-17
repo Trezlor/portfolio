@@ -17,10 +17,10 @@
 
 :root {
 	/*Miscellaneous*/
-	--color-bg: #1d1d1d;
-	--color-bg-variant: #474747;
-	--color-primary: #0091ff;
-	--color-primary-variant: #0091ff66;
+	--color-bg: rgb(34, 34, 34);
+	--color-bg-variant: #444;
+	--color-primary: #00fff7;
+	--color-primary-variant: #00fff766;
 	--color-white: #fff;
 	--color-light: rgba(255, 255, 255, 0.6);
 	/*Miscellaneous*/
@@ -52,8 +52,8 @@ html {
 
 body {
 	/*Box model stuff*/
-	background-image: url(images/bg-texture.png);
 	background: var(--color-bg);
+	background-image: url(images/bg-texture.png);
 	/*Typography stuff*/
 	font-family: "Poppins", sans-serif;
 	color: var(--color-white);
