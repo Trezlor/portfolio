@@ -16,6 +16,22 @@ export const Content = styled.div`
 			/*Display stuff*/
 			display: block;
 		}
+	}
+
+	& .skills {
+		/*Display stuff*/
+		display: none;
+		/*Box model stuff*/
+		margin: 2rem 0 2.6rem;
+		/*Typography stuff*/
+		color: var(--color-light);
+		/*Manipulations stuff*/
+		transition: var(--transition);
+
+		&.activeText {
+			/*Display stuff*/
+			display: block;
+		}
 
 		@media ${deviceSize.medium} {
 			/*Box model stuff*/
@@ -39,6 +55,31 @@ export const Container = styled.div`
 	grid-template-columns: 35% 1fr;
 	/*Miscellaneous*/
 	gap: 15%;
+
+	& div {
+		& .icons {
+			margin-block: 2rem;
+			display: flex;
+			gap: 0.5rem;
+			font-size: 1.5rem;
+
+			& .html {
+				color: #e44d26;
+			}
+
+			& .css {
+				color: #2965f1;
+			}
+
+			& .js {
+				color: #f7df1e;
+			}
+
+			& .react {
+				color: #60d8f9;
+			}
+		}
+	}
 
 	@media ${deviceSize.medium} {
 		/*Display stuff*/

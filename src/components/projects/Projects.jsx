@@ -20,6 +20,7 @@ const Projects = () => {
 					modules={[Pagination, Navigation, EffectFlip]}
 					spaceBetween={40}
 					navigation={true}
+					loop={true}
 					grabCursor={true}
 					effect={"flip"}
 					// loop={true}

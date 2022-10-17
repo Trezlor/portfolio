@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { GiConsoleController } from "react-icons/gi";
+import { ImCss3, ImHtmlFive } from "react-icons/im";
 import { IoMdBriefcase } from "react-icons/io";
 import { RiCodeBoxFill } from "react-icons/ri";
+import { SiJavascript, SiReact } from "react-icons/si";
 import MINION from "../../assets/images/about-me.jpg";
 import * as s from "./style";
 
@@ -71,7 +73,17 @@ const About = () => {
 						concentration, critical thinking and the value of working together with
 						others.
 					</p>
-					<p className={activeText === "skillsText" ? "activeText" : ""}>Skills </p>
+					<div className={activeText === "skillsText" ? "activeText skills" : "skills"}>
+						<div className="icons">
+							<ImHtmlFive className="icon html" />
+							<ImCss3 className="icon css" />
+							<SiJavascript className="icon js" />
+							<SiReact className="icon react" />
+						</div>
+						<p className={activeText === "skillsText" ? "activeText skills" : "skills"}>
+							Hallo?
+						</p>
+					</div>
 
 					<a href="#contact" className="btn btn-primary">
 						Let's Talk

@@ -23,6 +23,13 @@
 	--color-primary-variant: #00ff6266;
 	--color-white: #fff;
 	--color-light: rgba(255, 255, 255, 0.6);
+	/*Miscellaneous*/
+	/* --color-bg: #8cd9ff;
+	--color-bg-variant: #474747;
+	--color-primary: #bdbdbd;
+	--color-primary-variant: #00ff6266;
+	--color-white: #fff;
+	--color-light: #333; */
 
 	--transition: all 400ms ease;
 
