@@ -61,28 +61,58 @@ const About = () => {
 							<small>Languages</small>
 						</s.AboutCard>
 					</s.AboutCards>
-					<p className={activeText === "codingText" ? "activeText" : ""}>
-						I have a big fascination with programming, and have been learning how to
+					<p className={activeText === "codingText" ? "activeText skills" : "skills"}>
+						{/* I have a big fascination with programming, and have been learning how to
 						code for about 6 months! I love a challenge and strive to learn new coding
-						skills. My current skills involves HTML, CSS, Javascript & React.
+						skills. My current skills involves HTML, CSS, Javascript & React. */}
+						Jeg har stor fascinasjon for frontend programmering, er alltid lærevillig og
+						tar en utfordring på strak arm. Jeg er for det meste glad i css styling og å
+						jobbe med javascript, og syns alltid det er gøy å lære lettere måter å jobbe
+						på.
 					</p>
-					<p className={activeText === "hobbiesText" ? "activeText" : ""}>
-						My biggest hobby is gaming, and has been ever since i was a kid. Some of the
+					<p className={activeText === "hobbiesText" ? "activeText skills" : "skills"}>
+						{/* My biggest hobby is gaming, and has been ever since i was a kid. Some of the
 						games are League of Legends, Apex, Overwatch and Valorant. Gaming has taught
 						me many things, such as risk-taking, patience, problem solving,
 						concentration, critical thinking and the value of working together with
-						others.
+						others. */}
+						Min hobby er gaming, og har vært det så lenge jeg kan huske. Noen av
+						spillene jeg liker å holde på med er League of Legends, Overwatch og
+						Valorant. Er også glad i hjernetrim og skrekk-spill.
+						<br />
+						Jeg har lært mye fra gaming, som risikotagning, tålmodighet, problemløsning,
+						være konsentrert, ha kritisk tenkning og forståelse for hvor bra det kan
+						være å jobbe som et team.
 					</p>
 					<div className={activeText === "skillsText" ? "activeText skills" : "skills"}>
-						<div className="icons">
-							<ImHtmlFive className="icon html" />
-							<ImCss3 className="icon css" />
-							<SiJavascript className="icon js" />
-							<SiReact className="icon react" />
+						<div className="skill_scale">
+							<p>Novice</p>
+							<p>Expert</p>
 						</div>
-						<p className={activeText === "skillsText" ? "activeText skills" : "skills"}>
-							Hallo?
-						</p>
+						<div className="skill">
+							<ImHtmlFive className="icon html" />
+							<div className="skill_bar_bg active">
+								<div className="skill_bar_html"></div>
+							</div>
+						</div>
+						<div className="skill">
+							<ImCss3 className="icon css" />
+							<div className="skill_bar_bg">
+								<div className="skill_bar_css"></div>
+							</div>
+						</div>
+						<div className="skill">
+							<SiJavascript className="icon js" />
+							<div className="skill_bar_bg">
+								<div className="skill_bar_js"></div>
+							</div>
+						</div>
+						<div className="skill skill__react">
+							<SiReact className="icon react" />
+							<div className="skill_bar_bg">
+								<div className="skill_bar_react"></div>
+							</div>
+						</div>
 					</div>
 
 					<a href="#contact" className="btn btn-primary">

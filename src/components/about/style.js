@@ -2,22 +2,6 @@ import styled from "styled-components";
 import { deviceSize } from "../../utils/deviceSize";
 
 export const Content = styled.div`
-	& p {
-		/*Display stuff*/
-		display: none;
-		/*Box model stuff*/
-		margin: 2rem 0 2.6rem;
-		/*Typography stuff*/
-		color: var(--color-light);
-		/*Manipulations stuff*/
-		transition: var(--transition);
-
-		&.activeText {
-			/*Display stuff*/
-			display: block;
-		}
-	}
-
 	& .skills {
 		/*Display stuff*/
 		display: none;
@@ -30,7 +14,102 @@ export const Content = styled.div`
 
 		&.activeText {
 			/*Display stuff*/
-			display: block;
+			display: flex;
+			flex-direction: column;
+
+			& .skill {
+				& .skill_bar_bg {
+					& div {
+						animation: extend 2s;
+					}
+					@keyframes pulseColorGreenMkt {
+						0% {
+							background-color: var(--c);
+						}
+						100% {
+							background-color: black;
+						}
+					}
+				}
+			}
+		}
+
+		& .skill_scale {
+			margin-left: 2.5rem;
+			margin-bottom: 0;
+			width: 80%;
+			justify-content: space-between;
+			display: flex;
+		}
+
+		& .skill {
+			display: flex;
+			gap: 1rem;
+			align-items: center;
+			margin-bottom: 1rem;
+
+			& .icon {
+				vertical-align: middle;
+				display: flex;
+				flex-direction: column;
+				font-size: 1.5rem;
+				width: fit-content;
+			}
+
+			& .html {
+				color: #e44d26;
+			}
+
+			& .css {
+				color: #2965f1;
+			}
+
+			& .js {
+				color: #f7df1e;
+			}
+
+			& .react {
+				color: #60d8f9;
+			}
+
+			& .skill_bar_bg {
+				background-color: var(--color-bg-variant);
+				height: 0.8rem;
+				width: 80%;
+				border-radius: 100px;
+
+				& .skill_bar_html {
+					background: linear-gradient(90deg, #e44d26, #e47826);
+					width: 45%;
+					height: 100%;
+					border-radius: inherit;
+				}
+
+				& .skill_bar_css {
+					background: linear-gradient(90deg, #2965f1, #39bdff);
+					width: 55%;
+					height: 100%;
+					border-radius: inherit;
+				}
+
+				& .skill_bar_js {
+					background: linear-gradient(90deg, #f7df1e, #ffeb52);
+					width: 35%;
+					height: 100%;
+					border-radius: inherit;
+				}
+
+				& .skill_bar_react {
+					background: linear-gradient(90deg, #60d8f9, #95e8ff);
+					width: 55%;
+					height: 100%;
+					border-radius: inherit;
+				}
+			}
+		}
+
+		& .skill__react {
+			margin-bottom: initial;
 		}
 
 		@media ${deviceSize.medium} {
@@ -55,31 +134,6 @@ export const Container = styled.div`
 	grid-template-columns: 35% 1fr;
 	/*Miscellaneous*/
 	gap: 15%;
-
-	& div {
-		& .icons {
-			margin-block: 2rem;
-			display: flex;
-			gap: 0.5rem;
-			font-size: 1.5rem;
-
-			& .html {
-				color: #e44d26;
-			}
-
-			& .css {
-				color: #2965f1;
-			}
-
-			& .js {
-				color: #f7df1e;
-			}
-
-			& .react {
-				color: #60d8f9;
-			}
-		}
-	}
 
 	@media ${deviceSize.medium} {
 		/*Display stuff*/
