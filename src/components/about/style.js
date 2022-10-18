@@ -258,7 +258,7 @@ export const AboutCard = styled.article`
 	&.active {
 		/*Box model stuff*/
 		border-color: var(--color-primary);
-		background-color: transparent;
+		background-color: var(--color-bg);
 		/*Miscellaneous*/
 		cursor: initial;
 
