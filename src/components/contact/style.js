@@ -94,6 +94,7 @@ export const ContactOption = styled.article`
 		padding: 0.5rem 1rem;
 		border-radius: 0.25rem;
 		background-color: var(--color-primary);
+		color: var(--color-bg);
 		/*Manipulations stuff*/
 		transform: translateX(-50%);
 		transition: var(--transition);
