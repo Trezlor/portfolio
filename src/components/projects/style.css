@@ -7,7 +7,7 @@
 	/*Positioning stuff*/
 	position: absolute;
 	left: 0;
-	top: calc((100% - 97.5px) / 2);
+	top: calc((100% - 222.434px) / 2);
 	/*Box model stuff*/
 	padding: 2rem;
 	/*Typography stuff*/
@@ -18,7 +18,7 @@
 	/*Positioning stuff*/
 	position: absolute;
 	right: 0;
-	top: 218px;
+	top: calc((100% - 222.434px) / 2);
 	/*Box model stuff*/
 	padding: 2rem;
 	/*Typography stuff*/
