@@ -29,14 +29,23 @@ const Contact = () => {
 
 	return (
 		<section id="contact">
-			<h5>Get in touch</h5>
-			<h2>Contact Me</h2>
+			<h5>
+				{/* Get in touch */}
+				Send en melding
+			</h5>
+			<h2>
+				{/* Contact Me */}
+				Kontakt Meg
+			</h2>
 
 			<s.Container className="container">
 				<s.ContactOptions>
 					<s.ContactOption>
 						<FaPhoneAlt className="icon" />
-						<h4>Phone</h4>
+						<h4>
+							{/* Phone */}
+							Mobil
+						</h4>
 						<h5
 							onClick={() => {
 								navigator.clipboard.writeText("+47 971 416 88");
@@ -48,7 +57,10 @@ const Contact = () => {
 						>
 							+47 971 41 688
 						</h5>
-						<p className={activeCopied === "copied" ? "active" : ""}>Copied!</p>
+						<p className={activeCopied === "copied" ? "active" : ""}>
+							{/* Copied! */}
+							Kopiert
+						</p>
 					</s.ContactOption>
 					<s.ContactOption>
 						<IoIosMail className="icon" />
@@ -68,11 +80,21 @@ const Contact = () => {
 					</s.ContactOption>
 				</s.ContactOptions>
 				<s.Form ref={form} onSubmit={sendEmail}>
-					<input type="text" name="name" placeholder="Your Full Name" required />
-					<input type="email" name="email" placeholder="Your Email" required />
-					<textarea name="message" rows="7" placeholder="Your Message" required />
+					<input type="text" name="name" placeholder=
+					// "Your Full Name"
+					"Fullt Navn"
+					 required />
+					<input type="email" name="email" placeholder=
+					// "Your Email"
+					"Email"
+					 required />
+					<textarea name="message" rows="7" placeholder=
+					// "Your Message"
+					"Din Melding"
+					 required />
 					<button type="submit" className="btn btn-primary">
-						Send Message
+						{/* Send Message */}
+						Send Melding
 					</button>
 				</s.Form>
 			</s.Container>

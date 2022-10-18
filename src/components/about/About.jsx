@@ -13,8 +13,14 @@ const About = () => {
 
 	return (
 		<section id="about">
-			<h5>Get to know</h5>
-			<h2>About Me</h2>
+			<h5>
+				{/* Get to know */}
+				Vit mer
+			</h5>
+			<h2>
+				{/* About Me */}
+				Om Meg
+			</h2>
 
 			<s.Container className="container">
 				<s.AboutMe>
@@ -33,8 +39,14 @@ const About = () => {
 							}}
 						>
 							<RiCodeBoxFill className="icon" />
-							<h5>Coding</h5>
-							<small>Interest</small>
+							<h5>
+								{/* Coding */}
+								Koding
+							</h5>
+							<small>
+								{/* Interest */}
+								Interesse
+							</small>
 						</s.AboutCard>
 
 						<s.AboutCard
@@ -45,7 +57,10 @@ const About = () => {
 							}}
 						>
 							<GiConsoleController className="icon" />
-							<h5>Hobbies</h5>
+							<h5>
+								{/* Hobbies */}
+								Hobby
+							</h5>
 							<small>Gaming</small>
 						</s.AboutCard>
 
@@ -57,17 +72,24 @@ const About = () => {
 							}}
 						>
 							<IoMdBriefcase className="icon" />
-							<h5>Skills</h5>
-							<small>Languages</small>
+							<h5>
+								{/* Skills */}
+								Ferdigheter
+							</h5>
+							<small>
+								{/* Languages */}
+								Språk
+							</small>
 						</s.AboutCard>
 					</s.AboutCards>
 					<p className={activeText === "codingText" ? "activeText skills" : "skills"}>
 						{/* I have a big fascination with programming, and have been learning how to
 						code for about 6 months! I love a challenge and strive to learn new coding
 						skills. My current skills involves HTML, CSS, Javascript & React. */}
-						Jeg har stor fascinasjon for frontend programmering, er lærevillig og tar en
-						utfordring på strak arm. Jeg er for det meste glad i css styling og å jobbe
-						med javascript, og syns alltid det er gøy å lære lettere måter å jobbe på.
+						Jeg har stor fascinasjon for frontend programmering, det å realisere koden
+						man skriver er veldig artig. Er lærevillig og tar en utfordring på strak
+						arm. Jeg er for det meste glad i css styling og å jobbe med javascript, og
+						syns alltid det er gøy å lære nye lettere måter å jobbe på.
 					</p>
 					<p className={activeText === "hobbiesText" ? "activeText skills" : "skills"}>
 						{/* My biggest hobby is gaming, and has been ever since i was a kid. Some of the
@@ -85,8 +107,14 @@ const About = () => {
 					</p>
 					<div className={activeText === "skillsText" ? "activeText skills" : "skills"}>
 						<div className="skill_scale">
-							<p>Novice</p>
-							<p>Expert</p>
+							<p>
+								{/* Novice */}
+								Nybegynner
+							</p>
+							<p>
+								{/* Expert */}
+								Ekspert
+							</p>
 						</div>
 						<div className="skill">
 							<ImHtmlFive className="icon html" />
@@ -115,7 +143,8 @@ const About = () => {
 					</div>
 
 					<a href="#contact" className="btn btn-primary">
-						Let's Talk
+						{/* Let's Talk */}
+						Send en melding
 					</a>
 				</s.Content>
 			</s.Container>

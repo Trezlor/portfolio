@@ -7,9 +7,15 @@ const Header = () => {
 		<>
 			<s.Header id="home">
 				<s.Header_Container className="container">
-					<h5>Hi, I'm</h5>
+					<h5>
+						{/* Hi, I'm */}
+						Hei, mitt nav er
+					</h5>
 					<h1>Sondre!</h1>
-					<h5 className="text-light">Frontend developer student from Norway!</h5>
+					<h5 className="text-light">
+						{/* Frontend developer student from Norway! */}
+						Frontend utvikler student fra Norge!
+					</h5>
 					<CTA />
 
 					<s.Div_Me>

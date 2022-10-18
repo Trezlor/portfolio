@@ -36,7 +36,10 @@ const Navbar = () => {
 				</s.Nav_Li>
 			</s.Nav>
 			<HeaderSocials />
-			<s.ScrollDown href="#contact">Scroll Down</s.ScrollDown>
+			<s.ScrollDown href="#contact">
+				{/* Scroll Down */}
+				Scroll Ned
+			</s.ScrollDown>
 		</>
 	);
 };

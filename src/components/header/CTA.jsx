@@ -6,10 +6,12 @@ const CTA = () => {
 		<>
 			<s.Div_CTA>
 				<a href={CV} download className="btn">
-					Download CV
+					{/* Download CV */}
+					Last ned CV
 				</a>
 				<a href="#contact" className="btn btn-primary">
-					Let's Talk
+					{/* Let's Talk */}
+					Send en melding
 				</a>
 			</s.Div_CTA>
 		</>

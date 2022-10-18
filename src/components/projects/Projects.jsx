@@ -11,8 +11,14 @@ import { ProjectsData } from "./utils/data";
 const Projects = () => {
 	return (
 		<section id="projects">
-			<h5>My work</h5>
-			<h2>Projects</h2>
+			<h5>
+				{/* My work */}
+				Mine
+			</h5>
+			<h2>
+				{/* Projects */}
+				Prosjekter
+			</h2>
 
 			<s.SwiperWrapper className="container">
 				<Swiper
@@ -51,7 +57,8 @@ const Projects = () => {
 												target="_blank"
 												rel="noreferrer noopener"
 											>
-												Webpage
+												{/* Webpage */}
+												Nettside
 											</a>
 										</s.LinkContainer>
 									</s.ProjectInfoContainer>
