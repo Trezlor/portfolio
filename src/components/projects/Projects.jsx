@@ -37,10 +37,12 @@ const Projects = () => {
 						{ProjectsData.map(({ title, image, github, link }, key) => {
 							return (
 								<SwiperSlide key={key}>
-									<style.Image
-										src={require("./images/" + image)}
-										alt="Project preview"
-									/>
+									<a href={link} target="_blank" rel="noreferrer noopener">
+										<style.Image
+											src={require("./images/" + image)}
+											alt="Project preview"
+										/>
+									</a>
 
 									<style.ProjectInfoContainer>
 										<style.Title>{title}</style.Title>

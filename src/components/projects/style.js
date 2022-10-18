@@ -50,6 +50,8 @@ export const LinkContainer = styled.div`
 `;
 
 export const SwiperWrapper = styled.div`
+	display: flex;
+
 	& .container {
 		/*Box model stuff*/
 		width: 60rem;

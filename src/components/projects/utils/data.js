@@ -1,6 +1,14 @@
 export const ProjectsData = [
 	{
 		title:
+			// "Solar System"
+			"Sol Systemet",
+		image: "solar-system.png",
+		link: "https://knutcode.github.io/hostoppgave/",
+		github: "https://github.com/knutcode/hostoppgave",
+	},
+	{
+		title:
 			// "Vacation Advertisement"
 			"Feriedestinasjon - Reklame",
 		image: "japan-ad.png",

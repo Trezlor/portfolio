@@ -3,16 +3,11 @@
 	background: var(--color-primary);
 }
 
-.swiper__container {
-	/*Box model stuff*/
-	width: 100%;
-}
-
 .swiper-button-prev {
 	/*Positioning stuff*/
 	position: absolute;
 	left: 0;
-	top: 218px;
+	top: calc((100% - 97.5px) / 2);
 	/*Box model stuff*/
 	padding: 2rem;
 	/*Typography stuff*/
@@ -30,7 +25,7 @@
 	color: var(--color-primary);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1130px) {
 	.swiper-button-prev {
 		/*Display stuff*/
 		display: none;

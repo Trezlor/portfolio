@@ -221,7 +221,7 @@ export const AboutCards = styled.div`
 
 	@media ${deviceSize.small} {
 		/*Display stuff*/
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: repeat(auto-fit, 130px);
 		/*Miscellaneous*/
 		gap: 1rem;
 	}
@@ -229,7 +229,7 @@ export const AboutCards = styled.div`
 
 export const AboutCard = styled.article`
 	/*Box model stuff*/
-	padding: 2rem;
+	padding-block: 2rem;
 	border: var(--border) solid var(--color-primary-variant);
 	border-radius: 1rem;
 	background-color: var(--color-bg-variant);
@@ -290,5 +290,13 @@ export const AboutCard = styled.article`
 		/*Typography stuff*/
 		font-size: 1.4rem;
 		color: var(--color-primary);
+
+		@media ${deviceSize.small} {
+			margin-bottom: 0;
+		}
+	}
+
+	@media ${deviceSize.small} {
+		padding-block: 1rem;
 	}
 `;
