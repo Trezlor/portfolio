@@ -63,16 +63,16 @@ export const Content = styled.div`
 				border-radius: 100px;
 
 				& .skill_bar_html {
-					background: linear-gradient(90deg, #e44d26, #e47826);
+					background: linear-gradient(90deg, #e44d26, #fb9344);
 					height: 100%;
-					width: 45%;
+					width: 40%;
 
 					border-radius: inherit;
 					animation: extendHtml 1s;
 				}
 
 				& .skill_bar_css {
-					background: linear-gradient(90deg, #2965f1, #39bdff);
+					background: linear-gradient(90deg, #2965f1, #59c8ff);
 					height: 100%;
 					width: 55%;
 
@@ -81,18 +81,18 @@ export const Content = styled.div`
 				}
 
 				& .skill_bar_js {
-					background: linear-gradient(90deg, #f7df1e, #ffeb52);
+					background: linear-gradient(90deg, #f7df1e, #ffef79);
 					height: 100%;
-					width: 35%;
+					width: 30%;
 
 					border-radius: inherit;
 					animation: extendJs 1s;
 				}
 
 				& .skill_bar_react {
-					background: linear-gradient(90deg, #60d8f9, #95e8ff);
+					background: linear-gradient(90deg, #60d8f9, #b6efff);
 					height: 100%;
-					width: 55%;
+					width: 50%;
 
 					border-radius: inherit;
 					animation: extendReact 1s;
@@ -103,7 +103,7 @@ export const Content = styled.div`
 						width: 0%;
 					}
 					100% {
-						width: 45%;
+						width: 40%;
 					}
 				}
 
@@ -121,7 +121,7 @@ export const Content = styled.div`
 						width: 0%;
 					}
 					100% {
-						width: 35%;
+						width: 30%;
 					}
 				}
 
@@ -130,7 +130,7 @@ export const Content = styled.div`
 						width: 0%;
 					}
 					100% {
-						width: 55%;
+						width: 50%;
 					}
 				}
 			}

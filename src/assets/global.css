@@ -148,6 +148,10 @@ a:hover {
 }
 
 .btn:hover {
+	scale: 1.1;
+}
+
+.btn:hover {
 	/*Box model stuff*/
 	border-color: transparent;
 	background: var(--color-white);
