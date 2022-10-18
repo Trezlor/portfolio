@@ -1,12 +1,12 @@
 import ME from "../../assets/images/sondre4.png";
 import CTA from "./CTA";
-import * as s from "./style";
+import * as style from "./style";
 
 const Header = () => {
 	return (
 		<>
-			<s.Header id="home">
-				<s.Header_Container className="container">
+			<style.Header id="home">
+				<style.Header_Container className="container">
 					<h5>
 						{/* Hi, I'm */}
 						Hei, mitt nav er
@@ -18,11 +18,11 @@ const Header = () => {
 					</h5>
 					<CTA />
 
-					<s.Div_Me>
+					<style.Div_Me>
 						<img src={ME} alt="Sondre Halvorsen" />
-					</s.Div_Me>
-				</s.Header_Container>
-			</s.Header>
+					</style.Div_Me>
+				</style.Header_Container>
+			</style.Header>
 		</>
 	);
 };

@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./style.css";
-import * as s from "./style.js";
+import * as style from "./style.js";
 import { ProjectsData } from "./utils/data";
 
 const Projects = () => {
@@ -20,7 +20,7 @@ const Projects = () => {
 				Prosjekter
 			</h2>
 
-			<s.SwiperWrapper className="container">
+			<style.SwiperWrapper className="container">
 				<Swiper
 					className="container mySwiper"
 					modules={[Pagination, Navigation, EffectFlip]}
@@ -37,14 +37,14 @@ const Projects = () => {
 						{ProjectsData.map(({ title, image, github, link }, key) => {
 							return (
 								<SwiperSlide key={key}>
-									<s.Image
+									<style.Image
 										src={require("./images/" + image)}
 										alt="Project preview"
 									/>
 
-									<s.ProjectInfoContainer>
-										<s.Title>{title}</s.Title>
-										<s.LinkContainer>
+									<style.ProjectInfoContainer>
+										<style.Title>{title}</style.Title>
+										<style.LinkContainer>
 											<a
 												href={github}
 												target="_blank"
@@ -60,14 +60,14 @@ const Projects = () => {
 												{/* Webpage */}
 												Nettside
 											</a>
-										</s.LinkContainer>
-									</s.ProjectInfoContainer>
+										</style.LinkContainer>
+									</style.ProjectInfoContainer>
 								</SwiperSlide>
 							);
 						})}
 					</article>
 				</Swiper>
-			</s.SwiperWrapper>
+			</style.SwiperWrapper>
 		</section>
 	);
 };

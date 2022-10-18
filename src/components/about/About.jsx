@@ -5,7 +5,7 @@ import { IoMdBriefcase } from "react-icons/io";
 import { RiCodeBoxFill } from "react-icons/ri";
 import { SiJavascript, SiReact } from "react-icons/si";
 import MINION from "../../assets/images/about-me.jpg";
-import * as s from "./style";
+import * as style from "./style";
 
 const About = () => {
 	const [activeTab, setActiveTab] = useState("coding");
@@ -22,16 +22,16 @@ const About = () => {
 				Om Meg
 			</h2>
 
-			<s.Container className="container">
-				<s.AboutMe>
-					<s.AboutMeImage>
+			<style.Container className="container">
+				<style.AboutMe>
+					<style.AboutMeImage>
 						<img src={MINION} alt="minion" />
-					</s.AboutMeImage>
-				</s.AboutMe>
+					</style.AboutMeImage>
+				</style.AboutMe>
 
-				<s.Content>
-					<s.AboutCards>
-						<s.AboutCard
+				<style.Content>
+					<style.AboutCards>
+						<style.AboutCard
 							className={activeTab === "coding" ? "active" : ""}
 							onClick={() => {
 								setActiveTab("coding");
@@ -47,9 +47,9 @@ const About = () => {
 								{/* Interest */}
 								Interesse
 							</small>
-						</s.AboutCard>
+						</style.AboutCard>
 
-						<s.AboutCard
+						<style.AboutCard
 							className={activeTab === "hobbies" ? "active" : ""}
 							onClick={() => {
 								setActiveTab("hobbies");
@@ -62,9 +62,9 @@ const About = () => {
 								Hobby
 							</h5>
 							<small>Gaming</small>
-						</s.AboutCard>
+						</style.AboutCard>
 
-						<s.AboutCard
+						<style.AboutCard
 							className={activeTab === "skills" ? "active" : ""}
 							onClick={() => {
 								setActiveTab("skills");
@@ -80,8 +80,8 @@ const About = () => {
 								{/* Languages */}
 								Språk
 							</small>
-						</s.AboutCard>
-					</s.AboutCards>
+						</style.AboutCard>
+					</style.AboutCards>
 					<p className={activeText === "codingText" ? "activeText skills" : "skills"}>
 						{/* I have a big fascination with programming, and have been learning how to
 						code for about 6 months! I love a challenge and strive to learn new coding
@@ -146,8 +146,8 @@ const About = () => {
 						{/* Let's Talk */}
 						Send en melding
 					</a>
-				</s.Content>
-			</s.Container>
+				</style.Content>
+			</style.Container>
 		</section>
 	);
 };

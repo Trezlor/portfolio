@@ -240,7 +240,6 @@ export const AboutCard = styled.article`
 
 	&:hover {
 		/*Box model stuff*/
-		border-color: var(--color-bg-variant);
 		background-color: var(--color-primary);
 		/*Miscellaneous*/
 		cursor: pointer;

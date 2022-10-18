@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { SiDiscord } from "react-icons/si";
-import * as s from "./style";
+import * as style from "./style";
 
 const Contact = () => {
 	const form = useRef();
@@ -38,9 +38,9 @@ const Contact = () => {
 				Kontakt Meg
 			</h2>
 
-			<s.Container className="container">
-				<s.ContactOptions>
-					<s.ContactOption>
+			<style.Container className="container">
+				<style.ContactOptions>
+					<style.ContactOption>
 						<FaPhoneAlt className="icon" />
 						<h4>
 							{/* Phone */}
@@ -61,13 +61,13 @@ const Contact = () => {
 							{/* Copied! */}
 							Kopiert
 						</p>
-					</s.ContactOption>
-					<s.ContactOption>
+					</style.ContactOption>
+					<style.ContactOption>
 						<IoIosMail className="icon" />
 						<h4>Email</h4>
 						<a href="mailto:sondre-h@hotmail.com">sondre-h@hotmail.com</a>
-					</s.ContactOption>
-					<s.ContactOption>
+					</style.ContactOption>
+					<style.ContactOption>
 						<SiDiscord className="icon" />
 						<h4>Discord</h4>
 						<a
@@ -77,9 +77,9 @@ const Contact = () => {
 						>
 							Send a message
 						</a>
-					</s.ContactOption>
-				</s.ContactOptions>
-				<s.Form ref={form} onSubmit={sendEmail}>
+					</style.ContactOption>
+				</style.ContactOptions>
+				<style.Form ref={form} onSubmit={sendEmail}>
 					<input type="text" name="name" placeholder=
 					// "Your Full Name"
 					"Fullt Navn"
@@ -96,8 +96,8 @@ const Contact = () => {
 						{/* Send Message */}
 						Send Melding
 					</button>
-				</s.Form>
-			</s.Container>
+				</style.Form>
+			</style.Container>
 		</section>
 	);
 };
