@@ -131,5 +131,10 @@ export const Form = styled.form`
 		color: var(--color-white);
 		/*Miscellaneous*/
 		resize: none;
+		transition: var(--transition);
+
+		&:focus {
+			border-color: var(--color-primary);
+		}
 	}
 `;
