@@ -40,21 +40,19 @@ const Contact = () => {
 
 			<style.Container className="container">
 				<style.ContactOptions>
-					<style.ContactOption>
-						<FaPhoneAlt className="icon" />
-						<h4>
-							{/* Phone */}
-							Mobil
-						</h4>
-						<h5
-							onClick={() => {
+					<style.ContactOption onClick={() => {
 								navigator.clipboard.writeText("+47 971 416 88");
 								setActiveCopied("copied");
 								setTimeout(() => {
 									setActiveCopied("");
 								}, 1500);
-							}}
-						>
+							}}>
+						<FaPhoneAlt className="icon" />
+						<h4>
+							{/* Phone */}
+							Mobil
+						</h4>
+						<h5>
 							+47 971 41 688
 						</h5>
 						<p className={activeCopied === "copied" ? "active" : ""}>
@@ -62,22 +60,24 @@ const Contact = () => {
 							Kopiert
 						</p>
 					</style.ContactOption>
+					<a href="mailto:sondre-h@hotmail.com">
 					<style.ContactOption>
 						<IoIosMail className="icon" />
 						<h4>Email</h4>
-						<a href="mailto:sondre-h@hotmail.com">sondre-h@hotmail.com</a>
+						<h5>sondre-h@hotmail.com</h5>
 					</style.ContactOption>
+					</a>
+					<a href="https://discordapp.com/users/212315187124895744"
+							target="_blank"
+							rel="noreferrer noopener">
 					<style.ContactOption>
 						<SiDiscord className="icon" />
 						<h4>Discord</h4>
-						<a
-							href="https://discordapp.com/users/212315187124895744"
-							target="_blank"
-							rel="noreferrer noopener"
-						>
+						<h5>
 							Send a message
-						</a>
+						</h5>
 					</style.ContactOption>
+					</a>
 				</style.ContactOptions>
 				<style.Form ref={form} onSubmit={sendEmail}>
 					<input type="text" name="name" placeholder=

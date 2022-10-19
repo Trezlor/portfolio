@@ -48,11 +48,18 @@ export const ContactOption = styled.article`
 		/*Box model stuff*/
 		border-color: var(--color-primary-variant);
 		background: transparent;
+		cursor: pointer;
+
+		& h5 {
+			scale: 1.2;
+		}
 	}
 
 	& .icon {
 		/*Box model stuff*/
 		margin-bottom: 0.5rem;
+		color: var(--color-white);
+
 		/*Typography stuff*/
 		font-size: 1.5rem;
 	}
@@ -66,6 +73,10 @@ export const ContactOption = styled.article`
 		font-size: 0.8rem;
 	}
 
+	& h4 {
+		color: var(--color-white);
+	}
+
 	& h5 {
 		/*Box model stuff*/
 		margin-top: 0.7rem;
@@ -74,13 +85,6 @@ export const ContactOption = styled.article`
 		color: var(--color-primary);
 		/*Manipulations stuff*/
 		transition: var(--transition);
-
-		&:hover {
-			/*Typography stuff*/
-			color: var(--color-white);
-			/*Miscellaneous*/
-			cursor: pointer;
-		}
 	}
 
 	& p {
