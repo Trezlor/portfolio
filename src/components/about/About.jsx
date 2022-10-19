@@ -15,7 +15,7 @@ const About = () => {
 		<section id="about">
 			<h5>
 				{/* Get to know */}
-				Vit mer
+				Finn ut mer
 			</h5>
 			<h2>
 				{/* About Me */}
