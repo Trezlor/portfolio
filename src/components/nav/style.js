@@ -13,7 +13,7 @@ export const Nav = styled.nav`
 	/*Box model stuff*/
 	width: max-content;
 	padding: 0.7rem 1.7rem;
-	border-radius: 3rem;
+	border-radius: 100px;
 	background: rgba(0, 0, 0, 0.3);
 	/*Manipulations stuff*/
 	transform: translateX(-50%);

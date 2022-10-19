@@ -37,8 +37,8 @@ export const ContactOption = styled.article`
 	/*Box model stuff*/
 	padding: 1.2rem;
 	border: var(--border) solid var(--color-primary);
-	border-radius: 1.2rem;
-	background-color: var(--color-bg-variant);
+	border-radius: var(--border-radius-primary);
+	background: var(--color-bg-variant);
 	/*Typography stuff*/
 	text-align: center;
 	/*Manipulations stuff*/
@@ -47,7 +47,7 @@ export const ContactOption = styled.article`
 	&:hover {
 		/*Box model stuff*/
 		border-color: var(--color-primary-variant);
-		background-color: transparent;
+		background: transparent;
 	}
 
 	& .icon {
@@ -93,7 +93,7 @@ export const ContactOption = styled.article`
 		margin-top: 10px;
 		padding: 0.5rem 1rem;
 		border-radius: 0.25rem;
-		background-color: var(--color-primary);
+		background: var(--color-primary);
 		color: var(--color-bg);
 		/*Manipulations stuff*/
 		transform: translateX(-50%);
@@ -120,8 +120,8 @@ export const Form = styled.form`
 		width: 100%;
 		padding: 1.5rem;
 		border: var(--border) solid var(--color-primary-variant);
-		border-radius: 0.5rem;
-		background-color: transparent;
+		border-radius: var(--border-radius-primary);
+		background: transparent;
 		/*Typography stuff*/
 		font-size: 1rem;
 		color: var(--color-white);

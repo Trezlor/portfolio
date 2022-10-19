@@ -18,7 +18,7 @@ export const Image = styled.img`
 	width: 85%;
 	margin: 2rem auto 1rem;
 	border: var(--border) solid var(--color-primary);
-	border-radius: 0.5rem;
+	border-radius: var(--border-radius-primary);
 `;
 
 export const ProjectInfoContainer = styled.div`
@@ -27,8 +27,8 @@ export const ProjectInfoContainer = styled.div`
 	margin: 0 auto 3rem;
 	padding: 2rem 4rem;
 	border: var(--border) solid var(--color-primary);
-	border-radius: 1rem;
-	background-color: var(--color-bg-variant);
+	border-radius: var(--border-radius-primary);
+	background: var(--color-bg-variant);
 
 	@media ${deviceSize.small} {
 		/*Box model stuff*/

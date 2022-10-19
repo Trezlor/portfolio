@@ -57,7 +57,7 @@ export const Content = styled.div`
 			}
 
 			& .skill_bar_bg {
-				background-color: var(--color-bg-variant);
+				background: var(--color-bg-variant);
 				height: 0.8rem;
 				width: 80%;
 				border-radius: 100px;
@@ -231,8 +231,8 @@ export const AboutCard = styled.article`
 	/*Box model stuff*/
 	padding-block: 2rem;
 	border: var(--border) solid var(--color-primary-variant);
-	border-radius: 1rem;
-	background-color: var(--color-bg-variant);
+	border-radius: var(--border-radius-primary);
+	background: var(--color-bg-variant);
 	/*Typography stuff*/
 	text-align: center;
 	/*Manipulations stuff*/
@@ -240,7 +240,7 @@ export const AboutCard = styled.article`
 
 	&:hover {
 		/*Box model stuff*/
-		background-color: var(--color-primary);
+		background: var(--color-primary);
 		/*Miscellaneous*/
 		cursor: pointer;
 
@@ -258,7 +258,7 @@ export const AboutCard = styled.article`
 	&.active {
 		/*Box model stuff*/
 		border-color: var(--color-primary);
-		background-color: var(--color-bg);
+		background: var(--color-bg);
 		/*Miscellaneous*/
 		cursor: initial;
 
