@@ -22,8 +22,6 @@ const Header = () => {
 			[letter]: true,
 		}));
 
-		console.log(isHovering);
-
 		setTimeout(() => {
 			setIsHovering((olderValue) => ({
 				...olderValue,
