@@ -4,7 +4,7 @@ import { BsPencil } from "react-icons/bs";
 
 import React from "react";
 import { Link } from "react-scroll";
-import HeaderSocials from "./Socials";
+import HeaderSocials from "./components/Socials";
 import * as style from "./style";
 
 const Navbar = () => {

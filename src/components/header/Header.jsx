@@ -1,5 +1,5 @@
 import ME from "../../assets/images/sondre4.png";
-import CTA from "./CTA";
+import CTA from "./components/CTA";
 import * as style from "./style";
 
 const Header = () => {
@@ -9,7 +9,7 @@ const Header = () => {
 				<style.Header_Container className="container">
 					<h5>
 						{/* Hi, I'm */}
-						Hei, mitt nav er
+						Hei, mitt navn er
 					</h5>
 					<h1>Sondre!</h1>
 					<h5 className="text-light">

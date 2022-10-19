@@ -227,12 +227,16 @@ export const AboutCards = styled.div`
 	}
 `;
 
+export const AboutCardBg = styled.div`
+	background: var(--color-bg-variant);
+`;
+
 export const AboutCard = styled.article`
 	/*Box model stuff*/
 	padding-block: 2rem;
 	border: var(--border) solid var(--color-primary-variant);
 	border-radius: var(--border-radius-primary);
-	background: var(--color-bg-variant);
+	background: transparent;
 	/*Typography stuff*/
 	text-align: center;
 	/*Manipulations stuff*/

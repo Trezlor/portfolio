@@ -31,56 +31,62 @@ const About = () => {
 
 				<style.Content>
 					<style.AboutCards>
-						<style.AboutCard
-							className={activeTab === "coding" ? "active" : ""}
-							onClick={() => {
-								setActiveTab("coding");
-								setActiveText("codingText");
-							}}
-						>
-							<RiCodeBoxFill className="icon" />
-							<h5>
-								{/* Coding */}
-								Koding
-							</h5>
-							<small>
-								{/* Interest */}
-								Interesse
-							</small>
-						</style.AboutCard>
+						<style.AboutCardBg>
+							<style.AboutCard
+								className={activeTab === "coding" ? "active" : ""}
+								onClick={() => {
+									setActiveTab("coding");
+									setActiveText("codingText");
+								}}
+							>
+								<RiCodeBoxFill className="icon" />
+								<h5>
+									{/* Coding */}
+									Koding
+								</h5>
+								<small>
+									{/* Interest */}
+									Interesse
+								</small>
+							</style.AboutCard>
+						</style.AboutCardBg>
 
-						<style.AboutCard
-							className={activeTab === "hobbies" ? "active" : ""}
-							onClick={() => {
-								setActiveTab("hobbies");
-								setActiveText("hobbiesText");
-							}}
-						>
-							<GiConsoleController className="icon" />
-							<h5>
-								{/* Hobbies */}
-								Hobby
-							</h5>
-							<small>Gaming</small>
-						</style.AboutCard>
+						<style.AboutCardBg>
+							<style.AboutCard
+								className={activeTab === "hobbies" ? "active" : ""}
+								onClick={() => {
+									setActiveTab("hobbies");
+									setActiveText("hobbiesText");
+								}}
+							>
+								<GiConsoleController className="icon" />
+								<h5>
+									{/* Hobbies */}
+									Hobby
+								</h5>
+								<small>Gaming</small>
+							</style.AboutCard>
+						</style.AboutCardBg>
 
-						<style.AboutCard
-							className={activeTab === "skills" ? "active" : ""}
-							onClick={() => {
-								setActiveTab("skills");
-								setActiveText("skillsText");
-							}}
-						>
-							<IoMdBriefcase className="icon" />
-							<h5>
-								{/* Skills */}
-								Ferdigheter
-							</h5>
-							<small>
-								{/* Languages */}
-								Språk
-							</small>
-						</style.AboutCard>
+						<style.AboutCardBg>
+							<style.AboutCard
+								className={activeTab === "skills" ? "active" : ""}
+								onClick={() => {
+									setActiveTab("skills");
+									setActiveText("skillsText");
+								}}
+							>
+								<IoMdBriefcase className="icon" />
+								<h5>
+									{/* Skills */}
+									Ferdigheter
+								</h5>
+								<small>
+									{/* Languages */}
+									Språk
+								</small>
+							</style.AboutCard>
+						</style.AboutCardBg>
 					</style.AboutCards>
 					<p className={activeText === "codingText" ? "activeText skills" : "skills"}>
 						{/* I have a big fascination with programming, and have been learning how to
