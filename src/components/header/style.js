@@ -4,18 +4,23 @@ import { deviceSize } from "../../utils/deviceSize";
 const tiltShaking = keyframes`
 		0% {
 			transform: translate(0, 0) rotate(0deg);
+			scale: 1;
 		}
 		25% {
 			transform: translate(5px, 5px) rotate(5deg);
+			scale: 1.1;
 		}
 		50% {
 			transform: translate(0, 0) rotate(0eg);
+			scale: 1.2;
 		}
 		75% {
 			transform: translate(-5px, 5px) rotate(-5deg);
+			scale: 1.1;
 		}
 		100% {
 			transform: translate(0, 0) rotate(0deg);
+			scale: 1;
 		}
 	`;
 
@@ -44,11 +49,14 @@ export const Header_Container = styled.div`
 
 export const Letter_Effect = styled.span`
 	/* position: relative; */
-	transition: all 200ms ease;
+	transition: all 500ms ease;
+
+	&:hover {
+		cursor: pointer;
+	}
 
 	&.hovered {
 		color: var(--color-primary);
-		cursor: pointer;
 		display: inline-block;
 		animation: ${tiltShaking} 0.5s;
 	}
