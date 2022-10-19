@@ -30,6 +30,10 @@ export const ProjectInfoContainer = styled.div`
 	border-radius: var(--border-radius-primary);
 	background: var(--color-bg-variant);
 
+	&:hover {
+		cursor: initial;
+	}
+
 	@media ${deviceSize.small} {
 		/*Box model stuff*/
 		padding: 1rem 2rem;
