@@ -1,4 +1,4 @@
-import CV from "../../../assets/cv.pdf";
+import CV from "../../../../../assets/cv.pdf";
 import * as style from "../style";
 
 const CTA = () => {

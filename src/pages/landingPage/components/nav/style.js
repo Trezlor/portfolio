@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { deviceSize } from "../../utils/deviceSize";
+import { deviceSize } from "../../../../utils/deviceSize";
 
 export const Nav = styled.nav`
 	/*Display stuff*/
@@ -19,7 +19,7 @@ export const Nav = styled.nav`
 	transform: translateX(-50%);
 	/*Miscellaneous*/
 	gap: 0.8rem;
-	backdrop-filter: blur(15px);
+	backdrop-filter: blur(10px);
 `;
 
 export const Nav_Li = styled.li`

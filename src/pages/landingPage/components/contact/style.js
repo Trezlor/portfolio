@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { deviceSize } from "../../utils/deviceSize";
+import { deviceSize } from "../../../../utils/deviceSize";
 
 export const Container = styled.div`
 	/*Display stuff*/
@@ -41,12 +41,14 @@ export const ContactOption = styled.article`
 	background: var(--color-bg-variant);
 	/*Typography stuff*/
 	text-align: center;
+	z-index: 0;
 	/*Manipulations stuff*/
 	transition: var(--transition);
 
 	&:hover {
 		/*Box model stuff*/
 		border-color: var(--color-primary-variant);
+		backdrop-filter: blur(5px);
 		background: transparent;
 		cursor: pointer;
 
@@ -62,6 +64,8 @@ export const ContactOption = styled.article`
 
 		/*Typography stuff*/
 		font-size: 1.5rem;
+
+		margin-bottom: initial;
 	}
 
 	& a {
@@ -91,16 +95,16 @@ export const ContactOption = styled.article`
 		/*Positioning stuff*/
 		position: absolute;
 		left: 50%;
-		z-index: 1;
+		top: 50%;
 		/*Box model stuff*/
 		width: fit-content;
-		margin-top: 10px;
 		padding: 0.5rem 1rem;
 		border-radius: 0.25rem;
 		background: var(--color-primary);
 		color: var(--color-bg);
 		/*Manipulations stuff*/
-		transform: translateX(-50%);
+		transform: translate(-50%, -40%);
+		/* transform: translateY(-50%); */
 		transition: var(--transition);
 		opacity: 0;
 
@@ -108,6 +112,15 @@ export const ContactOption = styled.article`
 			/*Manipulations stuff*/
 			opacity: 1;
 		}
+	}
+`;
+
+export const ContactOptionHeader = styled.div`
+	@media ${deviceSize.small} {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+		justify-content: center;
 	}
 `;
 
@@ -125,7 +138,9 @@ export const Form = styled.form`
 		padding: 1.5rem;
 		border: var(--border) solid var(--color-primary-variant);
 		border-radius: var(--border-radius-primary);
-		background: transparent;
+		background: rgba(0, 0, 0, 0.4);
+
+		backdrop-filter: blur(2px);
 		/*Typography stuff*/
 		font-size: 1rem;
 		color: var(--color-white);

@@ -47,11 +47,13 @@ const Contact = () => {
 									setActiveCopied("");
 								}, 1500);
 							}}>
+						<style.ContactOptionHeader>
 						<FaPhoneAlt className="icon" />
 						<h4>
 							{/* Phone */}
 							Mobil
 						</h4>
+						</style.ContactOptionHeader>
 						<h5>
 							+47 971 41 688
 						</h5>
@@ -62,8 +64,10 @@ const Contact = () => {
 					</style.ContactOption>
 					<a href="mailto:sondre-h@hotmail.com">
 					<style.ContactOption>
+						<style.ContactOptionHeader>
 						<IoIosMail className="icon" />
 						<h4>Email</h4>
+						</style.ContactOptionHeader>
 						<h5>sondre-h@hotmail.com</h5>
 					</style.ContactOption>
 					</a>
@@ -71,8 +75,10 @@ const Contact = () => {
 							target="_blank"
 							rel="noreferrer noopener">
 					<style.ContactOption>
+						<style.ContactOptionHeader>
 						<SiDiscord className="icon" />
 						<h4>Discord</h4>
+						</style.ContactOptionHeader>
 						<h5>
 							Send a message
 						</h5>

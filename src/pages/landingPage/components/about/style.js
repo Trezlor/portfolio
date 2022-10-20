@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { deviceSize } from "../../utils/deviceSize";
+import { deviceSize } from "../../../../utils/deviceSize";
 
 export const Content = styled.div`
 	& .skills {
@@ -18,12 +18,21 @@ export const Content = styled.div`
 			flex-direction: column;
 		}
 
+		&.coding,
+		&.hobbies {
+			backdrop-filter: blur(2px);
+		}
+
 		& .skill_scale {
 			margin-left: 2.5rem;
 			margin-bottom: 0;
 			width: 80%;
 			justify-content: space-between;
 			display: flex;
+
+			& p {
+				backdrop-filter: blur(2px);
+			}
 		}
 
 		& .skill {
@@ -227,16 +236,12 @@ export const AboutCards = styled.div`
 	}
 `;
 
-export const AboutCardBg = styled.div`
-	background: var(--color-bg-variant);
-`;
-
 export const AboutCard = styled.article`
 	/*Box model stuff*/
 	padding-block: 2rem;
 	border: var(--border) solid var(--color-primary-variant);
 	border-radius: var(--border-radius-primary);
-	background: transparent;
+	background: var(--color-bg-variant);
 	/*Typography stuff*/
 	text-align: center;
 	/*Manipulations stuff*/
@@ -244,37 +249,25 @@ export const AboutCard = styled.article`
 
 	&:hover {
 		/*Box model stuff*/
-		background: var(--color-primary);
+		border-color: var(--color-primary);
+		backdrop-filter: blur(2px);
 		/*Miscellaneous*/
 		cursor: pointer;
+		transition: var(--transition);
+		background: transparent;
 
-		& .icon {
-			/*Typography stuff*/
-			color: var(--color-bg);
-		}
-
-		& small {
-			/*Typography stuff*/
-			color: var(--color-bg);
-		}
+		scale: 1.02;
 	}
 
 	&.active {
 		/*Box model stuff*/
 		border-color: var(--color-primary);
-		background: var(--color-bg);
+		background: rgba(0, 0, 0, 0.4);
+
 		/*Miscellaneous*/
 		cursor: initial;
-
-		& .icon {
-			/*Typography stuff*/
-			color: var(--color-primary);
-		}
-
-		& small {
-			/*Typography stuff*/
-			color: var(--color-light);
-		}
+		scale: 1.1;
+		backdrop-filter: blur(2px);
 	}
 
 	& h5 {

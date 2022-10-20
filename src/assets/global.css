@@ -17,13 +17,14 @@
 
 :root {
 	/*Miscellaneous*/
-	--color-bg: rgb(40, 40, 40);
-	--color-bg-variant: rgb(75, 90, 89);
-	--color-bg-variant: linear-gradient(135deg, #414242, #717171);
+	--color-bg: rgb(15, 15, 15);
+	--color-bg-variant: rgb(35, 35, 35);
 	--color-primary: #00c8ff;
 	--color-primary-variant: #00c8ff66;
 	--color-white: rgb(250, 250, 250);
 	--color-light: rgba(255, 255, 255, 0.6);
+	--color-g1: #00b188;
+	--color-g2: #004355;
 
 	--transition: all 400ms ease;
 
@@ -45,19 +46,35 @@ html {
 	display: none;
 }
 
+@keyframes background-pan {
+	from {
+		background-position: 0% center;
+	}
+
+	to {
+		background-position: -200% center;
+	}
+}
+
 body {
 	/*Box model stuff*/
-	background: var(--color-bg);
-	background-image: url(images/bg-texture.png);
-	/*Typography stuff*/
+	height: 400vh;
+	background: linear-gradient(
+		to right,
+		var(--color-g1),
+		var(--color-g2),
+		var(--color-g2),
+		var(--color-g1)
+	);
+	background-size: 200%;
+	animation: background-pan 10s linear infinite;
 	font-family: "Poppins", sans-serif;
 	color: var(--color-white);
-	/*Miscellaneous*/
 	line-height: 1.7;
+	overflow-x: hidden;
 }
 
 /* GENERAL STYLES */
-
 .container {
 	/*Box model stuff*/
 	width: var(--container-width-large);
@@ -134,6 +151,8 @@ a:hover {
 	padding: 0.75rem 1.2rem;
 	border: 1px solid var(--color-primary);
 	border-radius: 0.4rem;
+	backdrop-filter: blur(5px);
+
 	/*Typography stuff*/
 	color: var(--color-primary);
 	/*Manipulations stuff*/
@@ -143,7 +162,7 @@ a:hover {
 }
 
 .btn:hover {
-	scale: 1.1;
+	scale: 1.05;
 }
 
 .btn:hover {
@@ -170,8 +189,29 @@ img {
 	object-fit: cover;
 }
 
-/* MEDIA QUERIES (TABLET DEVICES) */
+#tiles {
+	display: grid;
+	height: calc(100% - 1px);
+	width: calc(100vw - 1px);
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(130px, 1fr));
+}
 
+.tile {
+	position: relative;
+}
+
+.tile:before {
+	content: "";
+	position: absolute;
+	background-color: var(--color-bg);
+	inset: 0.5px;
+}
+
+/* MEDIA QUERIES (TABLET DEVICES) */
 @media screen and (max-width: 1024px) {
 	.container {
 		/*Box model stuff*/
@@ -183,10 +223,14 @@ img {
 		margin-top: 5rem;
 		padding-top: 1rem;
 	}
+
+	#tiles {
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+	}
 }
 
 /* MEDIA QUERIES (PHONE DEVICES) */
-
 @media screen and (max-width: 600px) {
 	.container {
 		/*Box model stuff*/
@@ -196,6 +240,11 @@ img {
 	section > h2 {
 		/*Box model stuff*/
 		margin-bottom: 2rem;
+	}
+
+	#tiles {
+		grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+		grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
 	}
 }
 

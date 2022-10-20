@@ -4,7 +4,7 @@ import { ImCss3, ImHtmlFive } from "react-icons/im";
 import { IoMdBriefcase } from "react-icons/io";
 import { RiCodeBoxFill } from "react-icons/ri";
 import { SiJavascript, SiReact } from "react-icons/si";
-import MINION from "../../assets/images/about-me.jpg";
+import MINION from "../../../../assets/images/about-me.jpg";
 import * as style from "./style";
 
 const About = () => {
@@ -31,64 +31,64 @@ const About = () => {
 
 				<style.Content>
 					<style.AboutCards>
-						<style.AboutCardBg>
-							<style.AboutCard
-								className={activeTab === "coding" ? "active" : ""}
-								onClick={() => {
-									setActiveTab("coding");
-									setActiveText("codingText");
-								}}
-							>
-								<RiCodeBoxFill className="icon" />
-								<h5>
-									{/* Coding */}
-									Koding
-								</h5>
-								<small>
-									{/* Interest */}
-									Interesse
-								</small>
-							</style.AboutCard>
-						</style.AboutCardBg>
+						<style.AboutCard
+							className={activeTab === "coding" ? "active" : ""}
+							onClick={() => {
+								setActiveTab("coding");
+								setActiveText("codingText");
+							}}
+						>
+							<RiCodeBoxFill className="icon" />
+							<h5>
+								{/* Coding */}
+								Koding
+							</h5>
+							<small>
+								{/* Interest */}
+								Interesse
+							</small>
+						</style.AboutCard>
 
-						<style.AboutCardBg>
-							<style.AboutCard
-								className={activeTab === "hobbies" ? "active" : ""}
-								onClick={() => {
-									setActiveTab("hobbies");
-									setActiveText("hobbiesText");
-								}}
-							>
-								<GiConsoleController className="icon" />
-								<h5>
-									{/* Hobbies */}
-									Hobby
-								</h5>
-								<small>Gaming</small>
-							</style.AboutCard>
-						</style.AboutCardBg>
+						<style.AboutCard
+							className={activeTab === "hobbies" ? "active" : ""}
+							onClick={() => {
+								setActiveTab("hobbies");
+								setActiveText("hobbiesText");
+							}}
+						>
+							<GiConsoleController className="icon" />
+							<h5>
+								{/* Hobbies */}
+								Hobby
+							</h5>
+							<small>Gaming</small>
+						</style.AboutCard>
 
-						<style.AboutCardBg>
-							<style.AboutCard
-								className={activeTab === "skills" ? "active" : ""}
-								onClick={() => {
-									setActiveTab("skills");
-									setActiveText("skillsText");
-								}}
-							>
-								<IoMdBriefcase className="icon" />
-								<h5>
-									{/* Skills */}
-									Ferdigheter
-								</h5>
-								<small>
-									{/* Languages */}
-									Språk
-								</small>
-							</style.AboutCard>
-						</style.AboutCardBg>
+						<style.AboutCard
+							className={activeTab === "skills" ? "active" : ""}
+							onClick={() => {
+								setActiveTab("skills");
+								setActiveText("skillsText");
+							}}
+						>
+							<IoMdBriefcase className="icon" />
+							<h5>
+								{/* Skills */}
+								Ferdigheter
+							</h5>
+							<small>
+								{/* Languages */}
+								Språk
+							</small>
+						</style.AboutCard>
 					</style.AboutCards>
-					<p className={activeText === "codingText" ? "activeText skills" : "skills"}>
+					<p
+						className={
+							activeText === "codingText"
+								? "activeText skills coding"
+								: "skills coding"
+						}
+					>
 						{/* I have a big fascination with programming, and have been learning how to
 						code for about 6 months! I love a challenge and strive to learn new coding
 						skills. My current skills involves HTML, CSS, Javascript & React. */}
@@ -97,7 +97,13 @@ const About = () => {
 						arm. Jeg er for det meste glad i css styling og å jobbe med javascript, og
 						syns alltid det er gøy å lære nye lettere måter å jobbe på.
 					</p>
-					<p className={activeText === "hobbiesText" ? "activeText skills" : "skills"}>
+					<p
+						className={
+							activeText === "hobbiesText"
+								? "activeText skills hobbies"
+								: "skills hobbies"
+						}
+					>
 						{/* My biggest hobby is gaming, and has been ever since i was a kid. Some of the
 						games are League of Legends, Apex, Overwatch and Valorant. Gaming has taught
 						me many things, such as risk-taking, patience, problem solving,
@@ -111,7 +117,13 @@ const About = () => {
 						være konsentrert, ha kritisk tenkning og forståelse for hvor bra det kan
 						være å jobbe som et team.
 					</p>
-					<div className={activeText === "skillsText" ? "activeText skills" : "skills"}>
+					<div
+						className={
+							activeText === "skillsText"
+								? "activeText skills language"
+								: "skills language"
+						}
+					>
 						<div className="skill_scale">
 							<p>
 								{/* Novice */}

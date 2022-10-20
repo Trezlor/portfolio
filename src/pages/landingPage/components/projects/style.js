@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { deviceSize } from "../../utils/deviceSize";
+import { deviceSize } from "../../../../utils/deviceSize";
 
 export const Title = styled.h3`
 	/*Box model stuff*/
@@ -29,6 +29,7 @@ export const ProjectInfoContainer = styled.div`
 	border: var(--border) solid var(--color-primary);
 	border-radius: var(--border-radius-primary);
 	background: var(--color-bg-variant);
+	backdrop-filter: blur(5px);
 
 	&:hover {
 		cursor: initial;

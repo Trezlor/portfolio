@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { deviceSize } from "../../utils/deviceSize";
+import { deviceSize } from "../../../../utils/deviceSize";
 
 const tiltShaking = keyframes`
 		0% {
