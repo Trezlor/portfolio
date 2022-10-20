@@ -15,6 +15,7 @@ export const Container = styled.div`
 		grid-template-columns: 1fr;
 		/*Miscellaneous*/
 		gap: 2rem;
+		margin-bottom: 10rem;
 	}
 
 	@media ${deviceSize.small} {

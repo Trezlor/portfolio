@@ -213,6 +213,10 @@ img {
 
 /* MEDIA QUERIES (TABLET DEVICES) */
 @media screen and (max-width: 1024px) {
+	body {
+		height: 430vh;
+	}
+
 	.container {
 		/*Box model stuff*/
 		width: var(--container-width-medium);
