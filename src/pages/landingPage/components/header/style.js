@@ -7,20 +7,21 @@ const tiltShaking = keyframes`
 			scale: 1;
 		}
 		25% {
-			transform: translate(5px, 5px) rotate(5deg);
-			scale: 1.1;
+			transform: translate(10px, -10px) rotate(5deg);
+			scale: 1.2;
+
 		}
 		50% {
-			transform: translate(0, 0) rotate(0eg);
-			scale: 1.2;
+			scale: 1.4;
 		}
 		75% {
-			transform: translate(-5px, 5px) rotate(-5deg);
-			scale: 1.1;
+			transform: translate(-10px, -10px) rotate(-5deg);
+			scale: 1.2;
 		}
 		100% {
 			transform: translate(0, 0) rotate(0deg);
 			scale: 1;
+
 		}
 	`;
 
@@ -58,6 +59,7 @@ export const Hover_Card = styled.div`
 	top: 0.3rem;
 	left: -3.6rem;
 	transform: rotate(-25deg);
+	box-shadow: 0px 0px 10px var(--color-primary);
 
 	@media ${deviceSize.size_1130} {
 		display: none;

@@ -42,31 +42,7 @@ export const Nav_Li = styled.li`
 	}
 	> .active {
 		/*Box model stuff*/
-		background: var(--color-bg);
-		/*Typography stuff*/
-		color: var(--color-white);
-	}
-`;
-
-export const Nav_A = styled.a`
-	/*Display stuff*/
-	display: flex;
-	/*Box model stuff*/
-	padding: 0.9rem;
-	border-radius: 50%;
-	background: transparent;
-	/*Typography stuff*/
-	font-size: 1.1rem;
-	color: var(--color-light);
-
-	&:hover {
-		/*Box model stuff*/
-		background: rgba(0, 0, 0, 0.2);
-	}
-
-	&.active {
-		/*Box model stuff*/
-		background: var(--color-bg);
+		background: var(--color-bg-light);
 		/*Typography stuff*/
 		color: var(--color-white);
 	}
