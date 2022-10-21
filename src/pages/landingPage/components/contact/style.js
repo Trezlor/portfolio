@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { deviceSize } from "../../../../utils/deviceSize";
+import styled from 'styled-components';
+import { deviceSize } from '../../../../utils/deviceSize';
 
 export const Container = styled.div`
 	/*Display stuff*/
@@ -122,6 +122,10 @@ export const ContactOptionHeader = styled.div`
 		flex-direction: row;
 		gap: 1rem;
 		justify-content: center;
+
+		& h4 {
+			margin: 0;
+		}
 	}
 `;
 
@@ -139,7 +143,7 @@ export const Form = styled.form`
 		padding: 1.5rem;
 		border: var(--border) solid var(--color-primary-variant);
 		border-radius: var(--border-radius-primary);
-		background: rgba(0, 0, 0, 0.4);
+		background: var(--color-bg-transparent);
 
 		backdrop-filter: blur(2px);
 		/*Typography stuff*/

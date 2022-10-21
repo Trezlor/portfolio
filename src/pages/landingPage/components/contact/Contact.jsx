@@ -59,8 +59,8 @@ const Contact = () => {
 						<style.ContactOptionHeader>
 							<FaPhoneAlt className='icon' />
 							<h4>
-								{/* Phone */}
 								Mobil
+								{/* Phone */}
 							</h4>
 						</style.ContactOptionHeader>
 						<h5>+47 971 41 688</h5>
@@ -71,8 +71,8 @@ const Contact = () => {
 									: ''
 							}
 						>
-							{/* Copied! */}
 							Kopiert
+							{/* Copied! */}
 						</p>
 					</style.ContactOption>
 					<a href='mailto:sondre-h@hotmail.com'>
@@ -94,7 +94,10 @@ const Contact = () => {
 								<SiDiscord className='icon' />
 								<h4>Discord</h4>
 							</style.ContactOptionHeader>
-							<h5>Send a message</h5>
+							<h5>
+								Send en melding
+								{/* Send a message */}
+							</h5>
 						</style.ContactOption>
 					</a>
 				</style.ContactOptions>

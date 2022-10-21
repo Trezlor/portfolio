@@ -1,7 +1,11 @@
-import styled from "styled-components";
-import { deviceSize } from "../../../../utils/deviceSize";
+import styled from 'styled-components';
+import { deviceSize } from '../../../../utils/deviceSize';
 
 export const Content = styled.div`
+	& .skills__container {
+		width: 100%;
+	}
+
 	& .skills {
 		/*Display stuff*/
 		display: none;
@@ -72,7 +76,11 @@ export const Content = styled.div`
 				border-radius: 100px;
 
 				& .skill_bar_html {
-					background: linear-gradient(90deg, #e44d26, #fb9344);
+					background: linear-gradient(
+						90deg,
+						#e44d26,
+						#fb9344
+					);
 					height: 100%;
 					width: 40%;
 
@@ -81,7 +89,11 @@ export const Content = styled.div`
 				}
 
 				& .skill_bar_css {
-					background: linear-gradient(90deg, #2965f1, #59c8ff);
+					background: linear-gradient(
+						90deg,
+						#2965f1,
+						#59c8ff
+					);
 					height: 100%;
 					width: 55%;
 
@@ -90,7 +102,11 @@ export const Content = styled.div`
 				}
 
 				& .skill_bar_js {
-					background: linear-gradient(90deg, #f7df1e, #ffef79);
+					background: linear-gradient(
+						90deg,
+						#f7df1e,
+						#ffef79
+					);
 					height: 100%;
 					width: 30%;
 
@@ -99,7 +115,11 @@ export const Content = styled.div`
 				}
 
 				& .skill_bar_react {
-					background: linear-gradient(90deg, #60d8f9, #b6efff);
+					background: linear-gradient(
+						90deg,
+						#60d8f9,
+						#b6efff
+					);
 					height: 100%;
 					width: 50%;
 
@@ -186,7 +206,12 @@ export const AboutMe = styled.div`
 	/*Box model stuff*/
 	width: 100%;
 	border-radius: 2rem;
-	background: linear-gradient(-45deg, transparent, var(--color-primary), transparent);
+	background: linear-gradient(
+		-45deg,
+		transparent,
+		var(--color-primary),
+		transparent
+	);
 	/*Miscellaneous*/
 	aspect-ratio: 1/1;
 	place-items: center;
@@ -228,9 +253,21 @@ export const AboutCards = styled.div`
 	/*Miscellaneous*/
 	gap: 1.5rem;
 
-	@media ${deviceSize.small} {
+	@media (max-width: 1730px) {
 		/*Display stuff*/
 		grid-template-columns: repeat(auto-fit, 130px);
+		/*Miscellaneous*/
+		gap: 1rem;
+	}
+
+	@media ${deviceSize.small} {
+		justify-content: center;
+	}
+
+	@media (max-width: 470px) {
+		/*Display stuff*/
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(auto-fit, 1fr 1fr);
 		/*Miscellaneous*/
 		gap: 1rem;
 	}
@@ -260,17 +297,39 @@ export const AboutCard = styled.article`
 	&.active {
 		/*Box model stuff*/
 		border-color: var(--color-primary);
-		background: rgba(0, 0, 0, 0.4);
+		background: var(--color-bg-transparent);
 
 		/*Miscellaneous*/
 		cursor: initial;
 		scale: 1.1;
 		backdrop-filter: blur(2px);
-	}
 
-	& h5 {
-		/*Typography stuff*/
-		font-size: 0.95rem;
+		@media (max-width: 470px) {
+			scale: 1.05;
+		}
+	}
+	& .card__header {
+		& h5 {
+			/*Typography stuff*/
+			font-size: 0.95rem;
+
+			@media (max-width: 470px) {
+				margin: 0 30px 0 0;
+			}
+		}
+
+		& .icon {
+			/*Box model stuff*/
+			margin-bottom: 1rem;
+			/*Typography stuff*/
+			font-size: 1.4rem;
+			color: var(--color-primary);
+			vertical-align: middle;
+
+			@media (max-width: 1730px) {
+				margin-bottom: 0;
+			}
+		}
 	}
 
 	& small {
@@ -279,19 +338,23 @@ export const AboutCard = styled.article`
 		color: var(--color-light);
 	}
 
-	& .icon {
-		/*Box model stuff*/
-		margin-bottom: 1rem;
-		/*Typography stuff*/
-		font-size: 1.4rem;
-		color: var(--color-primary);
-
-		@media ${deviceSize.small} {
-			margin-bottom: 0;
-		}
+	@media (max-width: 1730px) {
+		padding-block: 1rem;
 	}
 
 	@media ${deviceSize.small} {
 		padding-block: 1rem;
 	}
+`;
+
+export const AboutCardHeader = styled.div`
+	@media (max-width: 470px) {
+		display: flex;
+		justify-content: center;
+		gap: 0.5rem;
+	}
+`;
+
+export const SkillsContainer = styled.div`
+	justify-content: center;
 `;

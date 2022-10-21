@@ -42,14 +42,16 @@ const About = () => {
 								setActiveText('codingText');
 							}}
 						>
-							<RiCodeBoxFill className='icon' />
-							<h5>
-								{/* Coding */}
-								Koding
-							</h5>
+							<style.AboutCardHeader className='card__header'>
+								<RiCodeBoxFill className='icon' />
+								<h5>
+									Koding
+									{/* Coding */}
+								</h5>
+							</style.AboutCardHeader>
 							<small>
-								{/* Interest */}
 								Interesse
+								{/* Interest */}
 							</small>
 						</style.AboutCard>
 
@@ -64,11 +66,13 @@ const About = () => {
 								setActiveText('hobbiesText');
 							}}
 						>
-							<GiConsoleController className='icon' />
-							<h5>
-								{/* Hobbies */}
-								Hobby
-							</h5>
+							<style.AboutCardHeader className='card__header'>
+								<GiConsoleController className='icon' />
+								<h5>
+									Hobby
+									{/* Hobbies */}
+								</h5>
+							</style.AboutCardHeader>
 							<small>Gaming</small>
 						</style.AboutCard>
 
@@ -83,14 +87,16 @@ const About = () => {
 								setActiveText('skillsText');
 							}}
 						>
-							<IoMdBriefcase className='icon' />
-							<h5>
-								{/* Skills */}
-								Ferdigheter
-							</h5>
+							<style.AboutCardHeader className='card__header'>
+								<IoMdBriefcase className='icon' />
+								<h5>
+									Ferdigheter
+									{/* Skills */}
+								</h5>
+							</style.AboutCardHeader>
 							<small>
-								{/* Languages */}
 								Språk
+								{/* Languages */}
 							</small>
 						</style.AboutCard>
 					</style.AboutCards>
@@ -113,6 +119,7 @@ const About = () => {
 						er gøy å lære nye lettere måter å jobbe
 						på.
 					</p>
+
 					<p
 						className={
 							activeText === 'hobbiesText'
@@ -131,13 +138,14 @@ const About = () => {
 						med er League of Legends, Overwatch og
 						Valorant. Er også glad i hjernetrim og
 						skrekk-spill.
-						<br />
+						<br style={{ marginBottom: '1rem' }} />
 						Jeg har lært mye fra gaming, som
 						risikotagning, tålmodighet,
 						problemløsning, være konsentrert, ha
 						kritisk tenkning og forståelse for hvor
 						bra det kan være å jobbe som et team.
 					</p>
+
 					<div
 						className={
 							activeText === 'skillsText'

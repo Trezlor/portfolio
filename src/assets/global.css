@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 *,
 *:before,
@@ -22,7 +22,7 @@
 	--color-primary: #00f0e0;
 	--color-primary-variant: #00b18866;
 	--color-white: rgb(250, 250, 250);
-	--color-light: rgba(255, 255, 255, 0.6);
+	--color-bg-transparent: rgba(0, 0, 0, 0.4);
 	--color-g1: #004355;
 	--color-note: rgb(255, 255, 110);
 
@@ -69,7 +69,7 @@ body {
 	background-size: 200%;
 	background-repeat: repeat;
 	animation: background-pan 10s linear infinite;
-	font-family: "Poppins", sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: var(--color-white);
 	line-height: 1.7;
 	overflow-x: hidden;
@@ -204,8 +204,8 @@ img {
 	position: fixed;
 	z-index: -1;
 	top: 0;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .tile {
@@ -213,7 +213,7 @@ img {
 }
 
 .tile:before {
-	content: "";
+	content: '';
 	position: absolute;
 	background-color: var(--color-bg);
 	inset: 0.5px;
@@ -235,7 +235,10 @@ img {
 	#tiles {
 		height: calc(100% + 300px - 1px);
 
-		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		grid-template-columns: repeat(
+			auto-fit,
+			minmax(150px, 1fr)
+		);
 		grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
 	}
 }
@@ -255,7 +258,10 @@ img {
 	#tiles {
 		height: calc(100% + 200px - 1px);
 
-		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		grid-template-columns: repeat(
+			auto-fit,
+			minmax(100px, 1fr)
+		);
 		grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
 	}
 }

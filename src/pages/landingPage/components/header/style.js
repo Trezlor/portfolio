@@ -1,5 +1,5 @@
-import styled, { keyframes } from "styled-components";
-import { deviceSize } from "../../../../utils/deviceSize";
+import styled, { keyframes } from 'styled-components';
+import { deviceSize } from '../../../../utils/deviceSize';
 
 const tiltShaking = keyframes`
 		0% {
@@ -48,27 +48,20 @@ export const Header_Container = styled.div`
 `;
 
 export const Hover_Card = styled.div`
-	color: black;
+	color: var(--color-white);
 	position: absolute;
-	font-size: 1rem;
-	padding: 1rem 0.5rem 0.5rem;
-	background: var(--color-note);
+	font-size: 0.8rem;
+	padding: 0.5em;
+	border: var(--border) solid var(--color-primary);
+	background: var(--color-bg-transparent);
 	border-radius: 5px;
-	left: -4rem;
+	top: 0.3rem;
+	left: -3.6rem;
 	transform: rotate(-25deg);
 
 	@media ${deviceSize.medium} {
 		display: none;
 	}
-`;
-
-export const Pin = styled.div`
-	color: red;
-	position: absolute;
-	rotate: calc(-50deg);
-	top: -1.4rem;
-	left: 2.5rem;
-	font-size: 1.5rem;
 `;
 
 export const Letter_Effect = styled.span`
@@ -105,7 +98,10 @@ export const Div_Me = styled.div`
 	margin-top: 4rem;
 	padding: 3rem 1.5rem 1.5rem 1.5rem;
 	border-radius: 0 10rem 0 0;
-	background: linear-gradient(var(--color-primary), transparent);
+	background: linear-gradient(
+		var(--color-primary),
+		transparent
+	);
 	/*Miscellaneous*/
 	margin-inline: auto;
 	overflow: hidden;

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { deviceSize } from "../../../../utils/deviceSize";
+import styled from 'styled-components';
+import { deviceSize } from '../../../../utils/deviceSize';
 
 export const Title = styled.h3`
 	/*Box model stuff*/
@@ -66,11 +66,6 @@ export const SwiperWrapper = styled.div`
 		@media ${deviceSize.medium} {
 			/*Box model stuff*/
 			width: 35rem;
-		}
-
-		@media ${deviceSize.small} {
-			/*Box model stuff*/
-			width: min(20rem, 100%);
 		}
 	}
 `;

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { BsFillPinAngleFill } from 'react-icons/bs';
 import ME from '../../../../assets/images/sondre4.png';
 import CTA from './components/CTA';
 import letterArray from './components/letterArray';
@@ -41,9 +40,6 @@ const Header = () => {
 					</h5>
 					<h1 style={{ position: 'relative' }}>
 						<style.Hover_Card>
-							<style.Pin>
-								<BsFillPinAngleFill />
-							</style.Pin>
 							Hover me!
 						</style.Hover_Card>
 						{letterArray.map((letter, key) => {
