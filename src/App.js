@@ -1,9 +1,9 @@
-import "./assets/global.css";
-import LandingPage from "./pages/LandingPage";
+import './assets/global.css';
+import LandingPage from './pages/LandingPage';
 
 export default function App() {
 	return (
-		<div className="App">
+		<div className='App'>
 			<>
 				<LandingPage />
 			</>

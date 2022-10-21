@@ -1,3 +1,3 @@
-const letterArray = ["S", "o", "n", "d", "r", "e", "!"];
+const letterArray = ['S', 'o', 'n', 'd', 'r', 'e', '!'];
 
 export default letterArray;
