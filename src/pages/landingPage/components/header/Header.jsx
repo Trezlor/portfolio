@@ -61,12 +61,12 @@ const Header = () => {
 					</h1>
 					<h5 className='text-light'>
 						{/* Frontend developer student from Norway! */}
-						Frontend utvikler student fra Norge!
+						Frontend utvikler student fra Norge
 					</h5>
 					<CTA />
 
 					<style.Div_Me>
-						<img src={ME} alt='Sondre Halvorsen' />
+						{/* <img src={ME} alt='Sondre Halvorsen' /> */}
 					</style.Div_Me>
 				</style.Header_Container>
 			</style.Header>
