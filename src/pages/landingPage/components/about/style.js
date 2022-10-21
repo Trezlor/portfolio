@@ -255,8 +255,6 @@ export const AboutCard = styled.article`
 		cursor: pointer;
 		transition: var(--transition);
 		background: transparent;
-
-		scale: 1.02;
 	}
 
 	&.active {

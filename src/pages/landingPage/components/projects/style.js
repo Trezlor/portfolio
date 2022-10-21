@@ -17,7 +17,6 @@ export const Image = styled.img`
 	/*Box model stuff*/
 	width: 85%;
 	margin: 2rem auto 1rem;
-	border: var(--border) solid var(--color-primary);
 	border-radius: var(--border-radius-primary);
 `;
 
