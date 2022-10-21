@@ -32,7 +32,7 @@ export const Header = styled.main`
 	/*Miscellaneous*/
 	overflow: hidden;
 
-	@media ${deviceSize.small} {
+	@media ${deviceSize.size_600} {
 		/*Box model stuff*/
 		padding-top: 1rem;
 	}
@@ -59,7 +59,7 @@ export const Hover_Card = styled.div`
 	left: -3.6rem;
 	transform: rotate(-25deg);
 
-	@media ${deviceSize.medium} {
+	@media ${deviceSize.size_1130} {
 		display: none;
 	}
 `;

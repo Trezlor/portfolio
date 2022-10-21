@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { deviceSize } from "../../../../utils/deviceSize";
+import styled from 'styled-components';
+import { deviceSize } from '../../../../utils/deviceSize';
 
 export const Nav = styled.nav`
 	/*Display stuff*/
@@ -89,14 +89,14 @@ export const Div_Socials = styled.div`
 
 	&:after {
 		/*Display stuff*/
-		content: "";
+		content: '';
 		/*Box model stuff*/
 		width: 1px;
 		height: 2rem;
 		background: var(--color-primary);
 	}
 
-	@media ${deviceSize.small} {
+	@media ${deviceSize.size_600} {
 		/*Display stuff*/
 		display: none;
 	}
@@ -114,7 +114,7 @@ export const ScrollDown = styled.a`
 	/*Manipulations stuff*/
 	transform: rotate(90deg);
 
-	@media ${deviceSize.small} {
+	@media ${deviceSize.size_600} {
 		/*Display stuff*/
 		display: none;
 	}

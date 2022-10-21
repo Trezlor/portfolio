@@ -7,7 +7,7 @@ export const Title = styled.h3`
 	/*Typography stuff*/
 	text-align: center;
 
-	@media ${deviceSize.small} {
+	@media ${deviceSize.size_600} {
 		/*Box model stuff*/
 		margin-bottom: 0.8rem;
 	}
@@ -34,7 +34,7 @@ export const ProjectInfoContainer = styled.div`
 		cursor: initial;
 	}
 
-	@media ${deviceSize.small} {
+	@media ${deviceSize.size_600} {
 		/*Box model stuff*/
 		padding: 1rem 2rem;
 	}
@@ -47,7 +47,7 @@ export const LinkContainer = styled.div`
 	/*Miscellaneous*/
 	gap: 50px;
 
-	@media ${deviceSize.small} {
+	@media ${deviceSize.size_600} {
 		/*Miscellaneous*/
 		gap: 30px;
 	}
@@ -63,7 +63,7 @@ export const SwiperWrapper = styled.div`
 		/*Miscellaneous*/
 		overflow: hidden;
 
-		@media ${deviceSize.medium} {
+		@media ${deviceSize.size_1130} {
 			/*Box model stuff*/
 			width: 35rem;
 		}

@@ -22,9 +22,9 @@
 	--color-primary: #00f0e0;
 	--color-primary-variant: #00b18866;
 	--color-white: rgb(250, 250, 250);
+	--color-light: rgb(200, 200, 200);
 	--color-bg-transparent: rgba(0, 0, 0, 0.4);
 	--color-g1: #004355;
-	--color-note: rgb(255, 255, 110);
 
 	--transition: all 400ms ease;
 
