@@ -1,16 +1,16 @@
-import { EffectFlip, Navigation, Pagination } from "swiper";
-import "swiper/css";
-import "swiper/css/effect-flip";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "./style.css";
-import * as style from "./style.js";
-import { ProjectsData } from "./utils/data";
+import { EffectFlip, Navigation, Pagination } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/effect-flip';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import './style.css';
+import * as style from './style.js';
+import { ProjectsData } from './utils/data';
 
 const Projects = () => {
 	return (
-		<section id="projects">
+		<section id='projects'>
 			<h5>
 				{/* My work */}
 				Mine
@@ -20,53 +20,69 @@ const Projects = () => {
 				Prosjekter
 			</h2>
 
-			<style.SwiperWrapper className="container">
+			<style.SwiperWrapper className='container'>
 				<Swiper
-					className="container mySwiper"
-					modules={[Pagination, Navigation, EffectFlip]}
+					className='container mySwiper'
+					modules={[
+						Pagination,
+						Navigation,
+						EffectFlip,
+					]}
 					spaceBetween={40}
 					navigation={true}
 					loop={true}
 					grabCursor={true}
-					effect={"flip"}
+					effect={'flip'}
 					// loop={true}
 					slidesPerView={1}
 					pagination={{ clickable: true }}
 				>
-					<article className="testimonial">
-						{ProjectsData.map(({ title, image, github, link }, key) => {
-							return (
-								<SwiperSlide key={key}>
-									<a href={link} target="_blank" rel="noreferrer noopener">
-										<style.Image
-											src={require("./images/" + image)}
-											alt="Project preview"
-										/>
-									</a>
+					<article className='testimonial'>
+						{ProjectsData.map(
+							(
+								{ title, image, github, link },
+								key
+							) => {
+								return (
+									<SwiperSlide key={key}>
+										<a
+											href={link}
+											target='_blank'
+											rel='noreferrer noopener'
+										>
+											<style.Image
+												src={require('./images/' +
+													image)}
+												alt='Project preview'
+											/>
+										</a>
 
-									<style.ProjectInfoContainer>
-										<style.Title>{title}</style.Title>
-										<style.LinkContainer>
-											<a
-												href={github}
-												target="_blank"
-												rel="noreferrer noopener"
-											>
-												Github
-											</a>
-											<a
-												href={link}
-												target="_blank"
-												rel="noreferrer noopener"
-											>
-												{/* Webpage */}
-												Nettside
-											</a>
-										</style.LinkContainer>
-									</style.ProjectInfoContainer>
-								</SwiperSlide>
-							);
-						})}
+										<style.ProjectInfoContainer>
+											<style.Title>
+												{title}
+											</style.Title>
+											<style.LinkContainer>
+												<a
+													href={github}
+													target='_blank'
+													rel='noreferrer noopener'
+												>
+													Github
+												</a>
+												<a
+													href={link}
+													target='_blank'
+													rel='noreferrer noopener'
+												>
+													{/* Webpage */}
+													Nettside
+												</a>
+											</style.LinkContainer>
+										</style.ProjectInfoContainer>
+									</SwiperSlide>
+								);
+							}
+						)}
 					</article>
 				</Swiper>
 			</style.SwiperWrapper>

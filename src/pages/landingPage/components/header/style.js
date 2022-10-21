@@ -47,6 +47,30 @@ export const Header_Container = styled.div`
 	text-align: center;
 `;
 
+export const Hover_Card = styled.div`
+	color: black;
+	position: absolute;
+	font-size: 1rem;
+	padding: 1rem 0.5rem 0.5rem;
+	background: var(--color-note);
+	border-radius: 5px;
+	left: -4rem;
+	transform: rotate(-25deg);
+
+	@media ${deviceSize.medium} {
+		display: none;
+	}
+`;
+
+export const Pin = styled.div`
+	color: red;
+	position: absolute;
+	rotate: calc(-50deg);
+	top: -1.4rem;
+	left: 2.5rem;
+	font-size: 1.5rem;
+`;
+
 export const Letter_Effect = styled.span`
 	/* position: relative; */
 	transition: all 500ms ease;
