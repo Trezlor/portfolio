@@ -1,16 +1,15 @@
 import styled from 'styled-components';
 import { deviceSize } from '../../../../utils/deviceSize';
 
-export const MobileNav = styled.nav`
+export const Nav_Mobile = styled.nav`
 	/*Display stuff*/
 	display: none;
 	/*Positioning stuff*/
 	position: fixed;
 	left: 50%;
 	bottom: 1rem;
-	z-index: 2;
+	z-index: 1;
 	/*Box model stuff*/
-	width: max-content;
 	padding: 0.7rem 0.8rem;
 	border-radius: 0.8rem;
 	background: rgba(0, 0, 0, 0.3);
@@ -26,38 +25,33 @@ export const MobileNav = styled.nav`
 		/*Box model stuff*/
 		padding: 0.9rem;
 		border-radius: 0.8rem;
-		background: transparent;
 		/*Typography stuff*/
 		font-size: 1.1rem;
-		color: var(--color-primary);
-		/*Miscellaneous*/
-		cursor: pointer;
-	}
-
-	& :hover {
-		color: var(--color-white);
 	}
 
 	& .active {
-		box-shadow: 0px 0px 10px 2px var(--color-primary);
 		/*Typography stuff*/
 		color: var(--color-white);
+		/*Miscellaneous*/
+		box-shadow: 0px 0px 10px 2px var(--color-primary);
 	}
 
 	@media ${deviceSize.size_1130} {
+		/*Display stuff*/
 		display: flex;
 	}
 `;
 
-export const DesktopNav = styled.nav`
+export const Nav_Desktop = styled.nav`
 	/*Display stuff*/
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	/*Positioning stuff*/
 	position: fixed;
-	align-items: center;
-	right: 1rem;
+	left: 1rem;
 	bottom: 3rem;
+	/*Miscellaneous*/
 	gap: 0.8rem;
 
 	&:before {
@@ -79,60 +73,66 @@ export const DesktopNav = styled.nav`
 	}
 
 	@media ${deviceSize.size_1130} {
+		/*Display stuff*/
 		display: none;
 	}
 `;
 
-export const LinkWrapper = styled.div`
-	background: rgba(0, 0, 0, 0.3);
-	border-radius: 0.8rem;
-	padding: 0.7rem 0.5rem;
-	gap: 0.8rem;
+export const Link_Container = styled.div`
+	/*Display stuff*/
 	display: flex;
 	flex-direction: column;
+	/*Box model stuff*/
+	padding: 0.7rem 0.5rem;
+	border-radius: 0.8rem;
+	background: rgba(0, 0, 0, 0.3);
+	/*Miscellaneous*/
+	gap: 0.8rem;
 
-	& .link__category {
-		display: flex;
-		align-items: center;
-		gap: 1rem;
-		justify-content: end;
-
-		& :hover {
-			color: var(--color-white);
+	&:hover {
+		& .link {
 			& p {
-				color: var(--color-white);
+				/*Positioning stuff*/
+				left: 4rem;
+				/*Manipulations stuff*/
+				opacity: 1;
 			}
 		}
+	}
 
-		& .link {
-			/*Display stuff*/
-			display: flex;
-			/*Box model stuff*/
-			padding: 0.9rem;
-			border-radius: 0.8rem;
-			background: transparent;
+	& .link {
+		/*Display stuff*/
+		display: flex;
+		align-items: center;
+		/*Positioning stuff*/
+		position: relative;
+		/*Box model stuff*/
+		padding: 0.9rem;
+		border-radius: 0.8rem;
+		/*Typography stuff*/
+		font-size: 1.1rem;
+		/*Miscellaneous*/
+		gap: 0.8rem;
+		cursor: pointer;
+
+		&.active {
 			/*Typography stuff*/
-			font-size: 1.1rem;
-			color: var(--color-primary);
+			color: var(--color-white);
 			/*Miscellaneous*/
-			cursor: pointer;
+			box-shadow: 0px 0px 10px 2px var(--color-primary);
 		}
 
 		& p {
-			color: var(--color-primary);
-		}
-
-		& .active {
-			/*Box model stuff*/
-			box-shadow: 0px 0px 10px 2px var(--color-primary);
-
-			/* background: var(--color-primary); */
+			/*Positioning stuff*/
+			position: absolute;
+			left: 6rem;
 			/*Typography stuff*/
-			color: var(--color-white);
-
-			& p {
-				color: var(--color-white);
-			}
+			font-size: 1rem;
+			/*Manipulations stuff*/
+			transition: var(--transition);
+			opacity: 0;
+			/*Miscellaneous*/
+			white-space: nowrap;
 		}
 	}
 `;
@@ -150,7 +150,7 @@ export const Socials_Links = styled.div`
 	align-items: center;
 	/*Positioning stuff*/
 	position: fixed;
-	left: 2rem;
+	right: 2rem;
 	bottom: 3rem;
 	/*Typography stuff*/
 	font-size: 1.5rem;

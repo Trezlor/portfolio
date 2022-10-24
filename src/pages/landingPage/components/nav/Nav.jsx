@@ -12,7 +12,7 @@ const Navbar = () => {
 		<>
 			<Socials />
 
-			<style.MobileNav>
+			<style.Nav_Mobile>
 				<Link
 					className='link'
 					to='home'
@@ -56,67 +56,59 @@ const Navbar = () => {
 				>
 					<BiMessageDetail />
 				</Link>
-			</style.MobileNav>
+			</style.Nav_Mobile>
 
-			<style.DesktopNav>
-				<style.LinkWrapper>
-					<div className='link__category'>
+			<style.Nav_Desktop>
+				<style.Link_Container>
+					<Link
+						className='link'
+						to='home'
+						spy={true}
+						smooth={true}
+						offset={0}
+						duration={400}
+					>
+						<AiOutlineHome />
 						<p>Hjem</p>
-						<Link
-							className='link'
-							to='home'
-							spy={true}
-							smooth={true}
-							offset={0}
-							duration={400}
-						>
-							<AiOutlineHome />
-						</Link>
-					</div>
+					</Link>
 
-					<div className='link__category'>
+					<Link
+						className='link'
+						to='about'
+						spy={true}
+						smooth={true}
+						offset={0}
+						duration={400}
+					>
+						<AiOutlineUser />
 						<p>Om Meg</p>
-						<Link
-							className='link'
-							to='about'
-							spy={true}
-							smooth={true}
-							offset={0}
-							duration={400}
-						>
-							<AiOutlineUser />
-						</Link>
-					</div>
+					</Link>
 
-					<div className='link__category'>
+					<Link
+						className='link'
+						to='projects'
+						spy={true}
+						smooth={true}
+						offset={0}
+						duration={400}
+					>
+						<BsPencil />
 						<p>Prosjekter</p>
-						<Link
-							className='link'
-							to='projects'
-							spy={true}
-							smooth={true}
-							offset={0}
-							duration={400}
-						>
-							<BsPencil />
-						</Link>
-					</div>
+					</Link>
 
-					<div className='link__category'>
+					<Link
+						className='link'
+						to='contact'
+						spy={true}
+						smooth={true}
+						offset={0}
+						duration={400}
+					>
+						<BiMessageDetail />
 						<p>Kontakt Meg</p>
-						<Link
-							className='link'
-							to='contact'
-							spy={true}
-							smooth={true}
-							offset={0}
-							duration={400}
-						>
-							<BiMessageDetail />
-						</Link>
-					</div>
-				</style.LinkWrapper>
-			</style.DesktopNav>
+					</Link>
+				</style.Link_Container>
+			</style.Nav_Desktop>
 		</>
 	);
 };
