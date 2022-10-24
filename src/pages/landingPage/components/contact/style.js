@@ -36,7 +36,10 @@ export const ContactOption = styled.article`
 	/*Positioning stuff*/
 	position: relative;
 	/*Box model stuff*/
-	padding: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 1rem;
 	border: var(--border) solid var(--color-primary);
 	border-radius: var(--border-radius-primary);
 	background: var(--color-bg-variant);
@@ -60,13 +63,11 @@ export const ContactOption = styled.article`
 
 	& .icon {
 		/*Box model stuff*/
-		margin-bottom: 0.5rem;
+		/* margin-bottom: 0.5rem; */
 		color: var(--color-white);
 
 		/*Typography stuff*/
 		font-size: 1.5rem;
-
-		margin-bottom: initial;
 	}
 
 	& a {
@@ -83,8 +84,6 @@ export const ContactOption = styled.article`
 	}
 
 	& h5 {
-		/*Box model stuff*/
-		margin-top: 0.7rem;
 		/*Typography stuff*/
 		font-size: 0.8rem;
 		color: var(--color-primary);
@@ -104,7 +103,7 @@ export const ContactOption = styled.article`
 		background: var(--color-primary);
 		color: var(--color-bg);
 		/*Manipulations stuff*/
-		transform: translate(-50%, -40%);
+		transform: translate(-50%, -50%);
 		/* transform: translateY(-50%); */
 		transition: var(--transition);
 		opacity: 0;
@@ -117,8 +116,12 @@ export const ContactOption = styled.article`
 `;
 
 export const ContactOptionHeader = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+
 	@media ${deviceSize.size_600} {
-		display: flex;
 		flex-direction: row;
 		gap: 1rem;
 		justify-content: center;

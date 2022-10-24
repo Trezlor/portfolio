@@ -30,7 +30,10 @@ const Contact = () => {
 		e.target.reset();
 	};
 
-	const [activeCopied, setActiveCopied] = useState('');
+	const [activeCopiedPhone, setActiveCopiedPhone] =
+		useState('');
+	const [activeCopiedEmail, setActiveCopiedEmail] =
+		useState('');
 
 	return (
 		<section id='contact'>
@@ -50,9 +53,9 @@ const Contact = () => {
 							navigator.clipboard.writeText(
 								'+47 971 416 88'
 							);
-							setActiveCopied('copied');
+							setActiveCopiedPhone('copied');
 							setTimeout(() => {
-								setActiveCopied('');
+								setActiveCopiedPhone('');
 							}, 1500);
 						}}
 					>
@@ -66,7 +69,7 @@ const Contact = () => {
 						<h5>+47 971 41 688</h5>
 						<p
 							className={
-								activeCopied === 'copied'
+								activeCopiedPhone === 'copied'
 									? 'active'
 									: ''
 							}
@@ -75,15 +78,35 @@ const Contact = () => {
 							{/* Copied! */}
 						</p>
 					</style.ContactOption>
-					<a href='mailto:sondre-h@hotmail.com'>
-						<style.ContactOption>
-							<style.ContactOptionHeader>
-								<IoIosMail className='icon' />
-								<h4>Email</h4>
-							</style.ContactOptionHeader>
-							<h5>sondre-h@hotmail.com</h5>
-						</style.ContactOption>
-					</a>
+
+					<style.ContactOption
+						onClick={() => {
+							navigator.clipboard.writeText(
+								'sondre-h@hotmail.com'
+							);
+							setActiveCopiedEmail('copied');
+							setTimeout(() => {
+								setActiveCopiedEmail('');
+							}, 1500);
+						}}
+					>
+						<style.ContactOptionHeader>
+							<IoIosMail className='icon' />
+							<h4>Email</h4>
+						</style.ContactOptionHeader>
+						<h5>sondre-h@hotmail.com</h5>
+						<p
+							className={
+								activeCopiedEmail === 'copied'
+									? 'active'
+									: ''
+							}
+						>
+							Kopiert
+							{/* Copied! */}
+						</p>
+					</style.ContactOption>
+
 					<a
 						href='https://discordapp.com/users/212315187124895744'
 						target='_blank'
