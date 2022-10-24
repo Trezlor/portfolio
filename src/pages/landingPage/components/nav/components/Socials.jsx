@@ -3,9 +3,9 @@ import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import * as style from '../style';
 
-const HeaderSocials = () => {
+const Socials = () => {
 	return (
-		<style.Div_Socials>
+		<style.Socials_Links>
 			<a
 				href='https://www.linkedin.com/in/sondre-halvorsen-74a453241/'
 				target='_blank'
@@ -27,8 +27,8 @@ const HeaderSocials = () => {
 			>
 				<MdEmail />
 			</a>
-		</style.Div_Socials>
+		</style.Socials_Links>
 	);
 };
 
-export default HeaderSocials;
+export default Socials;

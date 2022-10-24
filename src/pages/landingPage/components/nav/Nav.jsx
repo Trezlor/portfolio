@@ -4,13 +4,13 @@ import { BsPencil } from 'react-icons/bs';
 
 import React from 'react';
 import { Link } from 'react-scroll';
-import HeaderSocials from './components/Socials';
+import Socials from './components/Socials';
 import * as style from './style';
 
 const Navbar = () => {
 	return (
 		<>
-			<HeaderSocials />
+			<Socials />
 
 			<style.MobileNav>
 				<Link

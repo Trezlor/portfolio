@@ -58,7 +58,7 @@ export const DesktopNav = styled.nav`
 	align-items: center;
 	right: 1rem;
 	bottom: 3rem;
-	gap: 1rem;
+	gap: 0.8rem;
 
 	&:before {
 		/*Display stuff*/
@@ -87,7 +87,7 @@ export const LinkWrapper = styled.div`
 	background: rgba(0, 0, 0, 0.3);
 	border-radius: 0.8rem;
 	padding: 0.7rem 0.5rem;
-	gap: 1rem;
+	gap: 0.8rem;
 	display: flex;
 	flex-direction: column;
 
@@ -137,8 +137,13 @@ export const LinkWrapper = styled.div`
 	}
 `;
 
-// SOCIALS
-export const Div_Socials = styled.div`
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    SOCIALS
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+
+export const Socials_Links = styled.div`
 	/*Display stuff*/
 	display: flex;
 	flex-direction: column;
