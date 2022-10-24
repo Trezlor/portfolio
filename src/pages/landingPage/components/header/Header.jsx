@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ME from '../../../../assets/images/sondre4.png';
+import ME from '../../../../assets/images/sondre7.png';
 import CTA from './components/CTA';
 import letterArray from './components/letterArray';
 import * as style from './style';
@@ -66,7 +66,7 @@ const Header = () => {
 					<CTA />
 
 					<style.Div_Me>
-						{/* <img src={ME} alt='Sondre Halvorsen' /> */}
+						<img src={ME} alt='Sondre Halvorsen' />
 					</style.Div_Me>
 				</style.Header_Container>
 			</style.Header>

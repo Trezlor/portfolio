@@ -204,14 +204,15 @@ export const AboutMe = styled.div`
 	/*Display stuff*/
 	display: grid;
 	/*Box model stuff*/
-	width: 100%;
+	width: min(100%, 500px);
 	border-radius: 2rem;
 	background: linear-gradient(
 		-45deg,
 		transparent,
-		var(--color-primary),
+		var(--color-primary-variant),
 		transparent
 	);
+	border: 1px solid var(--color-primary);
 	/*Miscellaneous*/
 	aspect-ratio: 1/1;
 	place-items: center;
@@ -234,11 +235,25 @@ export const AboutMeImage = styled.div`
 	border-radius: 2rem;
 	/*Manipulations stuff*/
 	transform: rotate(-8deg);
+	border: 1px solid var(--color-primary-variant);
+
+	background: linear-gradient(
+		-45deg,
+		transparent,
+		var(--color-primary-variant),
+		transparent
+	);
 	transition: var(--transition);
 	/*Miscellaneous*/
 	overflow: hidden;
 
 	&:hover {
+		background: linear-gradient(
+			-45deg,
+			transparent,
+			var(--color-primary),
+			transparent
+		);
 		/*Manipulations stuff*/
 		transform: rotate(0);
 		/*Miscellaneous*/

@@ -4,7 +4,7 @@ import { ImCss3, ImHtmlFive } from 'react-icons/im';
 import { IoMdBriefcase } from 'react-icons/io';
 import { RiCodeBoxFill } from 'react-icons/ri';
 import { SiJavascript, SiReact } from 'react-icons/si';
-import MINION from '../../../../assets/images/about-me.jpg';
+import ME from '../../../../assets/images/about-me2.png';
 import * as style from './style';
 
 const About = () => {
@@ -25,7 +25,7 @@ const About = () => {
 			<style.Container className='container'>
 				<style.AboutMe>
 					<style.AboutMeImage>
-						<img src={MINION} alt='minion' />
+						<img src={ME} alt='minion' />
 					</style.AboutMeImage>
 				</style.AboutMe>
 

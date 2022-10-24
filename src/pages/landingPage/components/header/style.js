@@ -98,7 +98,7 @@ export const Div_Me = styled.div`
 	width: min(22rem, 100%);
 	height: min(30rem, auto);
 	margin-top: 4rem;
-	padding: 3rem 1.5rem 1.5rem 1.5rem;
+	padding: 3rem 1.5rem 0 1.5rem;
 	border-radius: 0 10rem 0 0;
 	background: linear-gradient(
 		var(--color-primary),
