@@ -204,7 +204,7 @@ export const AboutMe = styled.div`
 	/*Display stuff*/
 	display: grid;
 	/*Box model stuff*/
-	width: min(100%, 500px);
+	width: min(100%, 450px);
 	border-radius: 2rem;
 	background: linear-gradient(
 		-45deg,
