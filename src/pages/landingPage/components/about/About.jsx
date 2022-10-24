@@ -57,27 +57,6 @@ const About = () => {
 
 						<style.AboutCard
 							className={
-								activeTab === 'hobbies'
-									? 'active'
-									: ''
-							}
-							onClick={() => {
-								setActiveTab('hobbies');
-								setActiveText('hobbiesText');
-							}}
-						>
-							<style.AboutCardHeader className='card__header'>
-								<GiConsoleController className='icon' />
-								<h5>
-									Hobby
-									{/* Hobbies */}
-								</h5>
-							</style.AboutCardHeader>
-							<small>Gaming</small>
-						</style.AboutCard>
-
-						<style.AboutCard
-							className={
 								activeTab === 'skills'
 									? 'active'
 									: ''
@@ -98,6 +77,27 @@ const About = () => {
 								Språk
 								{/* Languages */}
 							</small>
+						</style.AboutCard>
+
+						<style.AboutCard
+							className={
+								activeTab === 'hobbies'
+									? 'active'
+									: ''
+							}
+							onClick={() => {
+								setActiveTab('hobbies');
+								setActiveText('hobbiesText');
+							}}
+						>
+							<style.AboutCardHeader className='card__header'>
+								<GiConsoleController className='icon' />
+								<h5>
+									Hobby
+									{/* Hobbies */}
+								</h5>
+							</style.AboutCardHeader>
+							<small>Gaming</small>
 						</style.AboutCard>
 					</style.AboutCards>
 					<p
@@ -203,7 +203,3 @@ const About = () => {
 };
 
 export default About;
-
-// 							In my latest job i was a certified telecommunication technician working
-// 							mainly with fiber optics, both out in the field and installations in
-// 							homes.
