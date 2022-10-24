@@ -16,7 +16,7 @@ const CTA = () => {
 				</a>
 				<a href='#contact' className='btn btn-primary'>
 					{/* Let's Talk */}
-					Send en melding
+					Kom i kontakt
 				</a>
 			</style.Div_CTA>
 		</>

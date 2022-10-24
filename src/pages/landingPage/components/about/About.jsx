@@ -194,7 +194,7 @@ const About = () => {
 						className='btn btn-primary'
 					>
 						{/* Let's Talk */}
-						Send en melding
+						Kom i kontakt
 					</a>
 				</style.Content>
 			</style.Container>
