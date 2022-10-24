@@ -10,60 +10,113 @@ import * as style from './style';
 const Navbar = () => {
 	return (
 		<>
-			<style.Nav>
-				<style.Nav_Li>
-					<Link
-						to='home'
-						spy={true}
-						smooth={true}
-						offset={0}
-						duration={400}
-					>
-						<AiOutlineHome />
-					</Link>
-				</style.Nav_Li>
-
-				<style.Nav_Li>
-					<Link
-						to='about'
-						spy={true}
-						smooth={true}
-						offset={0}
-						duration={400}
-					>
-						<AiOutlineUser />
-					</Link>
-				</style.Nav_Li>
-
-				<style.Nav_Li>
-					<Link
-						to='projects'
-						spy={true}
-						smooth={true}
-						offset={0}
-						duration={400}
-					>
-						<BsPencil />
-					</Link>
-				</style.Nav_Li>
-
-				<style.Nav_Li>
-					<Link
-						to='contact'
-						spy={true}
-						smooth={true}
-						offset={0}
-						duration={400}
-					>
-						<BiMessageDetail />
-					</Link>
-				</style.Nav_Li>
-			</style.Nav>
 			<HeaderSocials />
-			<style.ScrollDown href='#contact'>
-				{/* Scroll Down */}
-				Scroll Ned
-			</style.ScrollDown>
+
+			<style.MobileNav>
+				<Link
+					className='link'
+					to='home'
+					spy={true}
+					smooth={true}
+					offset={0}
+					duration={400}
+				>
+					<AiOutlineHome />
+				</Link>
+
+				<Link
+					className='link'
+					to='about'
+					spy={true}
+					smooth={true}
+					offset={0}
+					duration={400}
+				>
+					<AiOutlineUser />
+				</Link>
+
+				<Link
+					className='link'
+					to='projects'
+					spy={true}
+					smooth={true}
+					offset={0}
+					duration={400}
+				>
+					<BsPencil />
+				</Link>
+
+				<Link
+					className='link'
+					to='contact'
+					spy={true}
+					smooth={true}
+					offset={0}
+					duration={400}
+				>
+					<BiMessageDetail />
+				</Link>
+			</style.MobileNav>
+
+			<style.DesktopNav>
+				<style.LinkWrapper>
+					<div className='link__category'>
+						<p>Hjem</p>
+						<Link
+							className='link'
+							to='home'
+							spy={true}
+							smooth={true}
+							offset={0}
+							duration={400}
+						>
+							<AiOutlineHome />
+						</Link>
+					</div>
+
+					<div className='link__category'>
+						<p>Om Meg</p>
+						<Link
+							className='link'
+							to='about'
+							spy={true}
+							smooth={true}
+							offset={0}
+							duration={400}
+						>
+							<AiOutlineUser />
+						</Link>
+					</div>
+
+					<div className='link__category'>
+						<p>Prosjekter</p>
+						<Link
+							className='link'
+							to='projects'
+							spy={true}
+							smooth={true}
+							offset={0}
+							duration={400}
+						>
+							<BsPencil />
+						</Link>
+					</div>
+
+					<div className='link__category'>
+						<p>Kontakt Meg</p>
+						<Link
+							className='link'
+							to='contact'
+							spy={true}
+							smooth={true}
+							offset={0}
+							duration={400}
+						>
+							<BiMessageDetail />
+						</Link>
+					</div>
+				</style.LinkWrapper>
+			</style.DesktopNav>
 		</>
 	);
 };

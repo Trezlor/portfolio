@@ -1,67 +1,73 @@
 import styled from 'styled-components';
 import { deviceSize } from '../../../../utils/deviceSize';
 
-export const Nav = styled.nav`
+export const MobileNav = styled.nav`
 	/*Display stuff*/
-	display: block;
-	display: flex;
+	display: none;
 	/*Positioning stuff*/
 	position: fixed;
 	left: 50%;
-	bottom: 2rem;
+	bottom: 1rem;
 	z-index: 2;
 	/*Box model stuff*/
 	width: max-content;
-	padding: 0.7rem 1.7rem;
-	border-radius: 100px;
+	padding: 0.7rem 0.8rem;
+	border-radius: 0.8rem;
 	background: rgba(0, 0, 0, 0.3);
 	/*Manipulations stuff*/
 	transform: translateX(-50%);
 	/*Miscellaneous*/
 	gap: 0.8rem;
 	backdrop-filter: blur(10px);
-`;
 
-export const Nav_Li = styled.li`
-	> * {
+	& .link {
 		/*Display stuff*/
 		display: flex;
 		/*Box model stuff*/
 		padding: 0.9rem;
-		border-radius: 50%;
+		border-radius: 0.8rem;
 		background: transparent;
 		/*Typography stuff*/
 		font-size: 1.1rem;
-		color: var(--color-light);
+		color: var(--color-primary);
 		/*Miscellaneous*/
 		cursor: pointer;
 	}
-	> :hover {
-		/*Box model stuff*/
-		background: rgba(0, 0, 0, 0.2);
+
+	& :hover {
+		color: var(--color-white);
 	}
-	> .active {
-		/*Box model stuff*/
-		background: var(--color-bg-light);
+
+	& .active {
+		box-shadow: 0px 0px 10px 2px var(--color-primary);
 		/*Typography stuff*/
 		color: var(--color-white);
 	}
+
+	@media ${deviceSize.size_1130} {
+		display: flex;
+	}
 `;
 
-// SOCIALS
-export const Div_Socials = styled.div`
+export const DesktopNav = styled.nav`
 	/*Display stuff*/
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	/*Positioning stuff*/
-	position: absolute;
-	left: 2rem;
+	position: fixed;
+	align-items: center;
+	right: 1rem;
 	bottom: 3rem;
-	/*Typography stuff*/
-	font-size: 1.5rem;
-	/*Miscellaneous*/
-	gap: 0.8rem;
+	gap: 1rem;
+
+	&:before {
+		/*Display stuff*/
+		content: '';
+		/*Box model stuff*/
+		width: 1px;
+		height: 2rem;
+		background: var(--color-primary);
+	}
 
 	&:after {
 		/*Display stuff*/
@@ -72,25 +78,99 @@ export const Div_Socials = styled.div`
 		background: var(--color-primary);
 	}
 
-	@media ${deviceSize.size_600} {
-		/*Display stuff*/
+	@media ${deviceSize.size_1130} {
 		display: none;
 	}
 `;
 
-// SCROLL DOWN
-export const ScrollDown = styled.a`
+export const LinkWrapper = styled.div`
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 0.8rem;
+	padding: 0.7rem 0.5rem;
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+
+	& .link__category {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		justify-content: end;
+
+		& :hover {
+			color: var(--color-white);
+			& p {
+				color: var(--color-white);
+			}
+		}
+
+		& .link {
+			/*Display stuff*/
+			display: flex;
+			/*Box model stuff*/
+			padding: 0.9rem;
+			border-radius: 0.8rem;
+			background: transparent;
+			/*Typography stuff*/
+			font-size: 1.1rem;
+			color: var(--color-primary);
+			/*Miscellaneous*/
+			cursor: pointer;
+		}
+
+		& p {
+			color: var(--color-primary);
+		}
+
+		& .active {
+			/*Box model stuff*/
+			box-shadow: 0px 0px 10px 2px var(--color-primary);
+
+			/* background: var(--color-primary); */
+			/*Typography stuff*/
+			color: var(--color-white);
+
+			& p {
+				color: var(--color-white);
+			}
+		}
+	}
+`;
+
+// SOCIALS
+export const Div_Socials = styled.div`
+	/*Display stuff*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	/*Positioning stuff*/
-	position: absolute;
-	right: -1rem;
-	bottom: 6rem;
+	position: fixed;
+	left: 2rem;
+	bottom: 3rem;
 	/*Typography stuff*/
 	font-size: 1.5rem;
-	font-weight: 300;
-	/*Manipulations stuff*/
-	transform: rotate(90deg);
+	/*Miscellaneous*/
+	gap: 0.8rem;
 
-	@media ${deviceSize.size_600} {
+	&:before {
+		/*Display stuff*/
+		content: '';
+		/*Box model stuff*/
+		width: 1px;
+		height: 2rem;
+		background: var(--color-primary);
+	}
+
+	&:after {
+		/*Display stuff*/
+		content: '';
+		/*Box model stuff*/
+		width: 1px;
+		height: 2rem;
+		background: var(--color-primary);
+	}
+
+	@media ${deviceSize.size_1130} {
 		/*Display stuff*/
 		display: none;
 	}
