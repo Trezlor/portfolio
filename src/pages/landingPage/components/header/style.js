@@ -70,10 +70,6 @@ export const Letter_Effect = styled.span`
 	/* position: relative; */
 	transition: all 500ms ease;
 
-	&:hover {
-		cursor: pointer;
-	}
-
 	&.hovered {
 		color: var(--color-primary);
 		display: inline-block;
