@@ -95,7 +95,7 @@ export const Div_CTA = styled.div`
 // ME
 export const Div_Me = styled.div`
 	/*Box model stuff*/
-	width: min(22rem, 100%);
+	width: min(26rem, 100%);
 	height: min(30rem, auto);
 	margin-top: 4rem;
 	padding: 3rem 1.5rem 0 1.5rem;
