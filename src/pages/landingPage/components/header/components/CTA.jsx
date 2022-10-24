@@ -5,9 +5,14 @@ const CTA = () => {
 	return (
 		<>
 			<style.Div_CTA>
-				<a href={CV} download className='btn'>
+				<a
+					href={CV}
+					target='_blank'
+					rel='noreferrer'
+					className='btn'
+				>
 					{/* Download CV */}
-					Last ned CV
+					Åpne CV
 				</a>
 				<a href='#contact' className='btn btn-primary'>
 					{/* Let's Talk */}
