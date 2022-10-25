@@ -10,7 +10,7 @@ export const Container = styled.div`
 	/*Miscellaneous*/
 	gap: 12%;
 
-	@media ${deviceSize.size_1130} {
+	@media ${deviceSize.tablet} {
 		/*Display stuff*/
 		grid-template-columns: 1fr;
 		/*Miscellaneous*/
@@ -18,7 +18,7 @@ export const Container = styled.div`
 		margin-bottom: 10rem;
 	}
 
-	@media ${deviceSize.size_600} {
+	@media ${deviceSize.mobile} {
 		/*Box model stuff*/
 		width: var(--container-width-small);
 	}
@@ -121,7 +121,7 @@ export const ContactOptionHeader = styled.div`
 	align-items: center;
 	gap: 0.5rem;
 
-	@media ${deviceSize.size_600} {
+	@media ${deviceSize.mobile} {
 		flex-direction: row;
 		gap: 1rem;
 		justify-content: center;

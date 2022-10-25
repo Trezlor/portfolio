@@ -33,7 +33,7 @@ export const Header = styled.main`
 	/*Miscellaneous*/
 	overflow: hidden;
 
-	@media ${deviceSize.size_600} {
+	@media ${deviceSize.mobile} {
 		/*Box model stuff*/
 		padding-top: 1rem;
 	}
@@ -61,7 +61,7 @@ export const Hover_Card = styled.div`
 	transform: rotate(-25deg);
 	box-shadow: 0px 0px 10px var(--color-primary);
 
-	@media ${deviceSize.size_1130} {
+	@media ${deviceSize.tablet} {
 		display: none;
 	}
 `;
@@ -107,9 +107,4 @@ export const Div_Me = styled.div`
 	/*Miscellaneous*/
 	margin-inline: auto;
 	overflow: hidden;
-
-	& img {
-		/*Miscellaneous*/
-		/* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)); */
-	}
 `;

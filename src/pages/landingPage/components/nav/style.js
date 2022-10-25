@@ -36,7 +36,7 @@ export const Nav_Mobile = styled.nav`
 		box-shadow: 0px 0px 10px 2px var(--color-primary);
 	}
 
-	@media ${deviceSize.size_1130} {
+	@media ${deviceSize.tablet} {
 		/*Display stuff*/
 		display: flex;
 	}
@@ -72,7 +72,7 @@ export const Nav_Desktop = styled.nav`
 		background: var(--color-primary);
 	}
 
-	@media ${deviceSize.size_1130} {
+	@media ${deviceSize.tablet} {
 		/*Display stuff*/
 		display: none;
 	}
@@ -175,7 +175,7 @@ export const Socials_Links = styled.div`
 		background: var(--color-primary);
 	}
 
-	@media ${deviceSize.size_1130} {
+	@media ${deviceSize.tablet} {
 		/*Display stuff*/
 		display: none;
 	}

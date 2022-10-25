@@ -169,17 +169,17 @@ export const Content = styled.div`
 			margin-bottom: initial;
 		}
 
-		@media ${deviceSize.size_1130} {
+		@media ${deviceSize.tablet} {
 			/*Box model stuff*/
 			margin: 1rem 0 1.5rem;
 		}
 
-		@media ${deviceSize.size_600} {
+		@media ${deviceSize.mobile} {
 			/*Box model stuff*/
 			margin: 1.5rem 0;
 		}
 	}
-	@media ${deviceSize.size_600} {
+	@media ${deviceSize.mobile} {
 		/*Typography stuff*/
 		text-align: center;
 	}
@@ -192,7 +192,7 @@ export const Container = styled.div`
 	/*Miscellaneous*/
 	gap: 15%;
 
-	@media ${deviceSize.size_1130} {
+	@media ${deviceSize.tablet} {
 		/*Display stuff*/
 		grid-template-columns: 1fr;
 		/*Miscellaneous*/
@@ -217,13 +217,13 @@ export const AboutMe = styled.div`
 	aspect-ratio: 1/1;
 	place-items: center;
 
-	@media ${deviceSize.size_1130} {
+	@media ${deviceSize.tablet} {
 		/*Box model stuff*/
 		width: 50%;
 		margin: 2rem auto 4rem;
 	}
 
-	@media ${deviceSize.size_600} {
+	@media ${deviceSize.mobile} {
 		/*Box model stuff*/
 		width: 65%;
 		margin: 0 auto 3rem;
@@ -268,18 +268,18 @@ export const AboutCards = styled.div`
 	/*Miscellaneous*/
 	gap: 1.5rem;
 
-	@media ${deviceSize.size_1730} {
+	@media (max-width: 1730px) {
 		/*Display stuff*/
 		grid-template-columns: repeat(auto-fit, 130px);
 		/*Miscellaneous*/
 		gap: 1rem;
 	}
 
-	@media ${deviceSize.size_600} {
+	@media ${deviceSize.mobile} {
 		justify-content: center;
 	}
 
-	@media ${deviceSize.size_470} {
+	@media (max-width: 470px) {
 		/*Display stuff*/
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(auto-fit, 1fr 1fr);
@@ -319,7 +319,7 @@ export const AboutCard = styled.article`
 		scale: 1.1;
 		backdrop-filter: blur(2px);
 
-		@media ${deviceSize.size_470} {
+		@media (max-width: 470px) {
 			scale: 1.05;
 		}
 	}
@@ -328,7 +328,7 @@ export const AboutCard = styled.article`
 			/*Typography stuff*/
 			font-size: 0.95rem;
 
-			@media ${deviceSize.size_470} {
+			@media (max-width: 470px) {
 				margin: 0 30px 0 0;
 			}
 		}
@@ -341,7 +341,7 @@ export const AboutCard = styled.article`
 			color: var(--color-primary);
 			vertical-align: middle;
 
-			@media ${deviceSize.size_1730} {
+			@media (max-width: 1730px) {
 				margin-bottom: 0;
 			}
 		}
@@ -353,17 +353,17 @@ export const AboutCard = styled.article`
 		color: var(--color-light);
 	}
 
-	@media ${deviceSize.size_1730} {
+	@media (max-width: 1730px) {
 		padding-block: 1rem;
 	}
 
-	@media ${deviceSize.size_600} {
+	@media ${deviceSize.mobile} {
 		padding-block: 1rem;
 	}
 `;
 
 export const AboutCardHeader = styled.div`
-	@media ${deviceSize.size_470} {
+	@media (max-width: 470px) {
 		display: flex;
 		justify-content: center;
 		gap: 0.5rem;
