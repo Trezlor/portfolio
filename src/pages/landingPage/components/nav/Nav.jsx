@@ -1,6 +1,9 @@
-import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
-import { BiMessageDetail } from 'react-icons/bi';
-import { BsPencil } from 'react-icons/bs';
+import { AiFillHome } from 'react-icons/ai';
+import {
+	BsFillPersonLinesFill,
+	BsFillTelephoneFill,
+} from 'react-icons/bs';
+import { ImCogs } from 'react-icons/im';
 
 import React from 'react';
 import { Link } from 'react-scroll';
@@ -20,7 +23,7 @@ const Navbar = () => {
 					offset={0}
 					duration={400}
 				>
-					<AiOutlineHome />
+					<AiFillHome />
 				</Link>
 
 				<Link
@@ -30,7 +33,7 @@ const Navbar = () => {
 					offset={0}
 					duration={400}
 				>
-					<AiOutlineUser />
+					<BsFillPersonLinesFill />
 				</Link>
 
 				<Link
@@ -40,7 +43,7 @@ const Navbar = () => {
 					offset={0}
 					duration={400}
 				>
-					<BsPencil />
+					<ImCogs />
 				</Link>
 
 				<Link
@@ -50,7 +53,7 @@ const Navbar = () => {
 					offset={0}
 					duration={400}
 				>
-					<BiMessageDetail />
+					<BsFillTelephoneFill />
 				</Link>
 			</style.NavMobile>
 
@@ -63,7 +66,7 @@ const Navbar = () => {
 						offset={0}
 						duration={400}
 					>
-						<AiOutlineHome />
+						<AiFillHome />
 						<p>Hjem</p>
 					</Link>
 
@@ -74,7 +77,7 @@ const Navbar = () => {
 						offset={0}
 						duration={400}
 					>
-						<AiOutlineUser />
+						<BsFillPersonLinesFill />
 						<p>Om Meg</p>
 					</Link>
 
@@ -85,7 +88,7 @@ const Navbar = () => {
 						offset={0}
 						duration={400}
 					>
-						<BsPencil />
+						<ImCogs />
 						<p>Prosjekter</p>
 					</Link>
 
@@ -96,7 +99,7 @@ const Navbar = () => {
 						offset={0}
 						duration={400}
 					>
-						<BiMessageDetail />
+						<BsFillTelephoneFill />
 						<p>Kontakt Meg</p>
 					</Link>
 				</style.LinkContainer>
