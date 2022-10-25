@@ -1,20 +1,25 @@
 import styled, { keyframes } from 'styled-components';
 import { deviceSize } from '../../../../utils/deviceSize';
 
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    KEYFRAMES
+//
+////////////////////////////////////////////////////////////////////////////////////////////
 const tiltShaking = keyframes`
 		0% {
 			transform: translate(0, 0) rotate(0deg);
 			scale: 1;
 		}
 		25% {
-			transform: translate(10px, -10px) rotate(5deg);
+			transform: translate(5px, -8px) rotate(5deg);
 			scale: 1.2;
 		}
 		50% {
 			scale: 1.4;
 		}
 		75% {
-			transform: translate(-10px, -10px) rotate(-5deg);
+			transform: translate(-5px, -8px) rotate(-5deg);
 			scale: 1.2;
 		}
 		100% {

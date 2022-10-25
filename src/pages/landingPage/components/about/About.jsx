@@ -17,21 +17,20 @@ const About = () => {
 				{/* Get to know */}
 				Finn ut mer
 			</h5>
+
 			<h2>
 				{/* About Me */}
 				Om Meg
 			</h2>
 
 			<style.Container className='container'>
-				<style.AboutMe>
-					<style.AboutMeImage>
-						<img src={ME} alt='minion' />
-					</style.AboutMeImage>
-				</style.AboutMe>
+				<style.AboutMeImg>
+					<img src={ME} alt='me' />
+				</style.AboutMeImg>
 
-				<style.Content>
-					<style.AboutCards>
-						<style.AboutCard
+				<style.AboutMeInfoContainer>
+					<style.AboutMeCards>
+						<style.AboutMeCard
 							className={
 								activeTab === 'coding'
 									? 'active'
@@ -42,20 +41,22 @@ const About = () => {
 								setActiveText('codingText');
 							}}
 						>
-							<style.AboutCardHeader className='card__header'>
-								<RiCodeBoxFill className='icon' />
+							<div className='card__header'>
+								<RiCodeBoxFill className='card__icon' />
+
 								<h5>
 									Koding
 									{/* Coding */}
 								</h5>
-							</style.AboutCardHeader>
+							</div>
+
 							<small>
 								Interesse
 								{/* Interest */}
 							</small>
-						</style.AboutCard>
+						</style.AboutMeCard>
 
-						<style.AboutCard
+						<style.AboutMeCard
 							className={
 								activeTab === 'skills'
 									? 'active'
@@ -66,20 +67,22 @@ const About = () => {
 								setActiveText('skillsText');
 							}}
 						>
-							<style.AboutCardHeader className='card__header'>
-								<IoMdBriefcase className='icon' />
+							<div className='card__header'>
+								<IoMdBriefcase className='card__icon' />
+
 								<h5>
 									Ferdigheter
 									{/* Skills */}
 								</h5>
-							</style.AboutCardHeader>
+							</div>
+
 							<small>
 								Språk
 								{/* Languages */}
 							</small>
-						</style.AboutCard>
+						</style.AboutMeCard>
 
-						<style.AboutCard
+						<style.AboutMeCard
 							className={
 								activeTab === 'hobbies'
 									? 'active'
@@ -90,21 +93,24 @@ const About = () => {
 								setActiveText('hobbiesText');
 							}}
 						>
-							<style.AboutCardHeader className='card__header'>
-								<GiConsoleController className='icon' />
+							<div className='card__header'>
+								<GiConsoleController className='card__icon' />
+
 								<h5>
 									Hobby
 									{/* Hobbies */}
 								</h5>
-							</style.AboutCardHeader>
+							</div>
+
 							<small>Gaming</small>
-						</style.AboutCard>
-					</style.AboutCards>
+						</style.AboutMeCard>
+					</style.AboutMeCards>
+
 					<p
 						className={
 							activeText === 'codingText'
-								? 'activeText skills coding'
-								: 'skills coding'
+								? 'activeText info'
+								: 'info'
 						}
 					>
 						{/* I have a big fascination with programming, and have been learning how to
@@ -120,11 +126,59 @@ const About = () => {
 						på.
 					</p>
 
+					<style.AboutMeSkills
+						className={
+							activeText === 'skillsText'
+								? 'activeText info'
+								: 'info'
+						}
+					>
+						<div className='skill_scale'>
+							<p>
+								{/* Novice */}
+								Nybegynner
+							</p>
+
+							<p>
+								{/* Expert */}
+								Ekspert
+							</p>
+						</div>
+
+						<div className='skill'>
+							<ImHtmlFive className='icon html' />
+							<div className='skill_bar_bg'>
+								<div className='skill_bar_html'></div>
+							</div>
+						</div>
+
+						<div className='skill'>
+							<ImCss3 className='icon css' />
+							<div className='skill_bar_bg'>
+								<div className='skill_bar_css'></div>
+							</div>
+						</div>
+
+						<div className='skill'>
+							<SiJavascript className='icon js' />
+							<div className='skill_bar_bg'>
+								<div className='skill_bar_js'></div>
+							</div>
+						</div>
+
+						<div className='skill skill__react'>
+							<SiReact className='icon react' />
+							<div className='skill_bar_bg'>
+								<div className='skill_bar_react'></div>
+							</div>
+						</div>
+					</style.AboutMeSkills>
+
 					<p
 						className={
 							activeText === 'hobbiesText'
-								? 'activeText skills hobbies'
-								: 'skills hobbies'
+								? 'activeText info'
+								: 'info'
 						}
 					>
 						{/* My biggest hobby is gaming, and has been ever since i was a kid. Some of the
@@ -146,49 +200,6 @@ const About = () => {
 						bra det kan være å jobbe som et team.
 					</p>
 
-					<div
-						className={
-							activeText === 'skillsText'
-								? 'activeText skills language'
-								: 'skills language'
-						}
-					>
-						<div className='skill_scale'>
-							<p>
-								{/* Novice */}
-								Nybegynner
-							</p>
-							<p>
-								{/* Expert */}
-								Ekspert
-							</p>
-						</div>
-						<div className='skill'>
-							<ImHtmlFive className='icon html' />
-							<div className='skill_bar_bg active'>
-								<div className='skill_bar_html'></div>
-							</div>
-						</div>
-						<div className='skill'>
-							<ImCss3 className='icon css' />
-							<div className='skill_bar_bg'>
-								<div className='skill_bar_css'></div>
-							</div>
-						</div>
-						<div className='skill'>
-							<SiJavascript className='icon js' />
-							<div className='skill_bar_bg'>
-								<div className='skill_bar_js'></div>
-							</div>
-						</div>
-						<div className='skill skill__react'>
-							<SiReact className='icon react' />
-							<div className='skill_bar_bg'>
-								<div className='skill_bar_react'></div>
-							</div>
-						</div>
-					</div>
-
 					<a
 						href='#contact'
 						className='btn btn-primary'
@@ -196,7 +207,7 @@ const About = () => {
 						{/* Let's Talk */}
 						Kom i kontakt
 					</a>
-				</style.Content>
+				</style.AboutMeInfoContainer>
 			</style.Container>
 		</section>
 	);

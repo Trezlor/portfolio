@@ -3,6 +3,49 @@ import { deviceSize } from '../../../../utils/deviceSize';
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 //
+//    SOCIALS
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+export const Socials_Links = styled.div`
+	/*Display stuff*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/*Positioning stuff*/
+	position: fixed;
+	right: 2rem;
+	bottom: 3rem;
+	/*Typography stuff*/
+	font-size: 1.5rem;
+	/*Miscellaneous*/
+	gap: 0.8rem;
+
+	&:before {
+		/*Display stuff*/
+		content: '';
+		/*Box model stuff*/
+		width: 1px;
+		height: 2rem;
+		background: var(--color-primary);
+	}
+
+	&:after {
+		/*Display stuff*/
+		content: '';
+		/*Box model stuff*/
+		width: 1px;
+		height: 2rem;
+		background: var(--color-primary);
+	}
+
+	@media ${deviceSize.tablet} {
+		/*Display stuff*/
+		display: none;
+	}
+`;
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//
 //    MOBILE
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -99,17 +142,6 @@ export const Link_Container = styled.div`
 	/*Miscellaneous*/
 	gap: 0.8rem;
 
-	&:hover {
-		& .link {
-			& p {
-				/*Positioning stuff*/
-				left: 4rem;
-				/*Manipulations stuff*/
-				opacity: 1;
-			}
-		}
-	}
-
 	& .link {
 		/*Display stuff*/
 		display: flex;
@@ -145,48 +177,15 @@ export const Link_Container = styled.div`
 			white-space: nowrap;
 		}
 	}
-`;
 
-////////////////////////////////////////////////////////////////////////////////////////////
-//
-//    SOCIALS
-//
-////////////////////////////////////////////////////////////////////////////////////////////
-
-export const Socials_Links = styled.div`
-	/*Display stuff*/
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	/*Positioning stuff*/
-	position: fixed;
-	right: 2rem;
-	bottom: 3rem;
-	/*Typography stuff*/
-	font-size: 1.5rem;
-	/*Miscellaneous*/
-	gap: 0.8rem;
-
-	&:before {
-		/*Display stuff*/
-		content: '';
-		/*Box model stuff*/
-		width: 1px;
-		height: 2rem;
-		background: var(--color-primary);
-	}
-
-	&:after {
-		/*Display stuff*/
-		content: '';
-		/*Box model stuff*/
-		width: 1px;
-		height: 2rem;
-		background: var(--color-primary);
-	}
-
-	@media ${deviceSize.tablet} {
-		/*Display stuff*/
-		display: none;
+	&:hover {
+		& .link {
+			& p {
+				/*Positioning stuff*/
+				left: 4rem;
+				/*Manipulations stuff*/
+				opacity: 1;
+			}
+		}
 	}
 `;
