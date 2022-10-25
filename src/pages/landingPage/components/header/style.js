@@ -9,7 +9,6 @@ const tiltShaking = keyframes`
 		25% {
 			transform: translate(10px, -10px) rotate(5deg);
 			scale: 1.2;
-
 		}
 		50% {
 			scale: 1.4;
@@ -25,13 +24,15 @@ const tiltShaking = keyframes`
 		}
 	`;
 
-// HEADER
-export const Header = styled.main`
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    MAIN
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+export const Main = styled.main`
 	/*Box model stuff*/
 	min-height: 100vh;
 	padding-top: 7rem;
-	/*Miscellaneous*/
-	overflow: hidden;
 
 	@media ${deviceSize.mobile} {
 		/*Box model stuff*/
@@ -39,50 +40,56 @@ export const Header = styled.main`
 	}
 `;
 
-export const Header_Container = styled.div`
-	/*Positioning stuff*/
-	position: relative;
-	/*Box model stuff*/
-	height: 100%;
-	/*Typography stuff*/
-	text-align: center;
-`;
-
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    HOVER EFFECT
+//
+////////////////////////////////////////////////////////////////////////////////////////////
 export const Hover_Card = styled.div`
-	color: var(--color-white);
+	/*Positioning stuff*/
 	position: absolute;
-	font-size: 0.8rem;
+	left: -3.6rem;
+	top: 0.3rem;
+	/*Box model stuff*/
 	padding: 0.5em;
 	border: var(--border) solid var(--color-primary);
+	border-radius: 0.5rem;
 	background: var(--color-bg-transparent);
-	border-radius: 5px;
-	top: 0.3rem;
-	left: -3.6rem;
+	/*Typography stuff*/
+	font-size: 0.8rem;
+	/*Manipulations stuff*/
 	transform: rotate(-25deg);
+	/*Miscellaneous*/
 	box-shadow: 0px 0px 10px var(--color-primary);
 
 	@media ${deviceSize.tablet} {
+		/*Display stuff*/
 		display: none;
 	}
 `;
 
 export const Letter_Effect = styled.span`
-	/* position: relative; */
+	/*Display stuff*/
+	display: inline-block;
+	/*Manipulations stuff*/
 	transition: all 500ms ease;
-
-	&:hover {
-		cursor: default;
-	}
+	/*Miscellaneous*/
+	cursor: default;
 
 	&.hovered {
+		/*Typography stuff*/
 		color: var(--color-primary);
-		display: inline-block;
+		/*Manipulations stuff*/
 		animation: ${tiltShaking} 0.5s;
 	}
 `;
 
-// CTA
-export const Div_CTA = styled.div`
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    CTA BUTTONS
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+export const CTA_Buttons = styled.div`
 	/*Display stuff*/
 	display: flex;
 	justify-content: center;
@@ -92,8 +99,12 @@ export const Div_CTA = styled.div`
 	gap: 1.2rem;
 `;
 
-// ME
-export const Div_Me = styled.div`
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    IMG
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+export const Me_Img = styled.div`
 	/*Box model stuff*/
 	width: min(26rem, 100%);
 	height: min(30rem, auto);
