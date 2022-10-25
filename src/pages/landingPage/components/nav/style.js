@@ -59,7 +59,7 @@ export const NavMobile = styled.nav`
 	z-index: 1;
 	/*Box model stuff*/
 	padding: 0.7rem 0.8rem;
-	border-radius: 0.8rem;
+	border-radius: 2rem;
 	background: rgba(0, 0, 0, 0.3);
 	/*Manipulations stuff*/
 	transform: translateX(-50%);
@@ -72,16 +72,16 @@ export const NavMobile = styled.nav`
 		display: flex;
 		/*Box model stuff*/
 		padding: 0.9rem;
-		border-radius: 0.8rem;
+		border-radius: 2rem;
 		/*Typography stuff*/
 		font-size: 1.1rem;
 	}
 
 	& .active {
+		/*Box model stuff*/
+		background: var(--color-primary-variant);
 		/*Typography stuff*/
 		color: var(--color-white);
-		/*Miscellaneous*/
-		box-shadow: 0px 0px 10px 2px var(--color-primary);
 	}
 
 	@media ${deviceSize.tablet} {
