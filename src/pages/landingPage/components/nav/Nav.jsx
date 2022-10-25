@@ -12,7 +12,7 @@ const Navbar = () => {
 		<>
 			<Socials />
 
-			<style.Nav_Mobile>
+			<style.NavMobile>
 				<Link
 					className='link'
 					to='home'
@@ -56,10 +56,10 @@ const Navbar = () => {
 				>
 					<BiMessageDetail />
 				</Link>
-			</style.Nav_Mobile>
+			</style.NavMobile>
 
-			<style.Nav_Desktop>
-				<style.Link_Container>
+			<style.NavDesktop>
+				<style.LinkContainer>
 					<Link
 						className='link'
 						to='home'
@@ -107,8 +107,8 @@ const Navbar = () => {
 						<BiMessageDetail />
 						<p>Kontakt Meg</p>
 					</Link>
-				</style.Link_Container>
-			</style.Nav_Desktop>
+				</style.LinkContainer>
+			</style.NavDesktop>
 		</>
 	);
 };

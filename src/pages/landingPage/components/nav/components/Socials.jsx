@@ -5,7 +5,7 @@ import * as style from '../style';
 
 const Socials = () => {
 	return (
-		<style.Socials_Links>
+		<style.SocialsLinks>
 			<a
 				href='https://www.linkedin.com/in/sondre-halvorsen-74a453241/'
 				target='_blank'
@@ -27,7 +27,7 @@ const Socials = () => {
 			>
 				<MdEmail />
 			</a>
-		</style.Socials_Links>
+		</style.SocialsLinks>
 	);
 };
 

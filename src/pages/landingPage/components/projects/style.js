@@ -1,25 +1,43 @@
 import styled from 'styled-components';
 import { deviceSize } from '../../../../utils/deviceSize';
 
-export const Title = styled.h3`
-	/*Box model stuff*/
-	margin-bottom: 2rem;
-	/*Typography stuff*/
-	text-align: center;
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    CONTAINER
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+export const Container = styled.div`
+	/*Display stuff*/
+	display: flex;
 
-	@media ${deviceSize.mobile} {
+	& .container {
 		/*Box model stuff*/
-		margin-bottom: 0.8rem;
+		width: 60rem;
+
+		@media ${deviceSize.tablet} {
+			/*Box model stuff*/
+			width: 35rem;
+		}
 	}
 `;
 
-export const Image = styled.img`
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    IMG
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+export const ProjectImage = styled.img`
 	/*Box model stuff*/
 	width: 85%;
-	margin: 2rem auto 1rem;
+	margin: 0 auto 1rem;
 	border-radius: var(--border-radius-primary);
 `;
 
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    INFO CONTAINER
+//
+////////////////////////////////////////////////////////////////////////////////////////////
 export const ProjectInfoContainer = styled.div`
 	/*Box model stuff*/
 	width: fit-content;
@@ -28,9 +46,23 @@ export const ProjectInfoContainer = styled.div`
 	border: var(--border) solid var(--color-primary);
 	border-radius: var(--border-radius-primary);
 	background: var(--color-bg-variant);
+	/*Miscellaneous*/
 	backdrop-filter: blur(5px);
 
+	& h3 {
+		/*Box model stuff*/
+		margin-bottom: 2rem;
+		/*Typography stuff*/
+		text-align: center;
+
+		@media ${deviceSize.mobile} {
+			/*Box model stuff*/
+			margin-bottom: 0.8rem;
+		}
+	}
+
 	&:hover {
+		/*Miscellaneous*/
 		cursor: initial;
 	}
 
@@ -40,7 +72,7 @@ export const ProjectInfoContainer = styled.div`
 	}
 `;
 
-export const LinkContainer = styled.div`
+export const ProjectLinks = styled.div`
 	/*Display stuff*/
 	display: flex;
 	justify-content: center;
@@ -50,22 +82,5 @@ export const LinkContainer = styled.div`
 	@media ${deviceSize.mobile} {
 		/*Miscellaneous*/
 		gap: 30px;
-	}
-`;
-
-export const SwiperWrapper = styled.div`
-	display: flex;
-
-	& .container {
-		/*Box model stuff*/
-		width: 60rem;
-		height: fit-content;
-		/*Miscellaneous*/
-		overflow: hidden;
-
-		@media ${deviceSize.tablet} {
-			/*Box model stuff*/
-			width: 35rem;
-		}
 	}
 `;

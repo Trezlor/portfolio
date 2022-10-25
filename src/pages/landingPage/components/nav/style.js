@@ -6,7 +6,7 @@ import { deviceSize } from '../../../../utils/deviceSize';
 //    SOCIALS
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
-export const Socials_Links = styled.div`
+export const SocialsLinks = styled.div`
 	/*Display stuff*/
 	display: flex;
 	flex-direction: column;
@@ -49,7 +49,7 @@ export const Socials_Links = styled.div`
 //    MOBILE
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
-export const Nav_Mobile = styled.nav`
+export const NavMobile = styled.nav`
 	/*Display stuff*/
 	display: none;
 	/*Positioning stuff*/
@@ -95,7 +95,7 @@ export const Nav_Mobile = styled.nav`
 //    DESKTOP
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
-export const Nav_Desktop = styled.nav`
+export const NavDesktop = styled.nav`
 	/*Display stuff*/
 	display: flex;
 	flex-direction: column;
@@ -131,7 +131,7 @@ export const Nav_Desktop = styled.nav`
 	}
 `;
 
-export const Link_Container = styled.div`
+export const LinkContainer = styled.div`
 	/*Display stuff*/
 	display: flex;
 	flex-direction: column;

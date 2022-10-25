@@ -4,7 +4,7 @@ import * as style from '../style';
 const CTA = () => {
 	return (
 		<>
-			<style.CTA_Buttons>
+			<style.CTAButtons>
 				<a
 					href={CV}
 					target='_blank'
@@ -18,7 +18,7 @@ const CTA = () => {
 					{/* Let's Talk */}
 					Kom i kontakt
 				</a>
-			</style.CTA_Buttons>
+			</style.CTAButtons>
 		</>
 	);
 };

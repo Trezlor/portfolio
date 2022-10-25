@@ -50,7 +50,7 @@ export const Main = styled.main`
 //    HOVER EFFECT
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
-export const Hover_Card = styled.div`
+export const HoverCard = styled.div`
 	/*Positioning stuff*/
 	position: absolute;
 	left: -3.6rem;
@@ -73,7 +73,7 @@ export const Hover_Card = styled.div`
 	}
 `;
 
-export const Letter_Effect = styled.span`
+export const LetterEffect = styled.span`
 	/*Display stuff*/
 	display: inline-block;
 	/*Manipulations stuff*/
@@ -94,7 +94,7 @@ export const Letter_Effect = styled.span`
 //    CTA BUTTONS
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
-export const CTA_Buttons = styled.div`
+export const CTAButtons = styled.div`
 	/*Display stuff*/
 	display: flex;
 	justify-content: center;
@@ -109,7 +109,7 @@ export const CTA_Buttons = styled.div`
 //    IMG
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
-export const Me_Img = styled.div`
+export const MeImg = styled.div`
 	/*Box model stuff*/
 	width: min(26rem, 100%);
 	height: min(30rem, auto);

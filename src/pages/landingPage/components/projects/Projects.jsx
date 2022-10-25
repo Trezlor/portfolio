@@ -20,24 +20,22 @@ const Projects = () => {
 				Prosjekter
 			</h2>
 
-			<style.SwiperWrapper className='container'>
+			<style.Container className='container'>
 				<Swiper
-					className='container mySwiper'
+					className='container'
 					modules={[
 						Pagination,
 						Navigation,
 						EffectFlip,
 					]}
-					spaceBetween={40}
 					navigation={true}
 					loop={true}
 					grabCursor={true}
 					effect={'flip'}
-					// loop={true}
 					slidesPerView={1}
 					pagination={{ clickable: true }}
 				>
-					<article className='testimonial'>
+					<article>
 						{ProjectsData.map(
 							(
 								{ title, image, github, link },
@@ -50,7 +48,7 @@ const Projects = () => {
 											target='_blank'
 											rel='noreferrer noopener'
 										>
-											<style.Image
+											<style.ProjectImage
 												src={require('./images/' +
 													image)}
 												alt='Project preview'
@@ -58,10 +56,8 @@ const Projects = () => {
 										</a>
 
 										<style.ProjectInfoContainer>
-											<style.Title>
-												{title}
-											</style.Title>
-											<style.LinkContainer>
+											<h3>{title}</h3>
+											<style.ProjectLinks>
 												<a
 													href={github}
 													target='_blank'
@@ -77,7 +73,7 @@ const Projects = () => {
 													{/* Webpage */}
 													Nettside
 												</a>
-											</style.LinkContainer>
+											</style.ProjectLinks>
 										</style.ProjectInfoContainer>
 									</SwiperSlide>
 								);
@@ -85,7 +81,7 @@ const Projects = () => {
 						)}
 					</article>
 				</Swiper>
-			</style.SwiperWrapper>
+			</style.Container>
 		</section>
 	);
 };

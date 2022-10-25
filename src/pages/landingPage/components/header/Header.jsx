@@ -40,12 +40,12 @@ const Header = () => {
 					</h5>
 
 					<h1>
-						<style.Hover_Card>
+						<style.HoverCard>
 							Hover me!
-						</style.Hover_Card>
+						</style.HoverCard>
 						{letterArray.map((letter, key) => {
 							return (
-								<style.Letter_Effect
+								<style.LetterEffect
 									key={key}
 									className={
 										isHovering[letter]
@@ -56,7 +56,7 @@ const Header = () => {
 									id={letter}
 								>
 									{letter}
-								</style.Letter_Effect>
+								</style.LetterEffect>
 							);
 						})}
 					</h1>
@@ -68,9 +68,9 @@ const Header = () => {
 
 					<CTA />
 
-					<style.Me_Img>
+					<style.MeImg>
 						<img src={ME} alt='Sondre Halvorsen' />
-					</style.Me_Img>
+					</style.MeImg>
 				</div>
 			</style.Main>
 		</>
