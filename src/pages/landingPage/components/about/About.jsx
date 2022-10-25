@@ -4,7 +4,7 @@ import { ImCss3, ImHtmlFive } from 'react-icons/im';
 import { IoMdBriefcase } from 'react-icons/io';
 import { RiCodeBoxFill } from 'react-icons/ri';
 import { SiJavascript, SiReact } from 'react-icons/si';
-import ME from '../../../../assets/images/about-me2.png';
+import ME from '../../../../assets/images/about-me.png';
 import * as style from './style';
 
 const About = () => {
