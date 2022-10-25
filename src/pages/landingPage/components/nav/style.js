@@ -151,17 +151,35 @@ export const LinkContainer = styled.div`
 		border-radius: 2rem;
 		/*Typography stuff*/
 		font-size: 1.1rem;
+		/*Manipulations stuff*/
+		transition: none;
 		/*Miscellaneous*/
 		gap: 0.8rem;
 		cursor: pointer;
 
+		& p {
+			/*Display stuff*/
+			display: none;
+			/*Positioning stuff*/
+			position: absolute;
+			left: 4rem;
+			/*Typography stuff*/
+			font-size: 1rem;
+			color: var(--color-primary);
+			/*Miscellaneous*/
+			white-space: nowrap;
+			backdrop-filter: blur(5px);
+		}
+
 		&:hover {
+			/*Box model stuff*/
 			background: var(--color-bg-light);
+
 			& p {
+				/*Display stuff*/
+				display: initial;
 				/*Typography stuff*/
 				color: var(--color-primary);
-				/*Manipulations stuff*/
-				opacity: 1;
 			}
 		}
 
@@ -170,21 +188,6 @@ export const LinkContainer = styled.div`
 			background: var(--color-primary-variant);
 			/*Typography stuff*/
 			color: var(--color-white);
-		}
-
-		& p {
-			/*Positioning stuff*/
-			position: absolute;
-			left: 4rem;
-			/*Typography stuff*/
-			font-size: 1rem;
-			color: var(--color-primary);
-			/*Manipulations stuff*/
-			transition: var(--transition);
-			opacity: 0;
-			/*Miscellaneous*/
-			white-space: nowrap;
-			backdrop-filter: blur(5px);
 		}
 	}
 `;
