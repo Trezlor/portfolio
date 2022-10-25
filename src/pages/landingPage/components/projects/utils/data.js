@@ -2,7 +2,7 @@ export const ProjectsData = [
 	{
 		title:
 			// "Vacation Advertisement"
-			'Feriedestinasjon - Reklame',
+			'Reklameside',
 		image: 'japan-ad.png',
 		link: 'https://sondrehal.github.io/feriedestinasjon/',
 		github: 'https://github.com/SondreHal/feriedestinasjon',
@@ -10,7 +10,7 @@ export const ProjectsData = [
 	{
 		title:
 			// "Solar System"
-			'Sol Systemet',
+			'Solsystemet',
 		image: 'solar-system.png',
 		link: 'https://knutcode.github.io/hostoppgave/',
 		github: 'https://github.com/knutcode/hostoppgave',

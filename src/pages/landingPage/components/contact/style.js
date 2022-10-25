@@ -14,7 +14,7 @@ export const Container = styled.div`
 		/*Display stuff*/
 		grid-template-columns: 1fr;
 		/*Box model stuff*/
-		margin-bottom: 10rem;
+		margin-bottom: 5rem;
 		/*Miscellaneous*/
 		gap: 2rem;
 	}
@@ -40,7 +40,7 @@ export const ContactOption = styled.article`
 	/*Box model stuff*/
 	padding: 1rem;
 	border: var(--border) solid var(--color-primary);
-	border-radius: var(--border-radius-primary);
+	border-radius: var(--border-radius);
 	background: var(--color-bg-variant);
 	/*Typography stuff*/
 	text-align: center;
@@ -134,6 +134,7 @@ export const Form = styled.form`
 	flex-direction: column;
 	/*Miscellaneous*/
 	gap: 1.2rem;
+	margin-bottom: 2rem;
 
 	& input,
 	textarea {
@@ -141,7 +142,7 @@ export const Form = styled.form`
 		width: 100%;
 		padding: 1.5rem;
 		border: var(--border) solid var(--color-primary-variant);
-		border-radius: var(--border-radius-primary);
+		border-radius: var(--border-radius);
 		background: var(--color-bg-transparent);
 		/*Typography stuff*/
 		font-size: 1rem;
@@ -155,6 +156,12 @@ export const Form = styled.form`
 		&:focus {
 			/*Box model stuff*/
 			border-color: var(--color-primary);
+		}
+	}
+
+	& button {
+		@media ${deviceSize.tablet} {
+			margin: 0 auto;
 		}
 	}
 `;

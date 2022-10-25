@@ -195,7 +195,7 @@ export const AboutMeCards = styled.div`
 export const AboutMeCard = styled.article`
 	/*Box model stuff*/
 	border: var(--border) solid var(--color-primary-variant);
-	border-radius: var(--border-radius-primary);
+	border-radius: var(--border-radius);
 	background: var(--color-bg-variant);
 	/*Typography stuff*/
 	text-align: center;

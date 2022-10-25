@@ -67,7 +67,7 @@ export const NavMobile = styled.nav`
 	gap: 0.8rem;
 	backdrop-filter: blur(10px);
 
-	& .link {
+	& a {
 		/*Display stuff*/
 		display: flex;
 		/*Box model stuff*/

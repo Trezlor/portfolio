@@ -16,7 +16,7 @@ export const Container = styled.div`
 
 		@media ${deviceSize.tablet} {
 			/*Box model stuff*/
-			width: 35rem;
+			width: min(35rem, 100%);
 		}
 	}
 `;
@@ -30,7 +30,7 @@ export const ProjectImage = styled.img`
 	/*Box model stuff*/
 	width: 85%;
 	margin: 0 auto 1rem;
-	border-radius: var(--border-radius-primary);
+	border-radius: var(--border-radius);
 `;
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -44,7 +44,7 @@ export const ProjectInfoContainer = styled.div`
 	margin: 0 auto 3rem;
 	padding: 2rem 4rem;
 	border: var(--border) solid var(--color-primary);
-	border-radius: var(--border-radius-primary);
+	border-radius: var(--border-radius);
 	background: var(--color-bg-variant);
 	/*Miscellaneous*/
 	backdrop-filter: blur(5px);
