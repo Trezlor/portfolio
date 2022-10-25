@@ -137,55 +137,54 @@ export const LinkContainer = styled.div`
 	flex-direction: column;
 	/*Box model stuff*/
 	padding: 0.7rem 0.5rem;
-	border-radius: 0.8rem;
-	background: rgba(0, 0, 0, 0.3);
+	border-radius: 2rem;
+	background: rgba(0, 0, 0, 0.2);
 	/*Miscellaneous*/
 	gap: 0.8rem;
 
-	& .link {
+	& a {
 		/*Display stuff*/
 		display: flex;
 		align-items: center;
-		/*Positioning stuff*/
-		position: relative;
 		/*Box model stuff*/
 		padding: 0.9rem;
-		border-radius: 0.8rem;
+		border-radius: 2rem;
 		/*Typography stuff*/
 		font-size: 1.1rem;
 		/*Miscellaneous*/
 		gap: 0.8rem;
 		cursor: pointer;
 
+		&:hover {
+			background: var(--color-bg-light);
+			& p {
+				/*Typography stuff*/
+				color: var(--color-primary);
+				/*Manipulations stuff*/
+				opacity: 1;
+			}
+		}
+
 		&.active {
+			/*Box model stuff*/
+			background: var(--color-primary-variant);
 			/*Typography stuff*/
 			color: var(--color-white);
-			/*Miscellaneous*/
-			box-shadow: 0px 0px 10px 2px var(--color-primary);
 		}
 
 		& p {
 			/*Positioning stuff*/
 			position: absolute;
-			left: 6rem;
+			left: 4rem;
 			/*Typography stuff*/
 			font-size: 1rem;
+			color: var(--color-primary);
 			/*Manipulations stuff*/
 			transition: var(--transition);
 			opacity: 0;
 			/*Miscellaneous*/
 			white-space: nowrap;
-		}
-	}
-
-	&:hover {
-		& .link {
-			& p {
-				/*Positioning stuff*/
-				left: 4rem;
-				/*Manipulations stuff*/
-				opacity: 1;
-			}
+			backdrop-filter: blur(5px);
 		}
 	}
 `;

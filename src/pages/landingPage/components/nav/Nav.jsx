@@ -14,7 +14,6 @@ const Navbar = () => {
 
 			<style.NavMobile>
 				<Link
-					className='link'
 					to='home'
 					spy={true}
 					smooth={true}
@@ -25,7 +24,6 @@ const Navbar = () => {
 				</Link>
 
 				<Link
-					className='link'
 					to='about'
 					spy={true}
 					smooth={true}
@@ -36,7 +34,6 @@ const Navbar = () => {
 				</Link>
 
 				<Link
-					className='link'
 					to='projects'
 					spy={true}
 					smooth={true}
@@ -47,7 +44,6 @@ const Navbar = () => {
 				</Link>
 
 				<Link
-					className='link'
 					to='contact'
 					spy={true}
 					smooth={true}
@@ -61,7 +57,6 @@ const Navbar = () => {
 			<style.NavDesktop>
 				<style.LinkContainer>
 					<Link
-						className='link'
 						to='home'
 						spy={true}
 						smooth={true}
@@ -73,7 +68,6 @@ const Navbar = () => {
 					</Link>
 
 					<Link
-						className='link'
 						to='about'
 						spy={true}
 						smooth={true}
@@ -85,7 +79,6 @@ const Navbar = () => {
 					</Link>
 
 					<Link
-						className='link'
 						to='projects'
 						spy={true}
 						smooth={true}
@@ -97,7 +90,6 @@ const Navbar = () => {
 					</Link>
 
 					<Link
-						className='link'
 						to='contact'
 						spy={true}
 						smooth={true}
