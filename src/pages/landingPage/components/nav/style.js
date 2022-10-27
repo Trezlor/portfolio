@@ -213,17 +213,35 @@ export const LinkContainer = styled.div`
 		border-radius: 2rem;
 		/*Typography stuff*/
 		font-size: 1.3rem;
+		/*Manipulations stuff*/
+		transition: none;
 		/*Miscellaneous*/
 		gap: 0.8rem;
 		cursor: pointer;
 
+		& p {
+			/*Display stuff*/
+			display: none;
+			/*Positioning stuff*/
+			position: absolute;
+			left: 4rem;
+			/*Typography stuff*/
+			font-size: 1rem;
+			color: var(--color-primary);
+			/*Miscellaneous*/
+			white-space: nowrap;
+			backdrop-filter: blur(5px);
+		}
+
 		&:hover {
+			/*Box model stuff*/
 			background: var(--color-bg-light);
+
 			& p {
+				/*Display stuff*/
+				display: initial;
 				/*Typography stuff*/
 				color: var(--color-primary);
-				/*Manipulations stuff*/
-				opacity: 1;
 			}
 		}
 
