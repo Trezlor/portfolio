@@ -7,58 +7,72 @@ import { deviceSize } from '../../../../utils/deviceSize';
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 export const ThemeToggleButton = styled.div`
+	/*Positioning stuff*/
 	position: absolute;
 
 	& label {
-		cursor: pointer;
+		/*Display stuff*/
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		/*Box model stuff*/
 		padding: 15px;
+		/*Miscellaneous*/
+		cursor: pointer;
 
 		& span {
+			/*Display stuff*/
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			/*Positioning stuff*/
 			position: relative;
+			/*Box model stuff*/
 			width: 50px;
 			height: 26px;
 			border: var(--border) solid var(--color-primary);
 			border-radius: 15px;
+			/*Manipulations stuff*/
 			transition: transform 0.3s;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
+			/*Miscellaneous*/
 			padding-inline: 0.3rem;
 
 			&::before,
 			&::after {
+				/*Display stuff*/
 				content: '';
+				/*Positioning stuff*/
 				position: absolute;
 			}
 
 			&::before {
+				/*Positioning stuff*/
 				left: 1px;
 				top: 1px;
-				height: calc(100% - 2px);
-				aspect-ratio: 1/1;
-				background: var(--color-primary);
-				border-radius: 50%;
 				z-index: 1;
+				/*Box model stuff*/
+				height: calc(100% - 2px);
+				border-radius: 50%;
+				background: var(--color-primary);
+				/*Manipulations stuff*/
 				transition: transform 0.3s;
+				/*Miscellaneous*/
+				aspect-ratio: 1/1;
 			}
 		}
 	}
 
-	& [type='checkbox']:checked + label span {
-		background: grey;
-	}
-
 	& [type='checkbox']:checked + label span::before {
+		/*Manipulations stuff*/
 		transform: translateX(24px);
 	}
 
 	& [type='checkbox']:checked + label span::after {
+		/*Positioning stuff*/
+		left: 8px;
+		/*Box model stuff*/
 		width: 14px;
 		height: 14px;
-		left: 8px;
 		background-size: 14px 14px;
 	}
 `;
@@ -203,6 +217,7 @@ export const LinkContainer = styled.div`
 	background: rgba(0, 0, 0, 0.2);
 	/*Miscellaneous*/
 	gap: 0.8rem;
+	/* transition: var(--transition); */
 
 	& a {
 		/*Display stuff*/
@@ -214,7 +229,6 @@ export const LinkContainer = styled.div`
 		/*Typography stuff*/
 		font-size: 1.3rem;
 		/*Manipulations stuff*/
-		transition: none;
 		/*Miscellaneous*/
 		gap: 0.8rem;
 		cursor: pointer;
@@ -242,6 +256,8 @@ export const LinkContainer = styled.div`
 				display: initial;
 				/*Typography stuff*/
 				color: var(--color-primary);
+				/*Manipulations stuff*/
+				opacity: 1;
 			}
 		}
 

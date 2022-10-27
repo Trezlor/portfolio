@@ -123,4 +123,19 @@ export const MeImg = styled.div`
 	/*Miscellaneous*/
 	margin-inline: auto;
 	overflow: hidden;
+
+	& img {
+		/*Miscellaneous*/
+		mask-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 1),
+			rgba(0, 0, 0, 1),
+			rgba(0, 0, 0, 1),
+			rgba(0, 0, 0, 1),
+			rgba(0, 0, 0, 1),
+			rgba(0, 0, 0, 1),
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.3)
+		);
+	}
 `;
