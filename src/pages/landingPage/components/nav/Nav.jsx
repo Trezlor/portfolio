@@ -1,18 +1,78 @@
+import { useEffect } from 'react';
 import { AiFillHome } from 'react-icons/ai';
 import {
 	BsFillPersonLinesFill,
+	BsFillSunFill,
 	BsFillTelephoneFill,
 } from 'react-icons/bs';
+import { FaMoon } from 'react-icons/fa';
 import { ImCogs } from 'react-icons/im';
-
-import React from 'react';
 import { Link } from 'react-scroll';
 import Socials from './components/Socials';
 import * as style from './style';
 
 const Navbar = () => {
+	// LOCAL STORAGE FOR CHECKBOX
+	function save() {
+		let checkbox = document.getElementById('themeToggle');
+		localStorage.setItem('themeToggle', checkbox.checked);
+	}
+
+	function load() {
+		let checked = JSON.parse(
+			localStorage.getItem('themeToggle')
+		);
+		document.getElementById('themeToggle').checked = checked;
+	}
+
+	useEffect(() => {
+		load();
+	});
+
+	// LOCAL STORAGE FOR COLOR THEME
+	function isLight() {
+		return localStorage.getItem('light-mode');
+	}
+
+	function toggleRootClass() {
+		document
+			.querySelector(':root')
+			.classList.toggle('light');
+	}
+
+	function toggleLocalStorageItem() {
+		if (isLight()) {
+			localStorage.removeItem('light-mode');
+		} else {
+			localStorage.setItem('light-mode', 'set');
+		}
+	}
+
+	if (isLight()) {
+		toggleRootClass();
+	}
+
 	return (
 		<>
+			<style.ThemeToggleButton>
+				<input
+					type='checkbox'
+					id='themeToggle'
+					style={{ display: 'none' }}
+					onClick={() => {
+						toggleLocalStorageItem();
+						toggleRootClass();
+						save();
+					}}
+				/>
+				<label for='themeToggle'>
+					<span>
+						<BsFillSunFill className='sun' />
+						<FaMoon className='moon' />
+					</span>
+				</label>
+			</style.ThemeToggleButton>
+
 			<Socials />
 
 			<style.NavMobile>

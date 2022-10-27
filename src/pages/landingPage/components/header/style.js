@@ -59,7 +59,7 @@ export const HoverCard = styled.div`
 	padding: 0.5em;
 	border: var(--border) solid var(--color-primary);
 	border-radius: 0.5rem;
-	background: var(--color-bg-transparent);
+	/* background: var(--color-bg-transparent); */
 	/*Typography stuff*/
 	font-size: 0.8rem;
 	/*Manipulations stuff*/

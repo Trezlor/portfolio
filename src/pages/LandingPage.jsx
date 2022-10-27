@@ -13,6 +13,7 @@ const LandingPage = () => {
 
 	return (
 		<>
+			<Navbar />
 			<div id='tiles'>
 				{Array.from(Array(createTiles), (index, key) => {
 					return (
@@ -21,7 +22,6 @@ const LandingPage = () => {
 				})}
 			</div>
 			<Header />
-			<Navbar />
 			<About />
 			<Projects />
 			<Contact />

@@ -3,6 +3,68 @@ import { deviceSize } from '../../../../utils/deviceSize';
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 //
+//    LIGHT & DARK THEME TOGGLE BUTTON
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+export const ThemeToggleButton = styled.div`
+	position: absolute;
+
+	& label {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 15px;
+
+		& span {
+			position: relative;
+			width: 50px;
+			height: 26px;
+			border: var(--border) solid var(--color-primary);
+			border-radius: 15px;
+			transition: transform 0.3s;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding-inline: 0.3rem;
+
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+			}
+
+			&::before {
+				left: 1px;
+				top: 1px;
+				height: calc(100% - 2px);
+				aspect-ratio: 1/1;
+				background: var(--color-primary);
+				border-radius: 50%;
+				z-index: 1;
+				transition: transform 0.3s;
+			}
+		}
+	}
+
+	& [type='checkbox']:checked + label span {
+		background: grey;
+	}
+
+	& [type='checkbox']:checked + label span::before {
+		transform: translateX(24px);
+	}
+
+	& [type='checkbox']:checked + label span::after {
+		width: 14px;
+		height: 14px;
+		left: 8px;
+		background-size: 14px 14px;
+	}
+`;
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//
 //    SOCIALS
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -150,7 +212,7 @@ export const LinkContainer = styled.div`
 		padding: 0.9rem;
 		border-radius: 2rem;
 		/*Typography stuff*/
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 		/*Miscellaneous*/
 		gap: 0.8rem;
 		cursor: pointer;
@@ -175,7 +237,7 @@ export const LinkContainer = styled.div`
 		& p {
 			/*Positioning stuff*/
 			position: absolute;
-			left: 4rem;
+			left: 4.5rem;
 			/*Typography stuff*/
 			font-size: 1rem;
 			color: var(--color-primary);
