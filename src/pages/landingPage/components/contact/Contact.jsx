@@ -11,29 +11,20 @@ const Contact = () => {
 	const sendEmail = (e) => {
 		e.preventDefault();
 
-		emailjs
-			.sendForm(
-				'service_pe1wcx5',
-				'template_lp0tj9w',
-				form.current,
-				'q0E_SlrDXBX5jbt8i'
-			)
-			.then(
-				(result) => {
-					console.log(result.text);
-				},
-				(error) => {
-					console.log(error.text);
-				}
-			);
+		emailjs.sendForm('service_pe1wcx5', 'template_lp0tj9w', form.current, 'q0E_SlrDXBX5jbt8i').then(
+			(result) => {
+				console.log(result.text);
+			},
+			(error) => {
+				console.log(error.text);
+			}
+		);
 
 		e.target.reset();
 	};
 
-	const [activeCopiedPhone, setActiveCopiedPhone] =
-		useState('');
-	const [activeCopiedEmail, setActiveCopiedEmail] =
-		useState('');
+	const [activeCopiedPhone, setActiveCopiedPhone] = useState('');
+	const [activeCopiedEmail, setActiveCopiedEmail] = useState('');
 
 	return (
 		<section id='contact'>
@@ -50,9 +41,7 @@ const Contact = () => {
 				<style.ContactOptions>
 					<style.ContactOption
 						onClick={() => {
-							navigator.clipboard.writeText(
-								'+47 971 416 88'
-							);
+							navigator.clipboard.writeText('+47 971 416 88');
 							setActiveCopiedPhone('copied');
 							setTimeout(() => {
 								setActiveCopiedPhone('');
@@ -67,13 +56,7 @@ const Contact = () => {
 							</h4>
 						</style.ContactOptionHeader>
 						<h5>+47 971 41 688</h5>
-						<p
-							className={
-								activeCopiedPhone === 'copied'
-									? 'active'
-									: ''
-							}
-						>
+						<p className={activeCopiedPhone === 'copied' ? 'active' : ''}>
 							Kopiert
 							{/* Copied! */}
 						</p>
@@ -81,9 +64,7 @@ const Contact = () => {
 
 					<style.ContactOption
 						onClick={() => {
-							navigator.clipboard.writeText(
-								'sondre-h@hotmail.com'
-							);
+							navigator.clipboard.writeText('sondre-h@hotmail.com');
 							setActiveCopiedEmail('copied');
 							setTimeout(() => {
 								setActiveCopiedEmail('');
@@ -95,13 +76,7 @@ const Contact = () => {
 							<h4>Email</h4>
 						</style.ContactOptionHeader>
 						<h5>sondre-h@hotmail.com</h5>
-						<p
-							className={
-								activeCopiedEmail === 'copied'
-									? 'active'
-									: ''
-							}
-						>
+						<p className={activeCopiedEmail === 'copied' ? 'active' : ''}>
 							Kopiert
 							{/* Copied! */}
 						</p>
@@ -124,7 +99,10 @@ const Contact = () => {
 						</style.ContactOption>
 					</a>
 				</style.ContactOptions>
-				<style.Form ref={form} onSubmit={sendEmail}>
+				<style.Form
+					ref={form}
+					onSubmit={sendEmail}
+				>
 					<input
 						type='text'
 						name='name'

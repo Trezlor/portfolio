@@ -25,17 +25,16 @@ const About = () => {
 
 			<style.Container className='container'>
 				<style.AboutMeImg>
-					<img src={ME} alt='me' />
+					<img
+						src={ME}
+						alt='me'
+					/>
 				</style.AboutMeImg>
 
 				<style.AboutMeInfoContainer>
 					<style.AboutMeCards>
 						<style.AboutMeCard
-							className={
-								activeTab === 'coding'
-									? 'active'
-									: ''
-							}
+							className={activeTab === 'coding' ? 'active' : ''}
 							onClick={() => {
 								setActiveTab('coding');
 								setActiveText('codingText');
@@ -57,11 +56,7 @@ const About = () => {
 						</style.AboutMeCard>
 
 						<style.AboutMeCard
-							className={
-								activeTab === 'skills'
-									? 'active'
-									: ''
-							}
+							className={activeTab === 'skills' ? 'active' : ''}
 							onClick={() => {
 								setActiveTab('skills');
 								setActiveText('skillsText');
@@ -83,11 +78,7 @@ const About = () => {
 						</style.AboutMeCard>
 
 						<style.AboutMeCard
-							className={
-								activeTab === 'hobbies'
-									? 'active'
-									: ''
-							}
+							className={activeTab === 'hobbies' ? 'active' : ''}
 							onClick={() => {
 								setActiveTab('hobbies');
 								setActiveText('hobbiesText');
@@ -106,33 +97,17 @@ const About = () => {
 						</style.AboutMeCard>
 					</style.AboutMeCards>
 
-					<p
-						className={
-							activeText === 'codingText'
-								? 'activeText info'
-								: 'info'
-						}
-					>
+					<p className={activeText === 'codingText' ? 'activeText info' : 'info'}>
 						{/* I have a big fascination with programming, and have been learning how to
 						code for about 6 months! I love a challenge and strive to learn new coding
 						skills. My current skills involves HTML, CSS, Javascript & React. */}
-						Jeg har stor fascinasjon for frontend
-						programmering, det å realisere koden man
-						skriver er veldig artig. Er lærevillig og
-						tar en utfordring på strak arm. Jeg er
-						for det meste glad i css styling og å
-						jobbe med javascript, og syns alltid det
-						er gøy å lære nye lettere måter å jobbe
-						på.
+						Jeg har stor fascinasjon for frontend programmering, det å realisere koden man skriver
+						er veldig artig. Er lærevillig og tar en utfordring på strak arm. Jeg er for det meste
+						glad i css styling og å jobbe med javascript, og syns alltid det er gøy å lære nye
+						lettere måter å jobbe på.
 					</p>
 
-					<style.AboutMeSkills
-						className={
-							activeText === 'skillsText'
-								? 'activeText info'
-								: 'info'
-						}
-					>
+					<style.AboutMeSkills className={activeText === 'skillsText' ? 'activeText info' : 'info'}>
 						<div className='skill_scale'>
 							<p>
 								{/* Novice */}
@@ -174,30 +149,19 @@ const About = () => {
 						</div>
 					</style.AboutMeSkills>
 
-					<p
-						className={
-							activeText === 'hobbiesText'
-								? 'activeText info'
-								: 'info'
-						}
-					>
+					<p className={activeText === 'hobbiesText' ? 'activeText info' : 'info'}>
 						{/* My biggest hobby is gaming, and has been ever since i was a kid. Some of the
 						games are League of Legends, Apex, Overwatch and Valorant. Gaming has taught
 						me many things, such as risk-taking, patience, problem solving,
 						concentration, critical thinking and the value of working together with
 						others. */}
-						På fritiden liker jeg å game, og har
-						holdt på med det så lenge jeg kan huske.
-						Et par av spillene jeg liker å holde på
-						med er League of Legends, Overwatch og
-						Valorant. Er også glad i hjernetrim og
-						skrekk-spill.
+						På fritiden liker jeg å game, og har holdt på med det så lenge jeg kan huske. Et par
+						av spillene jeg liker å holde på med er League of Legends, Overwatch og Valorant. Er
+						også glad i hjernetrim og skrekk-spill.
 						<br style={{ marginBottom: '1rem' }} />
-						Jeg har lært mye fra gaming, som
-						risikotagning, tålmodighet,
-						problemløsning, være konsentrert, ha
-						kritisk tenkning og forståelse for hvor
-						bra det kan være å jobbe som et team.
+						Jeg har lært mye fra gaming, som risikotagning, tålmodighet, problemløsning, være
+						konsentrert, ha kritisk tenkning og forståelse for hvor bra det kan være å jobbe som
+						et team.
 					</p>
 
 					<a

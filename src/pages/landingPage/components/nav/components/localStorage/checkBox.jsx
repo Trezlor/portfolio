@@ -4,8 +4,6 @@ export function save() {
 }
 
 export function load() {
-	let checked = JSON.parse(
-		localStorage.getItem('themeToggle')
-	);
+	let checked = JSON.parse(localStorage.getItem('themeToggle'));
 	document.getElementById('themeToggle').checked = checked;
 }

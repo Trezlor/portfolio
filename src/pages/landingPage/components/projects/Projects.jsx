@@ -23,11 +23,7 @@ const Projects = () => {
 			<style.Container className='container'>
 				<Swiper
 					className='container'
-					modules={[
-						Pagination,
-						Navigation,
-						EffectFlip,
-					]}
+					modules={[Pagination, Navigation, EffectFlip]}
 					navigation={true}
 					loop={true}
 					grabCursor={true}
@@ -36,49 +32,43 @@ const Projects = () => {
 					pagination={{ clickable: true }}
 				>
 					<article>
-						{ProjectsData.map(
-							(
-								{ title, image, github, link },
-								key
-							) => {
-								return (
-									<SwiperSlide key={key}>
-										<a
-											href={link}
-											target='_blank'
-											rel='noreferrer noopener'
-										>
-											<style.ProjectImage
-												src={require('./images/' +
-													image)}
-												alt='Project preview'
-											/>
-										</a>
+						{ProjectsData.map(({ title, image, github, link }, key) => {
+							return (
+								<SwiperSlide key={key}>
+									<a
+										href={link}
+										target='_blank'
+										rel='noreferrer noopener'
+									>
+										<style.ProjectImage
+											src={require('./images/' + image)}
+											alt='Project preview'
+										/>
+									</a>
 
-										<style.ProjectInfoContainer>
-											<h3>{title}</h3>
-											<style.ProjectLinks>
-												<a
-													href={github}
-													target='_blank'
-													rel='noreferrer noopener'
-												>
-													Github
-												</a>
-												<a
-													href={link}
-													target='_blank'
-													rel='noreferrer noopener'
-												>
-													{/* Webpage */}
-													Nettside
-												</a>
-											</style.ProjectLinks>
-										</style.ProjectInfoContainer>
-									</SwiperSlide>
-								);
-							}
-						)}
+									<style.ProjectInfoContainer>
+										<h3>{title}</h3>
+										<style.ProjectLinks>
+											<a
+												href={github}
+												target='_blank'
+												rel='noreferrer noopener'
+											>
+												Github
+											</a>
+											<a
+												href={link}
+												target='_blank'
+												rel='noreferrer noopener'
+											>
+												{/* Webpage */}
+												Nettside
+											</a>
+										</style.ProjectLinks>
+									</style.ProjectInfoContainer>
+								</SwiperSlide>
+							);
+						})}
 					</article>
 				</Swiper>
 			</style.Container>

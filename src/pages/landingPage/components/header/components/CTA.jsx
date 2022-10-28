@@ -14,7 +14,10 @@ const CTA = () => {
 					{/* Download CV */}
 					Åpne CV
 				</a>
-				<a href='#contact' className='btn btn-primary'>
+				<a
+					href='#contact'
+					className='btn btn-primary'
+				>
 					{/* Let's Talk */}
 					Kom i kontakt
 				</a>
