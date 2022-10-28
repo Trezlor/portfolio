@@ -3,6 +3,68 @@ import { deviceSize } from '../../../../utils/deviceSize';
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 //
+//    HAMBURGER MENU
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+export const burgerMenuContainer = styled.div`
+	width: 2rem;
+	aspect-ratio: 1/1;
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+`;
+export const burgerMenu = styled.div`
+	width: 2rem;
+	height: 0.3rem;
+	border-radius: 2rem;
+	position: absolute;
+
+	&.open {
+		&:before,
+		:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: var(--color-white);
+		}
+
+		&:before {
+			transform: rotate(45deg) scaleX(1) translateZ(0);
+		}
+
+		&:after {
+			transform: rotate(-45deg) scaleX(1) translateZ(0);
+		}
+	}
+
+	&.closed {
+		background: var(--color-white);
+
+		&:before,
+		:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: var(--color-white);
+		}
+
+		&:before {
+			bottom: 0.5rem;
+			transform: rotate(0) scaleX(1) translateZ(0);
+		}
+
+		&:after {
+			top: 0.5rem;
+
+			transform: rotate(-0) scaleX(1) translateZ(0);
+		}
+	}
+`;
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//
 //    LIGHT & DARK THEME TOGGLE BUTTON
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
