@@ -15,8 +15,7 @@ const Navbar = () => {
 		load();
 	});
 
-	// LOCAL STORAGE FOR COLOR THEME
-
+	// IF LOCAL STORAGE HAS LIGHT MODE COLOR THEME, SETS COLOR THEME TO LIGHT MODE
 	if (isLight()) {
 		toggleRootClass();
 	}
