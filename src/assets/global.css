@@ -56,17 +56,18 @@
 
 :root:not(.light) .moon {
 	display: inline-block;
-	color: var(--color-white);
+	color: var(--color-light);
 }
 
 :root.light .sun {
 	display: inline-block;
-	color: var(--color-white);
+	color: var(--color-light);
 }
 
 html {
 	/*Miscellaneous*/
 	scroll-behavior: smooth;
+	transition: var(--transition);
 }
 
 ::-webkit-scrollbar {
