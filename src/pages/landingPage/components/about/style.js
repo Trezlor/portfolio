@@ -336,11 +336,14 @@ export const AboutMeSkills = styled.div`
 			height: 0.8rem;
 			border-radius: 0.25rem;
 			background: var(--color-bg-variant);
+			display: flex;
+			align-items: center;
 
 			& .skill_bar_html {
 				/*Box model stuff*/
-				width: 40%;
-				height: 100%;
+				width: calc(40% - 2px);
+				margin-left: 1px;
+				height: calc(100% - 2px);
 				border-radius: inherit;
 				background: linear-gradient(
 					90deg,
@@ -353,8 +356,9 @@ export const AboutMeSkills = styled.div`
 
 			& .skill_bar_css {
 				/*Box model stuff*/
-				width: 55%;
-				height: 100%;
+				width: calc(55% - 2px);
+				margin-left: 1px;
+				height: calc(100% - 2px);
 				border-radius: inherit;
 				background: linear-gradient(
 					90deg,
@@ -367,8 +371,9 @@ export const AboutMeSkills = styled.div`
 
 			& .skill_bar_js {
 				/*Box model stuff*/
-				width: 30%;
-				height: 100%;
+				width: calc(30% - 2px);
+				margin-left: 1px;
+				height: calc(100% - 2px);
 				border-radius: inherit;
 				background: linear-gradient(
 					90deg,
@@ -381,8 +386,9 @@ export const AboutMeSkills = styled.div`
 
 			& .skill_bar_react {
 				/*Box model stuff*/
-				width: 50%;
-				height: 100%;
+				width: calc(50% - 2px);
+				margin-left: 1px;
+				height: calc(100% - 2px);
 				border-radius: inherit;
 				background: linear-gradient(
 					90deg,

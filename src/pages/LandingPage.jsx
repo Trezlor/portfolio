@@ -17,7 +17,10 @@ const LandingPage = () => {
 			<div id='tiles'>
 				{Array.from(Array(createTiles), (index, key) => {
 					return (
-						<div className='tile' key={key}></div>
+						<div
+							className='tile'
+							key={key}
+						></div>
 					);
 				})}
 			</div>

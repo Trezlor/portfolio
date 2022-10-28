@@ -8,7 +8,7 @@ import { deviceSize } from '../../../../utils/deviceSize';
 ////////////////////////////////////////////////////////////////////////////////////////////
 export const ThemeToggleButton = styled.div`
 	/*Positioning stuff*/
-	position: absolute;
+	position: fixed;
 
 	& label {
 		/*Display stuff*/
@@ -214,7 +214,6 @@ export const LinkContainer = styled.div`
 	/*Box model stuff*/
 	padding: 0.7rem 0.5rem;
 	border-radius: 2rem;
-	background: rgba(0, 0, 0, 0.2);
 	/*Miscellaneous*/
 	gap: 0.8rem;
 	/* transition: var(--transition); */
@@ -249,7 +248,7 @@ export const LinkContainer = styled.div`
 
 		&:hover {
 			/*Box model stuff*/
-			background: var(--color-bg-light);
+			background: var(--color-bg-contrast);
 
 			& p {
 				/*Display stuff*/

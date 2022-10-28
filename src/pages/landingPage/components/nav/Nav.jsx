@@ -1,52 +1,21 @@
 import { useEffect } from 'react';
 import { AiFillHome } from 'react-icons/ai';
-import {
-	BsFillPersonLinesFill,
-	BsFillSunFill,
-	BsFillTelephoneFill,
-} from 'react-icons/bs';
+import { BsFillPersonLinesFill, BsFillSunFill, BsFillTelephoneFill } from 'react-icons/bs';
 import { FaMoon } from 'react-icons/fa';
 import { ImCogs } from 'react-icons/im';
 import { Link } from 'react-scroll';
+import { load, save } from './components/localStorage/checkBox';
+import { isLight, toggleLocalStorageItem, toggleRootClass } from './components/localStorage/themeColor';
 import Socials from './components/Socials';
 import * as style from './style';
 
 const Navbar = () => {
-	// LOCAL STORAGE FOR CHECKBOX
-	function save() {
-		let checkbox = document.getElementById('themeToggle');
-		localStorage.setItem('themeToggle', checkbox.checked);
-	}
-
-	function load() {
-		let checked = JSON.parse(
-			localStorage.getItem('themeToggle')
-		);
-		document.getElementById('themeToggle').checked = checked;
-	}
-
+	// LOADS LOCAL STORAGE FOR CHECKBOX ON PAGE LOAD
 	useEffect(() => {
 		load();
 	});
 
 	// LOCAL STORAGE FOR COLOR THEME
-	function isLight() {
-		return localStorage.getItem('light-mode');
-	}
-
-	function toggleRootClass() {
-		document
-			.querySelector(':root')
-			.classList.toggle('light');
-	}
-
-	function toggleLocalStorageItem() {
-		if (isLight()) {
-			localStorage.removeItem('light-mode');
-		} else {
-			localStorage.setItem('light-mode', 'set');
-		}
-	}
 
 	if (isLight()) {
 		toggleRootClass();
