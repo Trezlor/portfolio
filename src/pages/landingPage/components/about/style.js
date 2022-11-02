@@ -11,7 +11,7 @@ const extendHtml = keyframes`
 						width: 0%;
 					}
 					100% {
-						width: 40%;
+						width: calc(40% - 2px);
 					}
 `;
 
@@ -20,7 +20,7 @@ const extendCss = keyframes`
 						width: 0%;
 					}
 					100% {
-						width: 55%;
+						width: calc(55% - 2px);
 					}
 `;
 
@@ -29,7 +29,7 @@ const extendJs = keyframes`
 						width: 0%;
 					}
 					100% {
-						width: 30%;
+						width: calc(30% - 2px);
 					}
 `;
 
@@ -38,7 +38,7 @@ const extendReact = keyframes`
 						width: 0%;
 					}
 					100% {
-						width: 50%;
+						width: calc(50% - 2px);
 					}
 `;
 
