@@ -1,7 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { AiFillHome } from 'react-icons/ai';
-import { BsFillPersonLinesFill, BsFillSunFill, BsFillTelephoneFill } from 'react-icons/bs';
-import { FaMoon } from 'react-icons/fa';
+import {
+	BsFillPersonLinesFill,
+	// BsFillSunFill,
+	BsFillTelephoneFill,
+} from 'react-icons/bs';
+// import { FaMoon } from 'react-icons/fa';
 import { ImCogs } from 'react-icons/im';
 import { Link } from 'react-scroll';
 // import { load, save } from './components/localStorage/checkBox';

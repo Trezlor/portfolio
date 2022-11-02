@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import ME from '../../../../assets/images/sondre.png';
 import CTA from './components/CTA';
 import letterArray from './components/letterArray';
 import * as style from './style';
