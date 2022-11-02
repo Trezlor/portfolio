@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { AiFillHome } from 'react-icons/ai';
 import {
 	BsFillPersonLinesFill,
@@ -8,13 +7,13 @@ import {
 // import { FaMoon } from 'react-icons/fa';
 import { ImCogs } from 'react-icons/im';
 import { Link } from 'react-scroll';
+import BurgerMenu from './components/BurgerMenu';
 // import { load, save } from './components/localStorage/checkBox';
 // import { isLight,toggleLocalStorageItem, toggleRootClass } from './components/localStorage/themeColor';
 import Socials from './components/Socials';
 import * as style from './style';
 
 const Navbar = () => {
-	const [navOpen, setNavOpen] = useState('closed');
 	// LOADS LOCAL STORAGE FOR CHECKBOX ON PAGE LOAD
 	// useEffect(() => {
 	// 	load();
@@ -46,13 +45,7 @@ const Navbar = () => {
 				</label>
 			</style.ThemeToggleButton> */}
 
-			<style.burgerMenuContainer
-				onClick={() => {
-					if (navOpen === 'closed' ? setNavOpen('open') : setNavOpen('closed'));
-				}}
-			>
-				<style.burgerMenu className={navOpen} />
-			</style.burgerMenuContainer>
+			<BurgerMenu />
 
 			<Socials />
 

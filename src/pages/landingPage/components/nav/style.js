@@ -1,5 +1,124 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { deviceSize } from '../../../../utils/deviceSize';
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    KEYFRAMES ANIMATIONS
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+const menuOpenLine1 = keyframes`
+50% {
+	transform: none;
+	width: 0;
+	top: 1rem;
+}
+51% {
+	transform: rotate(-45deg) scaleX(1) translateZ(0);
+	width: 0;
+}
+100% {
+	transform: rotate(-45deg) scaleX(1) translateZ(0);
+	width: 100%;
+	top: 1rem;
+
+}
+`;
+
+const menuOpenLine2 = keyframes`
+50% {
+	width: 0;
+
+}
+100% {
+	width: 0;
+
+}
+`;
+
+const menuOpenLine3 = keyframes`
+50% {
+transform: none;
+width: 0;
+}
+51% {
+	transform: rotate(45deg) scaleX(1) translateZ(0);
+	width: 0;
+}
+100% {
+	transform: rotate(45deg) scaleX(1) translateZ(0);
+	width: 100%;
+	top: 1rem;
+}
+`;
+
+const menuCloseLine1 = keyframes`
+0%{
+transform: rotate(-45deg) scaleX(1) translateZ(0);
+width: 100%;
+top: 1rem;
+}
+50% {
+transform: rotate(-45deg) scaleX(1) translateZ(0);
+width: 0;
+top: 1rem;
+}
+51% {
+	transform: rotate(0);
+	width: 0;
+	top: 0.5rem;
+}
+100% {
+	transform: rotate(0);
+	width: 100%;
+	top: 0.5rem;
+}
+`;
+
+const menuCloseLine2 = keyframes`
+0%{
+width: 0;
+top: 1rem;
+}
+50% {
+width: 0;
+top: 1rem;
+}
+51% {
+transform: rotate(0);
+width: 0;
+top: 1rem;
+
+}
+100% {
+transform: rotate(0);
+width: 100%;
+}
+`;
+
+const menuCloseLine3 = keyframes`
+0% {
+	transform: rotate(45deg) scaleX(1) translateZ(0);
+	width: 100%;
+	top: 1rem;
+}
+50% {
+transform: rotate(45deg) scaleX(1) translateZ(0);
+width: 0;
+top: 1rem;
+}
+51% {
+	transform: rotate(0);
+	width: 0;
+	top: 1.5rem;
+
+}
+100% {
+	transform: rotate(0);
+	width: 100%;
+	top: 1.5rem;
+
+}
+`;
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -10,56 +129,84 @@ export const burgerMenuContainer = styled.div`
 	width: 2rem;
 	aspect-ratio: 1/1;
 	position: absolute;
+	display: flex;
 	top: 1rem;
 	left: 1rem;
+	justify-content: center;
 `;
-export const burgerMenu = styled.div`
-	width: 2rem;
-	height: 0.3rem;
+
+export const line1 = styled.div`
+	width: 1.7rem;
+	height: 0.2rem;
 	border-radius: 2rem;
+	background: white;
 	position: absolute;
+	top: 0.5rem;
 
 	&.open {
-		&:before,
-		:after {
-			content: '';
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			background: var(--color-white);
-		}
-
-		&:before {
-			transform: rotate(45deg) scaleX(1) translateZ(0);
-		}
-
-		&:after {
-			transform: rotate(-45deg) scaleX(1) translateZ(0);
-		}
+		animation: ${menuOpenLine1} 0.2s forwards;
 	}
 
 	&.closed {
-		background: var(--color-white);
+		animation: ${menuCloseLine1} 0.2s forwards;
+	}
+`;
 
-		&:before,
-		:after {
-			content: '';
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			background: var(--color-white);
-		}
+export const line2 = styled.div`
+	width: 1.7rem;
+	height: 0.2rem;
+	border-radius: 2rem;
+	background: white;
+	position: absolute;
+	top: 1rem;
 
-		&:before {
-			bottom: 0.5rem;
-			transform: rotate(0) scaleX(1) translateZ(0);
-		}
+	&.open {
+		animation: ${menuOpenLine2} 0.2s forwards;
+	}
 
-		&:after {
-			top: 0.5rem;
+	&.closed {
+		animation: ${menuCloseLine2} 0.2s forwards;
+	}
+`;
 
-			transform: rotate(-0) scaleX(1) translateZ(0);
-		}
+export const line3 = styled.div`
+	width: 1.7rem;
+	height: 0.2rem;
+	border-radius: 2rem;
+	background: white;
+	position: absolute;
+	top: 1.5rem;
+
+	&.open {
+		animation: ${menuOpenLine3} 0.2s forwards;
+	}
+
+	&.closed {
+		animation: ${menuCloseLine3} 0.2s forwards;
+	}
+`;
+
+export const burgerMenu = styled.div`
+	width: 1.7rem;
+	height: 0.2rem;
+	border-radius: 2rem;
+	background: white;
+	position: absolute;
+	top: inherit;
+	transition: var(--transition);
+`;
+
+export const menu = styled.div`
+	position: absolute;
+	top: 3.8rem;
+	left: 0;
+	padding-inline: 1rem;
+	border: 1px solid white;
+	translate: calc(-100%);
+	transition: var(--transition);
+
+	&.open {
+		translate: initial;
 	}
 `;
 

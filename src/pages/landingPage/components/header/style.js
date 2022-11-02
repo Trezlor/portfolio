@@ -3,7 +3,7 @@ import { deviceSize } from '../../../../utils/deviceSize';
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 //
-//    KEYFRAMES
+//    KEYFRAMES ANIMATIONS
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 const tiltShaking = keyframes`
@@ -115,10 +115,7 @@ export const MeImg = styled.div`
 	margin-top: 4rem;
 	padding: 3rem 1.5rem 0 1.5rem;
 	border-radius: 0 10rem 0 0;
-	background: linear-gradient(
-		var(--color-primary),
-		transparent
-	);
+	background: linear-gradient(var(--color-primary), transparent);
 	/*Miscellaneous*/
 	margin-inline: auto;
 	overflow: hidden;
