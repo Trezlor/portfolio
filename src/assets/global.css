@@ -88,13 +88,7 @@ html {
 body {
 	/*Box model stuff*/
 	min-height: 400vh;
-	background: linear-gradient(
-		to right,
-		var(--color-g1),
-		var(--color-bg),
-		var(--color-bg),
-		var(--color-g2)
-	);
+	background: linear-gradient(to right, var(--color-g1), var(--color-bg), var(--color-bg), var(--color-g2));
 	background-size: 200%;
 	/*Typography stuff*/
 	font-family: 'Poppins', sans-serif;
@@ -262,7 +256,7 @@ img {
 }
 
 /* MEDIA QUERIES (TABLET DEVICES) */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1130px) {
 	.container {
 		width: var(--container-width-medium);
 	}
@@ -275,10 +269,7 @@ img {
 	#tiles {
 		height: calc(100% + 300px - 1px);
 
-		grid-template-columns: repeat(
-			auto-fit,
-			minmax(150px, 1fr)
-		);
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 		grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
 	}
 }
@@ -295,10 +286,7 @@ img {
 
 	#tiles {
 		height: calc(100% + 200px - 1px);
-		grid-template-columns: repeat(
-			auto-fit,
-			minmax(100px, 1fr)
-		);
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 		grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
 	}
 }

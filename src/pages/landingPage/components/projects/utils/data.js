@@ -3,7 +3,7 @@ export const ProjectsData = [
 		title:
 			// "Vacation Advertisement"
 			'Reklameside',
-		image: 'japan-ad.png',
+		image: 'https://ik.imagekit.io/sondre/tr:w-1230/Portfolio/japan.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667381960076',
 		link: 'https://sondrehal.github.io/feriedestinasjon/',
 		github: 'https://github.com/SondreHal/feriedestinasjon',
 	},
@@ -11,7 +11,7 @@ export const ProjectsData = [
 		title:
 			// "Solar System"
 			'Solsystemet',
-		image: 'solar-system.png',
+		image: 'https://ik.imagekit.io/sondre/tr:w-1230/Portfolio/solarsystem.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667381959799',
 		link: 'https://knutcode.github.io/hostoppgave/',
 		github: 'https://github.com/knutcode/hostoppgave',
 	},
@@ -19,7 +19,7 @@ export const ProjectsData = [
 		title:
 			// "Password Generator"
 			'Passord Generator',
-		image: 'password-generator.png',
+		image: 'https://ik.imagekit.io/sondre/tr:w-1230/Portfolio/passwordgenerator.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667383853770',
 		link: 'https://sondrehal.github.io/password-generator/',
 		github: 'https://github.com/SondreHal/password-generator',
 	},
@@ -27,7 +27,7 @@ export const ProjectsData = [
 		title:
 			// "To-do List"
 			'To-do Liste',
-		image: 'to-do-list.png',
+		image: 'https://ik.imagekit.io/sondre/tr:w-1230/Portfolio/todolist.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667383853872',
 		link: 'https://sondrehal.github.io/to-do/',
 		github: 'https://github.com/SondreHal/to-do',
 	},
@@ -35,7 +35,7 @@ export const ProjectsData = [
 		title:
 			// "Unit Converter"
 			'Enhet-Konverterer',
-		image: 'unit-converter.png',
+		image: 'https://ik.imagekit.io/sondre/tr:w-1230/Portfolio/unitconverter.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667383853712',
 		link: 'https://sondrehal.github.io/unit-converter/',
 		github: 'https://github.com/SondreHal/unit-converter',
 	},
@@ -43,13 +43,13 @@ export const ProjectsData = [
 		title:
 			// "Registration form"
 			'Registrasjons-skjema',
-		image: 'register.png',
+		image: 'https://ik.imagekit.io/sondre/tr:w-1230/Portfolio/signupform.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667383853870',
 		link: 'https://sondrehal.github.io/register/',
 		github: 'https://github.com/SondreHal/register',
 	},
 	{
 		title: 'Eightball',
-		image: 'eightball.png',
+		image: 'https://ik.imagekit.io/sondre/tr:w-1230/Portfolio/eightball.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667383854382',
 		link: 'https://sondrehal.github.io/eightball/',
 		github: 'https://github.com/SondreHal/eightball',
 	},
@@ -57,7 +57,7 @@ export const ProjectsData = [
 		title:
 			// "Collatz Calculator"
 			'Collatz Kalkulator',
-		image: 'collatz.png',
+		image: 'https://ik.imagekit.io/sondre/tr:w-1230/Portfolio/collatz.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667383854039',
 		link: 'https://sondrehal.github.io/collatz/',
 		github: 'https://github.com/SondreHal/collatz',
 	},
@@ -65,7 +65,7 @@ export const ProjectsData = [
 		title:
 			// "Random Pokemon Card"
 			'Tilfeldig Pokemon-Kort',
-		image: 'pokedex.png',
+		image: 'https://ik.imagekit.io/sondre/tr:w-1230/Portfolio/randompokemon.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667383854050',
 		link: 'https://sondrehal.github.io/pokedex/',
 		github: 'https://github.com/SondreHal/pokedex',
 	},

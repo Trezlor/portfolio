@@ -64,7 +64,7 @@ const Header = () => {
 
 					<style.MeImg>
 						<img
-							src={ME}
+							src='https://ik.imagekit.io/sondre/tr:w-416/Portfolio/sondre.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1667296671770'
 							alt='Sondre Halvorsen'
 						/>
 					</style.MeImg>

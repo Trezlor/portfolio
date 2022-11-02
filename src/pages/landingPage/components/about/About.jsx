@@ -26,7 +26,7 @@ const About = () => {
 			<style.Container className='container'>
 				<style.AboutMeImg>
 					<img
-						src={ME}
+						src='https://ik.imagekit.io/sondre/tr:w-448px/Portfolio/about-me.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1667296671962'
 						alt='me'
 					/>
 				</style.AboutMeImg>

@@ -69,15 +69,10 @@ export const Container = styled.div`
 ////////////////////////////////////////////////////////////////////////////////////////////
 export const AboutMeImg = styled.div`
 	/*Box model stuff*/
-	width: min(100%, 450px);
+	width: min(28rem, 100%);
 	border: 1px solid var(--color-primary);
 	border-radius: 1rem;
-	background: linear-gradient(
-		-45deg,
-		transparent,
-		var(--color-primary-variant),
-		transparent
-	);
+	background: linear-gradient(-45deg, transparent, var(--color-primary-variant), transparent);
 	/*Miscellaneous*/
 	aspect-ratio: 1/1;
 
@@ -85,12 +80,7 @@ export const AboutMeImg = styled.div`
 		/*Box model stuff*/
 		border: 1px solid var(--color-primary-variant);
 		border-radius: inherit;
-		background: linear-gradient(
-			-45deg,
-			transparent,
-			var(--color-primary-variant),
-			transparent
-		);
+		background: linear-gradient(-45deg, transparent, var(--color-primary-variant), transparent);
 		/*Manipulations stuff*/
 		transform: rotate(-8deg);
 		transition: var(--transition);
@@ -99,12 +89,7 @@ export const AboutMeImg = styled.div`
 
 		&:hover {
 			/*Box model stuff*/
-			background: linear-gradient(
-				-45deg,
-				transparent,
-				var(--color-primary),
-				transparent
-			);
+			background: linear-gradient(-45deg, transparent, var(--color-primary), transparent);
 			/*Manipulations stuff*/
 			transform: rotate(0);
 			/*Miscellaneous*/
@@ -345,11 +330,7 @@ export const AboutMeSkills = styled.div`
 				margin-left: 1px;
 				height: calc(100% - 2px);
 				border-radius: inherit;
-				background: linear-gradient(
-					90deg,
-					#e44d26,
-					#fb9344
-				);
+				background: linear-gradient(90deg, #e44d26, #fb9344);
 				/*Manipulations stuff*/
 				animation: ${extendHtml} 1s;
 			}
@@ -360,11 +341,7 @@ export const AboutMeSkills = styled.div`
 				margin-left: 1px;
 				height: calc(100% - 2px);
 				border-radius: inherit;
-				background: linear-gradient(
-					90deg,
-					#2965f1,
-					#59c8ff
-				);
+				background: linear-gradient(90deg, #2965f1, #59c8ff);
 				/*Manipulations stuff*/
 				animation: ${extendCss} 1s;
 			}
@@ -375,11 +352,7 @@ export const AboutMeSkills = styled.div`
 				margin-left: 1px;
 				height: calc(100% - 2px);
 				border-radius: inherit;
-				background: linear-gradient(
-					90deg,
-					#f7df1e,
-					#ffef79
-				);
+				background: linear-gradient(90deg, #f7df1e, #ffef79);
 				/*Manipulations stuff*/
 				animation: ${extendJs} 1s;
 			}
@@ -390,11 +363,7 @@ export const AboutMeSkills = styled.div`
 				margin-left: 1px;
 				height: calc(100% - 2px);
 				border-radius: inherit;
-				background: linear-gradient(
-					90deg,
-					#60d8f9,
-					#b6efff
-				);
+				background: linear-gradient(90deg, #60d8f9, #b6efff);
 				/*Manipulations stuff*/
 				animation: ${extendReact} 1s;
 			}

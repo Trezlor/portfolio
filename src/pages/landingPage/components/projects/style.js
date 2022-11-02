@@ -7,17 +7,9 @@ import { deviceSize } from '../../../../utils/deviceSize';
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 export const Container = styled.div`
-	/*Display stuff*/
-	display: flex;
-
-	& .container {
+	@media ${deviceSize.tablet} {
 		/*Box model stuff*/
-		width: 60rem;
-
-		@media ${deviceSize.tablet} {
-			/*Box model stuff*/
-			width: min(35rem, 100%);
-		}
+		width: min(35rem, 100%);
 	}
 `;
 
@@ -31,6 +23,10 @@ export const ProjectImage = styled.img`
 	width: 85%;
 	margin: 0 auto 1rem;
 	border-radius: var(--border-radius);
+
+	@media ${deviceSize.tablet} {
+		width: 100%;
+	}
 `;
 
 ////////////////////////////////////////////////////////////////////////////////////////////

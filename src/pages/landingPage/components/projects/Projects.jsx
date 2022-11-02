@@ -41,7 +41,7 @@ const Projects = () => {
 										rel='noreferrer noopener'
 									>
 										<style.ProjectImage
-											src={require('./images/' + image)}
+											src={image}
 											alt='Project preview'
 										/>
 									</a>
