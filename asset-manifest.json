@@ -1,25 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5fcd9dd1.css",
-    "main.js": "/portfolio/static/js/main.6d8e716f.js",
+    "main.css": "/portfolio/static/css/main.4df72d16.css",
+    "main.js": "/portfolio/static/js/main.ab4fd1d7.js",
     "static/media/about-me.png": "/portfolio/static/media/about-me.1519233e02c68339b864.png",
     "static/media/sondre.png": "/portfolio/static/media/sondre.4c72e7368c8d298c7a85.png",
-    "static/media/japan-ad.png": "/portfolio/static/media/japan-ad.239a4471cb3f7dc70542.png",
-    "static/media/solar-system.png": "/portfolio/static/media/solar-system.b2f6f3f6b8113ccd97d1.png",
-    "static/media/pokedex.png": "/portfolio/static/media/pokedex.57196ed86bc5db79c3d1.png",
     "static/media/cv.pdf": "/portfolio/static/media/cv.2fc131f1ea591bc2ebef.pdf",
-    "static/media/to-do-list.png": "/portfolio/static/media/to-do-list.53083582274d9c7bbca2.png",
-    "static/media/register.png": "/portfolio/static/media/register.38416ad436ed8998472e.png",
-    "static/media/eightball.png": "/portfolio/static/media/eightball.6ef0e9d52cd289732f4f.png",
-    "static/media/collatz.png": "/portfolio/static/media/collatz.d98bd951820a79f5f47f.png",
-    "static/media/password-generator.png": "/portfolio/static/media/password-generator.a93d56e0832b0b492be9.png",
-    "static/media/unit-converter.png": "/portfolio/static/media/unit-converter.826c1fd912e84fe1da69.png",
     "index.html": "/portfolio/index.html",
-    "main.5fcd9dd1.css.map": "/portfolio/static/css/main.5fcd9dd1.css.map",
-    "main.6d8e716f.js.map": "/portfolio/static/js/main.6d8e716f.js.map"
+    "main.4df72d16.css.map": "/portfolio/static/css/main.4df72d16.css.map",
+    "main.ab4fd1d7.js.map": "/portfolio/static/js/main.ab4fd1d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.5fcd9dd1.css",
-    "static/js/main.6d8e716f.js"
+    "static/css/main.4df72d16.css",
+    "static/js/main.ab4fd1d7.js"
   ]
 }
