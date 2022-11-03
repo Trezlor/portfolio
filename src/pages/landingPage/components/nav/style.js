@@ -7,116 +7,128 @@ import { deviceSize } from '../../../../utils/deviceSize';
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 const menuOpenLine1 = keyframes`
+0% {
+	transform: none;
+	width: 100%;
+	top: 0;
+}
 50% {
 	transform: none;
 	width: 0;
-	top: 1rem;
+	top: 0.5rem;
 }
 51% {
-	transform: rotate(-45deg) scaleX(1) translateZ(0);
+	transform: rotate(45deg);
 	width: 0;
+	top: 0.5rem;
 }
 100% {
-	transform: rotate(-45deg) scaleX(1) translateZ(0);
+	transform: rotate(45deg);
 	width: 100%;
-	top: 1rem;
-
+	top: 0.5rem;
 }
 `;
 
 const menuOpenLine2 = keyframes`
+0% {
+	width: 100%;
+	top: 0.5rem;
+}
 50% {
-	width: 0;
-
+	width: 0%;
+	top: 0.5rem;
 }
 100% {
-	width: 0;
-
+	width: 0%;
+	top: 0.5rem;
 }
 `;
 
 const menuOpenLine3 = keyframes`
-50% {
-transform: none;
-width: 0;
-}
-51% {
-	transform: rotate(45deg) scaleX(1) translateZ(0);
-	width: 0;
-}
-100% {
-	transform: rotate(45deg) scaleX(1) translateZ(0);
+0% {
+	transform: none;
 	width: 100%;
 	top: 1rem;
+}
+50% {
+	transform: none;
+	width: 0;
+	top: 0.5rem;
+}
+51% {
+	transform: rotate(-45deg);
+	width: 0;
+	top: 0.5rem;
+}
+100% {
+	transform: rotate(-45deg);
+	width: 100%;
+	top: 0.5rem;
 }
 `;
 
 const menuCloseLine1 = keyframes`
 0%{
-transform: rotate(-45deg) scaleX(1) translateZ(0);
-width: 100%;
-top: 1rem;
+	transform: rotate(45deg);
+	width: 100%;
+	top: 0.5rem;
 }
 50% {
-transform: rotate(-45deg) scaleX(1) translateZ(0);
-width: 0;
-top: 1rem;
+	transform: rotate(45deg);
+	width: 0;
+	top: 0.5rem;
 }
 51% {
 	transform: rotate(0);
-	width: 0;
+	width: 0.5rem;
 	top: 0.5rem;
 }
 100% {
 	transform: rotate(0);
 	width: 100%;
-	top: 0.5rem;
+	top: 0;
 }
 `;
 
 const menuCloseLine2 = keyframes`
 0%{
-width: 0;
-top: 1rem;
+	width: 0;
+	top: 0.5rem;
 }
 50% {
-width: 0;
-top: 1rem;
+	width: 0;
+	top: 0.5rem;
 }
 51% {
-transform: rotate(0);
-width: 0;
-top: 1rem;
-
+	width: 0;
+	top: 0.5rem;
 }
 100% {
-transform: rotate(0);
-width: 100%;
+	width: 100%;
+	top: 0.5rem;
 }
 `;
 
 const menuCloseLine3 = keyframes`
 0% {
-	transform: rotate(45deg) scaleX(1) translateZ(0);
+	transform: rotate(-45deg);
 	width: 100%;
-	top: 1rem;
+	top: 0.5rem;
 }
 50% {
-transform: rotate(45deg) scaleX(1) translateZ(0);
-width: 0;
-top: 1rem;
+	transform: rotate(-45deg);
+	width: 0;
+	top: 0.5rem;
 }
 51% {
 	transform: rotate(0);
 	width: 0;
-	top: 1.5rem;
-
+	top: 0.5rem;
 }
 100% {
 	transform: rotate(0);
 	width: 100%;
-	top: 1.5rem;
-
+	top: 1rem;
 }
 `;
 
@@ -126,78 +138,64 @@ top: 1rem;
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 export const burgerMenuContainer = styled.div`
-	width: 2rem;
-	aspect-ratio: 1/1;
-	position: absolute;
+	width: 1.6rem;
+	height: 1.2rem;
+	position: fixed;
 	display: flex;
-	top: 1rem;
-	left: 1rem;
+	top: 2rem;
+	left: 1.5rem;
 	justify-content: center;
+
+	&:hover {
+		cursor: pointer;
+	}
 `;
 
 export const line1 = styled.div`
-	width: 1.7rem;
 	height: 0.2rem;
 	border-radius: 2rem;
 	background: white;
 	position: absolute;
-	top: 0.5rem;
+	z-index: 1;
 
 	&.open {
-		animation: ${menuOpenLine1} 0.2s forwards;
+		animation: ${menuOpenLine1} 0.4s forwards;
 	}
-
 	&.closed {
-		animation: ${menuCloseLine1} 0.2s forwards;
+		animation: ${menuCloseLine1} 0.4s forwards;
 	}
 `;
 
 export const line2 = styled.div`
-	width: 1.7rem;
 	height: 0.2rem;
 	border-radius: 2rem;
 	background: white;
 	position: absolute;
-	top: 1rem;
 
 	&.open {
-		animation: ${menuOpenLine2} 0.2s forwards;
+		animation: ${menuOpenLine2} 0.4s forwards;
 	}
-
 	&.closed {
-		animation: ${menuCloseLine2} 0.2s forwards;
+		animation: ${menuCloseLine2} 0.4s forwards;
 	}
 `;
 
 export const line3 = styled.div`
-	width: 1.7rem;
 	height: 0.2rem;
 	border-radius: 2rem;
 	background: white;
 	position: absolute;
-	top: 1.5rem;
 
 	&.open {
-		animation: ${menuOpenLine3} 0.2s forwards;
+		animation: ${menuOpenLine3} 0.4s forwards;
 	}
-
 	&.closed {
-		animation: ${menuCloseLine3} 0.2s forwards;
+		animation: ${menuCloseLine3} 0.4s forwards;
 	}
-`;
-
-export const burgerMenu = styled.div`
-	width: 1.7rem;
-	height: 0.2rem;
-	border-radius: 2rem;
-	background: white;
-	position: absolute;
-	top: inherit;
-	transition: var(--transition);
 `;
 
 export const menu = styled.div`
-	position: absolute;
+	position: fixed;
 	top: 3.8rem;
 	left: 0;
 	padding-inline: 1rem;
@@ -218,6 +216,8 @@ export const menu = styled.div`
 export const ThemeToggleButton = styled.div`
 	/*Positioning stuff*/
 	position: fixed;
+	right: 8rem;
+	top: 1rem;
 
 	& label {
 		/*Display stuff*/
@@ -225,7 +225,7 @@ export const ThemeToggleButton = styled.div`
 		align-items: center;
 		justify-content: space-between;
 		/*Box model stuff*/
-		padding: 15px;
+		/* padding: 15px; */
 		/*Miscellaneous*/
 		cursor: pointer;
 
