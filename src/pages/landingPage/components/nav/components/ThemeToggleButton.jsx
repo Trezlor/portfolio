@@ -1,14 +1,11 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BsFillSunFill } from 'react-icons/bs';
 import { FaMoon } from 'react-icons/fa';
-import { menuToggleContext } from '../../../../../utils/menuToggleContext';
 import * as style from '../style';
 import { load, save } from './localStorage/checkBox';
 import { isLight, toggleLocalStorageItem, toggleRootClass } from './localStorage/themeColor';
 
 const ThemeToggleButton = () => {
-	const { navState } = useContext(menuToggleContext);
-
 	// LOADS LOCAL STORAGE FOR CHECKBOX ON PAGE LOAD
 	useEffect(() => {
 		load();
@@ -21,7 +18,7 @@ const ThemeToggleButton = () => {
 
 	return (
 		<>
-			<style.ThemeToggleButton className={navState}>
+			<style.ThemeToggleButton>
 				<input
 					type='checkbox'
 					id='themeToggle'
@@ -32,7 +29,7 @@ const ThemeToggleButton = () => {
 						save();
 					}}
 				/>
-				<label for='themeToggle'>
+				<label htmlFor='themeToggle'>
 					<span>
 						<BsFillSunFill className='sun' />
 						<FaMoon className='moon' />

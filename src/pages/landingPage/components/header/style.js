@@ -84,7 +84,7 @@ export const LetterEffect = styled.span`
 		/*Typography stuff*/
 		color: var(--color-primary);
 		/*Manipulations stuff*/
-		animation: ${tiltShaking} 0.5s;
+		animation: ${tiltShaking} 0.49s;
 	}
 `;
 

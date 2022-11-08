@@ -1,11 +1,10 @@
-import React, { useContext } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import { menuToggleContext } from '../../../../utils/menuToggleContext';
 import ThemeToggleButton from './components/ThemeToggleButton';
 import * as style from './style';
 
 const Navbar = () => {
-	const { navState, setNavState } = useContext(menuToggleContext);
+	const [navState, setNavState] = useState('closed');
 
 	return (
 		<>
