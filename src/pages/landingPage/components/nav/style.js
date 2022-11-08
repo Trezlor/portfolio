@@ -165,7 +165,7 @@ export const line1 = styled.div`
 	border-radius: 2rem;
 	background: white;
 	position: absolute;
-	background: var(--color-white);
+	background: var(--color-primary);
 
 	&.open {
 		animation: ${menuOpenLine1} 0.4s forwards;
@@ -180,7 +180,7 @@ export const line2 = styled.div`
 	border-radius: 2rem;
 	background: white;
 	position: absolute;
-	background: var(--color-white);
+	background: var(--color-primary);
 
 	&.open {
 		animation: ${menuOpenLine2} 0.4s forwards;
@@ -195,7 +195,7 @@ export const line3 = styled.div`
 	border-radius: 2rem;
 	background: white;
 	position: absolute;
-	background: var(--color-white);
+	background: var(--color-primary);
 
 	&.open {
 		animation: ${menuOpenLine3} 0.4s forwards;
@@ -273,61 +273,15 @@ export const ThemeToggleButton = styled.div`
 		/*Miscellaneous*/
 		cursor: pointer;
 
-		& span {
-			/*Display stuff*/
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			/*Positioning stuff*/
-			position: relative;
-			/*Box model stuff*/
-			width: 54px;
-			height: 30px;
-			border: 3px solid var(--color-bg);
-			border-radius: 15px;
-			/*Manipulations stuff*/
-			transition: transform 0.3s;
-			/*Miscellaneous*/
-			padding-inline: 0.3rem;
+		& .moon {
+			color: var(--color-bg);
+			transition: var(--transition);
+			font-size: 1.8rem;
 
-			&::before,
-			&::after {
-				/*Display stuff*/
-				content: '';
-				/*Positioning stuff*/
-				position: absolute;
-			}
-
-			&::before {
-				/*Positioning stuff*/
-				left: 1px;
-				top: 1px;
-				z-index: 1;
-				/*Box model stuff*/
-				height: calc(100% - 2px);
-				border-radius: 50%;
-				background: var(--color-bg);
-				/*Manipulations stuff*/
-				transition: transform 0.3s;
-				/*Miscellaneous*/
-				aspect-ratio: 1/1;
+			&:hover {
+				scale: 1.15;
 			}
 		}
-	}
-
-	& [type='checkbox']:checked + label span::before {
-		/*Manipulations stuff*/
-		transform: translateX(24px);
-	}
-
-	& [type='checkbox']:checked + label span::after {
-		/*Positioning stuff*/
-		left: 8px;
-		/*Box model stuff*/
-		width: 14px;
-		height: 14px;
-		background-size: 14px 14px;
-	}
 `;
 
 ////////////////////////////////////////////////////////////////////////////////////////////

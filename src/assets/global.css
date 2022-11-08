@@ -59,16 +59,6 @@
 	--text-shadow: none;
 }
 
-:root:not(.light) .moon {
-	display: inline-block;
-	color: var(--color-bg);
-}
-
-:root.light .sun {
-	display: inline-block;
-	color: var(--color-bg);
-}
-
 html {
 	/*Miscellaneous*/
 	scroll-behavior: smooth;
