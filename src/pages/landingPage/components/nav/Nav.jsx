@@ -1,10 +1,20 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from 'react-scroll';
 import ThemeToggleButton from './components/ThemeToggleButton';
 import * as style from './style';
 
 const Navbar = () => {
 	const [navState, setNavState] = useState('closed');
+
+	const menu = useRef(null);
+
+	const closeMenu = (e) => {
+		if (menu.current && navState === 'open' && !menu.current.contains(e.target)) {
+			setNavState('closed');
+		}
+	};
+
+	document.addEventListener('mousedown', closeMenu);
 
 	return (
 		<>
@@ -18,7 +28,10 @@ const Navbar = () => {
 				<style.line3 className={navState} />
 			</style.burgerMenuContainer>
 
-			<style.menu className={navState}>
+			<style.menu
+				className={navState}
+				ref={menu}
+			>
 				<ThemeToggleButton />
 
 				<ul>
@@ -29,6 +42,9 @@ const Navbar = () => {
 							smooth={true}
 							offset={0}
 							duration={400}
+							onClick={() => {
+								setNavState('closed');
+							}}
 						>
 							Hjem
 						</Link>
@@ -41,6 +57,7 @@ const Navbar = () => {
 							smooth={true}
 							offset={0}
 							duration={400}
+							onClick={() => setNavState('closed')}
 						>
 							Om Meg
 						</Link>
@@ -53,6 +70,7 @@ const Navbar = () => {
 							smooth={true}
 							offset={0}
 							duration={400}
+							onClick={() => setNavState('closed')}
 						>
 							Prosjekter
 						</Link>
@@ -65,6 +83,7 @@ const Navbar = () => {
 							smooth={true}
 							offset={0}
 							duration={400}
+							onClick={() => setNavState('closed')}
 						>
 							Kom i Kontakt
 						</Link>
