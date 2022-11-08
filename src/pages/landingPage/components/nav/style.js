@@ -237,7 +237,7 @@ export const menu = styled.nav`
 		&:hover {
 			cursor: pointer;
 			color: var(--color-white);
-			text-shadow: 0px 0px 3px #000;
+			text-shadow: var(--text-shadow);
 		}
 	}
 `;
@@ -248,20 +248,19 @@ export const menu = styled.nav`
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 export const ThemeToggleButton = styled.div`
-	width: min(600px, 100vw);
+	/* width: min(600px, 100vw); */
 	position: absolute;
 	z-index: 3;
 	/*Positioning stuff*/
-	left: 0;
-	padding-right: 2rem;
+	right: 2rem;
 	display: flex;
 	justify-content: end;
-	top: 2rem;
-	translate: calc(-100%);
+	top: 1.7rem;
+	/* translate: calc(-100%); */
 	transition: var(--transition);
 
 	&.open {
-		translate: initial;
+		/* translate: initial; */
 	}
 
 	& label {

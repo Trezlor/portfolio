@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
-import * as style from '../style';
+import * as style from './nav/style';
 
 const Socials = () => {
 	return (

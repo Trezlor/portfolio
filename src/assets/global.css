@@ -38,6 +38,8 @@
 	--color-light: rgb(200, 200, 200);
 	--color-g1: #00f0e0;
 	--color-g2: #00f0e0;
+
+	--text-shadow: 0 0 10px black;
 }
 
 :root.light {
@@ -53,6 +55,8 @@
 	--color-light: rgb(50, 50, 50);
 	--color-g1: #000;
 	--color-g2: #000;
+
+	--text-shadow: none;
 }
 
 :root:not(.light) .moon {

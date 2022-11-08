@@ -4,6 +4,7 @@ import Contact from './landingPage/components/contact/Contact';
 import Header from './landingPage/components/header/Header';
 import Navbar from './landingPage/components/nav/Nav';
 import Projects from './landingPage/components/projects/Projects';
+import Socials from './landingPage/components/Socials';
 
 const LandingPage = () => {
 	let columns = Math.floor(document.body.clientWidth / 50),
@@ -13,7 +14,6 @@ const LandingPage = () => {
 
 	return (
 		<>
-			<Navbar />
 			<div id='tiles'>
 				{Array.from(Array(createTiles), (index, key) => {
 					return (
@@ -24,6 +24,8 @@ const LandingPage = () => {
 					);
 				})}
 			</div>
+			<Navbar />
+			<Socials />
 			<Header />
 			<About />
 			<Projects />
