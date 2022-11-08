@@ -47,6 +47,7 @@
 	--color-bg-contrast: rgba(100, 100, 100, 0.4);
 	--color-bg-transparent: rgba(80, 80, 80, 0.4);
 	--color-primary: #0076ad;
+	--color-primary: #0052e1;
 	--color-primary-variant: #0076ad66;
 	--color-white: rgb(5, 5, 5);
 	--color-light: rgb(50, 50, 50);
@@ -56,12 +57,12 @@
 
 :root:not(.light) .moon {
 	display: inline-block;
-	color: var(--color-light);
+	color: var(--color-bg);
 }
 
 :root.light .sun {
 	display: inline-block;
-	color: var(--color-light);
+	color: var(--color-bg);
 }
 
 html {

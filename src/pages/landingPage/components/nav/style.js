@@ -21,11 +21,13 @@ const menuOpenLine1 = keyframes`
 	transform: rotate(45deg);
 	width: 0;
 	top: 0.5rem;
+	background: var(--color-bg);
 }
 100% {
 	transform: rotate(45deg);
 	width: 100%;
 	top: 0.5rem;
+	background: var(--color-bg);
 }
 `;
 
@@ -59,11 +61,13 @@ const menuOpenLine3 = keyframes`
 	transform: rotate(-45deg);
 	width: 0;
 	top: 0.5rem;
+	background: var(--color-bg);
 }
 100% {
 	transform: rotate(-45deg);
 	width: 100%;
 	top: 0.5rem;
+	background: var(--color-bg);
 }
 `;
 
@@ -72,11 +76,13 @@ const menuCloseLine1 = keyframes`
 	transform: rotate(45deg);
 	width: 100%;
 	top: 0.5rem;
+	background: var(--color-bg);
 }
 50% {
 	transform: rotate(45deg);
 	width: 0;
 	top: 0.5rem;
+	background: var(--color-bg);
 }
 51% {
 	transform: rotate(0);
@@ -114,11 +120,13 @@ const menuCloseLine3 = keyframes`
 	transform: rotate(-45deg);
 	width: 100%;
 	top: 0.5rem;
+	background: var(--color-bg);
 }
 50% {
 	transform: rotate(-45deg);
 	width: 0;
 	top: 0.5rem;
+	background: var(--color-bg);
 }
 51% {
 	transform: rotate(0);
@@ -143,8 +151,9 @@ export const burgerMenuContainer = styled.div`
 	position: fixed;
 	display: flex;
 	top: 2rem;
-	left: 1.5rem;
+	left: 2rem;
 	justify-content: center;
+	z-index: 4;
 
 	&:hover {
 		cursor: pointer;
@@ -156,7 +165,7 @@ export const line1 = styled.div`
 	border-radius: 2rem;
 	background: white;
 	position: absolute;
-	z-index: 1;
+	background: var(--color-white);
 
 	&.open {
 		animation: ${menuOpenLine1} 0.4s forwards;
@@ -171,6 +180,7 @@ export const line2 = styled.div`
 	border-radius: 2rem;
 	background: white;
 	position: absolute;
+	background: var(--color-white);
 
 	&.open {
 		animation: ${menuOpenLine2} 0.4s forwards;
@@ -185,6 +195,7 @@ export const line3 = styled.div`
 	border-radius: 2rem;
 	background: white;
 	position: absolute;
+	background: var(--color-white);
 
 	&.open {
 		animation: ${menuOpenLine3} 0.4s forwards;
@@ -194,17 +205,40 @@ export const line3 = styled.div`
 	}
 `;
 
-export const menu = styled.div`
+export const menu = styled.nav`
 	position: fixed;
-	top: 3.8rem;
-	left: 0;
-	padding-inline: 1rem;
-	border: 1px solid white;
+	top: 0;
+	bottom: 0;
+	width: min(600px, 100vw);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	translate: calc(-100%);
+	background: var(--color-primary);
 	transition: var(--transition);
+	z-index: 2;
 
 	&.open {
 		translate: initial;
+	}
+
+	& ul {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		align-items: center;
+	}
+
+	& a {
+		color: var(--color-bg);
+		font-size: 1.8rem;
+		transition: none;
+
+		&:hover {
+			cursor: pointer;
+			color: var(--color-white);
+			text-shadow: 0px 0px 3px #000;
+		}
 	}
 `;
 
@@ -214,10 +248,21 @@ export const menu = styled.div`
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 export const ThemeToggleButton = styled.div`
+	width: min(600px, 100vw);
+	position: absolute;
+	z-index: 3;
 	/*Positioning stuff*/
-	position: fixed;
-	right: 8rem;
-	top: 1rem;
+	left: 0;
+	padding-right: 2rem;
+	display: flex;
+	justify-content: end;
+	top: 2rem;
+	translate: calc(-100%);
+	transition: var(--transition);
+
+	&.open {
+		translate: initial;
+	}
 
 	& label {
 		/*Display stuff*/
@@ -237,9 +282,9 @@ export const ThemeToggleButton = styled.div`
 			/*Positioning stuff*/
 			position: relative;
 			/*Box model stuff*/
-			width: 50px;
-			height: 26px;
-			border: var(--border) solid var(--color-primary);
+			width: 54px;
+			height: 30px;
+			border: 3px solid var(--color-bg);
 			border-radius: 15px;
 			/*Manipulations stuff*/
 			transition: transform 0.3s;
@@ -262,7 +307,7 @@ export const ThemeToggleButton = styled.div`
 				/*Box model stuff*/
 				height: calc(100% - 2px);
 				border-radius: 50%;
-				background: var(--color-primary);
+				background: var(--color-bg);
 				/*Manipulations stuff*/
 				transition: transform 0.3s;
 				/*Miscellaneous*/
@@ -298,7 +343,7 @@ export const SocialsLinks = styled.div`
 	align-items: center;
 	/*Positioning stuff*/
 	position: fixed;
-	right: 2rem;
+	left: 2rem;
 	bottom: 3rem;
 	/*Typography stuff*/
 	font-size: 1.5rem;
@@ -326,169 +371,5 @@ export const SocialsLinks = styled.div`
 	@media ${deviceSize.tablet} {
 		/*Display stuff*/
 		display: none;
-	}
-`;
-
-////////////////////////////////////////////////////////////////////////////////////////////
-//
-//    MOBILE
-//
-////////////////////////////////////////////////////////////////////////////////////////////
-export const NavMobile = styled.nav`
-	/*Display stuff*/
-	display: none;
-	/*Positioning stuff*/
-	position: fixed;
-	left: 50%;
-	bottom: 1rem;
-	z-index: 1;
-	/*Box model stuff*/
-	padding: 0.7rem 0.8rem;
-	border-radius: 2rem;
-	background: rgba(0, 0, 0, 0.3);
-	/*Manipulations stuff*/
-	transform: translateX(-50%);
-	/*Miscellaneous*/
-	gap: 0.8rem;
-	backdrop-filter: blur(10px);
-
-	& a {
-		/*Display stuff*/
-		display: flex;
-		/*Box model stuff*/
-		padding: 0.9rem;
-		border-radius: 2rem;
-		/*Typography stuff*/
-		font-size: 1.1rem;
-	}
-
-	& .active {
-		/*Box model stuff*/
-		background: var(--color-primary-variant);
-		/*Typography stuff*/
-		color: var(--color-white);
-	}
-
-	@media ${deviceSize.tablet} {
-		/*Display stuff*/
-		display: flex;
-	}
-`;
-
-////////////////////////////////////////////////////////////////////////////////////////////
-//
-//    DESKTOP
-//
-////////////////////////////////////////////////////////////////////////////////////////////
-export const NavDesktop = styled.nav`
-	/*Display stuff*/
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	/*Positioning stuff*/
-	position: fixed;
-	left: 1rem;
-	bottom: 3rem;
-	/*Miscellaneous*/
-	gap: 0.8rem;
-
-	&:before {
-		/*Display stuff*/
-		content: '';
-		/*Box model stuff*/
-		width: 1px;
-		height: 2rem;
-		background: var(--color-primary);
-	}
-
-	&:after {
-		/*Display stuff*/
-		content: '';
-		/*Box model stuff*/
-		width: 1px;
-		height: 2rem;
-		background: var(--color-primary);
-	}
-
-	@media ${deviceSize.tablet} {
-		/*Display stuff*/
-		display: none;
-	}
-`;
-
-export const LinkContainer = styled.div`
-	/*Display stuff*/
-	display: flex;
-	flex-direction: column;
-	/*Box model stuff*/
-	padding: 0.7rem 0.5rem;
-	border-radius: 2rem;
-	/*Miscellaneous*/
-	gap: 0.8rem;
-	/* transition: var(--transition); */
-
-	& a {
-		/*Display stuff*/
-		display: flex;
-		align-items: center;
-		/*Box model stuff*/
-		padding: 0.9rem;
-		border-radius: 2rem;
-		/*Typography stuff*/
-		font-size: 1.3rem;
-		/*Manipulations stuff*/
-		/*Miscellaneous*/
-		gap: 0.8rem;
-		cursor: pointer;
-
-		& p {
-			/*Display stuff*/
-			display: none;
-			/*Positioning stuff*/
-			position: absolute;
-			left: 4rem;
-			/*Typography stuff*/
-			font-size: 1rem;
-			color: var(--color-primary);
-			/*Miscellaneous*/
-			white-space: nowrap;
-			backdrop-filter: blur(5px);
-		}
-
-		&:hover {
-			/*Box model stuff*/
-			background: var(--color-bg-contrast);
-
-			& p {
-				/*Display stuff*/
-				display: initial;
-				/*Typography stuff*/
-				color: var(--color-primary);
-				/*Manipulations stuff*/
-				opacity: 1;
-			}
-		}
-
-		&.active {
-			/*Box model stuff*/
-			background: var(--color-primary-variant);
-			/*Typography stuff*/
-			color: var(--color-white);
-		}
-
-		& p {
-			/*Positioning stuff*/
-			position: absolute;
-			left: 4.5rem;
-			/*Typography stuff*/
-			font-size: 1rem;
-			color: var(--color-primary);
-			/*Manipulations stuff*/
-			transition: var(--transition);
-			opacity: 0;
-			/*Miscellaneous*/
-			white-space: nowrap;
-			backdrop-filter: blur(5px);
-		}
 	}
 `;
