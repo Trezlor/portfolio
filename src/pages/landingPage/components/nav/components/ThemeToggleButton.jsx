@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { BsMoonStarsFill } from 'react-icons/bs';
 import * as style from '../style';
-import { load, save } from './localStorage/checkBox';
-import { isLight, toggleLocalStorageItem, toggleRootClass } from './localStorage/themeColor';
+import { load, save } from '../utils/localStorage/checkBox';
+import { isLight, toggleLocalStorageItem, toggleRootClass } from '../utils/localStorage/themeColor';
 
 const ThemeToggleButton = () => {
 	// LOADS LOCAL STORAGE FOR CHECKBOX ON PAGE LOAD

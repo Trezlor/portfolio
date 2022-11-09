@@ -5,7 +5,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////// */
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
-	/*Box model stuff*/
 	background: var(--color-primary);
 }
 
@@ -15,25 +14,19 @@
 //
 //////////////////////////////////////////////////////////////////////////////////////////// */
 .swiper-button-prev {
-	/*Positioning stuff*/
-	position: absolute;
-	left: 0;
-	top: calc((100% - 222.434px) / 2);
-	/*Box model stuff*/
-	padding: 2rem;
-	/*Typography stuff*/
 	color: var(--color-primary);
+	left: 0;
+	padding: 2rem;
+	position: absolute;
+	top: calc((100% - 222.434px) / 2);
 }
 
 .swiper-button-next {
-	/*Positioning stuff*/
+	color: var(--color-primary);
+	padding: 2rem;
 	position: absolute;
 	right: 0;
 	top: calc((100% - 222.434px) / 2);
-	/*Box model stuff*/
-	padding: 2rem;
-	/*Typography stuff*/
-	color: var(--color-primary);
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////
@@ -43,12 +36,10 @@
 //////////////////////////////////////////////////////////////////////////////////////////// */
 @media screen and (max-width: 1130px) {
 	.swiper-button-prev {
-		/*Display stuff*/
 		display: none;
 	}
 
 	.swiper-button-next {
-		/*Display stuff*/
 		display: none;
 	}
 }
