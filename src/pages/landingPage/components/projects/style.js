@@ -8,7 +8,6 @@ import { deviceSize } from '../../../../utils/deviceSize';
 ////////////////////////////////////////////////////////////////////////////////////////////
 export const Container = styled.div`
 	@media ${deviceSize.tablet} {
-		/*Box model stuff*/
 		width: min(35rem, 100%);
 	}
 `;
@@ -19,10 +18,9 @@ export const Container = styled.div`
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 export const ProjectImage = styled.img`
-	/*Box model stuff*/
-	width: 85%;
-	margin: 0 auto 1rem;
 	border-radius: var(--border-radius);
+	margin: 0 auto 1rem;
+	width: 85%;
 
 	@media ${deviceSize.tablet} {
 		width: 100%;
@@ -35,48 +33,38 @@ export const ProjectImage = styled.img`
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 export const ProjectInfoContainer = styled.div`
-	/*Box model stuff*/
-	width: fit-content;
+	backdrop-filter: blur(5px);
+	background: var(--color-bg-variant);
+	border-radius: var(--border-radius);
+	border: var(--border) solid var(--color-primary);
 	margin: 0 auto 3rem;
 	padding: 2rem 4rem;
-	border: var(--border) solid var(--color-primary);
-	border-radius: var(--border-radius);
-	background: var(--color-bg-variant);
-	/*Miscellaneous*/
-	backdrop-filter: blur(5px);
+	width: fit-content;
 
-	& h3 {
-		/*Box model stuff*/
+	> h3 {
 		margin-bottom: 2rem;
-		/*Typography stuff*/
 		text-align: center;
 
 		@media ${deviceSize.mobile} {
-			/*Box model stuff*/
 			margin-bottom: 0.8rem;
 		}
 	}
 
-	&:hover {
-		/*Miscellaneous*/
+	:hover {
 		cursor: initial;
 	}
 
 	@media ${deviceSize.mobile} {
-		/*Box model stuff*/
 		padding: 1rem 2rem;
 	}
 `;
 
 export const ProjectLinks = styled.div`
-	/*Display stuff*/
 	display: flex;
-	justify-content: center;
-	/*Miscellaneous*/
 	gap: 50px;
+	justify-content: center;
 
 	@media ${deviceSize.mobile} {
-		/*Miscellaneous*/
 		gap: 30px;
 	}
 `;

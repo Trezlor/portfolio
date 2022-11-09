@@ -1,5 +1,4 @@
 import styled, { keyframes } from 'styled-components';
-import { deviceSize } from '../../../../utils/deviceSize';
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -8,135 +7,135 @@ import { deviceSize } from '../../../../utils/deviceSize';
 ////////////////////////////////////////////////////////////////////////////////////////////
 const menuOpenLine1 = keyframes`
 0% {
+	top: 0;
 	transform: none;
 	width: 100%;
-	top: 0;
 }
 50% {
+	top: 0.5rem;
 	transform: none;
 	width: 0;
-	top: 0.5rem;
 }
 51% {
+	background: var(--color-bg);
+	top: 0.5rem;
 	transform: rotate(45deg);
 	width: 0;
-	top: 0.5rem;
-	background: var(--color-bg);
 }
 100% {
+	background: var(--color-bg);
+	top: 0.5rem;
 	transform: rotate(45deg);
 	width: 100%;
-	top: 0.5rem;
-	background: var(--color-bg);
 }
 `;
 
 const menuOpenLine2 = keyframes`
 0% {
-	width: 100%;
 	top: 0.5rem;
+	width: 100%;
 }
 50% {
-	width: 0%;
 	top: 0.5rem;
+	width: 0%;
 }
 100% {
-	width: 0%;
 	top: 0.5rem;
+	width: 0%;
 }
 `;
 
 const menuOpenLine3 = keyframes`
 0% {
+	top: 1rem;
 	transform: none;
 	width: 100%;
-	top: 1rem;
 }
 50% {
+	top: 0.5rem;
 	transform: none;
 	width: 0;
-	top: 0.5rem;
 }
 51% {
+	background: var(--color-bg);
+	top: 0.5rem;
 	transform: rotate(-45deg);
 	width: 0;
-	top: 0.5rem;
-	background: var(--color-bg);
 }
 100% {
+	background: var(--color-bg);
+	top: 0.5rem;
 	transform: rotate(-45deg);
 	width: 100%;
-	top: 0.5rem;
-	background: var(--color-bg);
 }
 `;
 
 const menuCloseLine1 = keyframes`
 0%{
+	background: var(--color-bg);
+	top: 0.5rem;
 	transform: rotate(45deg);
 	width: 100%;
-	top: 0.5rem;
-	background: var(--color-bg);
 }
 50% {
+	background: var(--color-bg);
+	top: 0.5rem;
 	transform: rotate(45deg);
 	width: 0;
-	top: 0.5rem;
-	background: var(--color-bg);
 }
 51% {
+	top: 0.5rem;
 	transform: rotate(0);
 	width: 0.5rem;
-	top: 0.5rem;
 }
 100% {
+	top: 0;
 	transform: rotate(0);
 	width: 100%;
-	top: 0;
 }
 `;
 
 const menuCloseLine2 = keyframes`
 0%{
-	width: 0;
 	top: 0.5rem;
+	width: 0;
 }
 50% {
-	width: 0;
 	top: 0.5rem;
+	width: 0;
 }
 51% {
-	width: 0;
 	top: 0.5rem;
+	width: 0;
 }
 100% {
-	width: 100%;
 	top: 0.5rem;
+	width: 100%;
 }
 `;
 
 const menuCloseLine3 = keyframes`
 0% {
+	background: var(--color-bg);
+	top: 0.5rem;
 	transform: rotate(-45deg);
 	width: 100%;
-	top: 0.5rem;
-	background: var(--color-bg);
 }
 50% {
+	background: var(--color-bg);
+	top: 0.5rem;
 	transform: rotate(-45deg);
 	width: 0;
-	top: 0.5rem;
-	background: var(--color-bg);
 }
 51% {
+	top: 0.5rem;
 	transform: rotate(0);
 	width: 0;
-	top: 0.5rem;
 }
 100% {
+	top: 1rem;
 	transform: rotate(0);
 	width: 100%;
-	top: 1rem;
 }
 `;
 
@@ -146,98 +145,98 @@ const menuCloseLine3 = keyframes`
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 export const burgerMenuContainer = styled.div`
-	width: 1.6rem;
-	height: 1.2rem;
-	position: fixed;
 	display: flex;
-	top: 2rem;
-	left: 2rem;
+	height: 1.2rem;
 	justify-content: center;
+	left: 2rem;
+	position: fixed;
+	top: 2rem;
+	width: 1.6rem;
 	z-index: 4;
 
-	&:hover {
+	:hover {
 		cursor: pointer;
 	}
 `;
 
 export const line1 = styled.div`
-	height: 0.2rem;
-	border-radius: 2rem;
-	background: white;
-	position: absolute;
 	background: var(--color-primary);
+	border-radius: 2rem;
+	height: 0.2rem;
+	position: absolute;
 
 	&.open {
 		animation: ${menuOpenLine1} 0.4s forwards;
 	}
+
 	&.closed {
 		animation: ${menuCloseLine1} 0.4s forwards;
 	}
 `;
 
 export const line2 = styled.div`
-	height: 0.2rem;
-	border-radius: 2rem;
-	background: white;
-	position: absolute;
 	background: var(--color-primary);
+	border-radius: 2rem;
+	height: 0.2rem;
+	position: absolute;
 
 	&.open {
 		animation: ${menuOpenLine2} 0.4s forwards;
 	}
+
 	&.closed {
 		animation: ${menuCloseLine2} 0.4s forwards;
 	}
 `;
 
 export const line3 = styled.div`
-	height: 0.2rem;
-	border-radius: 2rem;
-	background: white;
-	position: absolute;
 	background: var(--color-primary);
+	border-radius: 2rem;
+	height: 0.2rem;
+	position: absolute;
 
 	&.open {
 		animation: ${menuOpenLine3} 0.4s forwards;
 	}
+
 	&.closed {
 		animation: ${menuCloseLine3} 0.4s forwards;
 	}
 `;
 
 export const menu = styled.nav`
+	align-items: center;
+	background: var(--color-primary);
+	bottom: 0;
+	display: flex;
+	justify-content: center;
 	position: fixed;
 	top: 0;
-	bottom: 0;
-	width: min(600px, 100vw);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	translate: calc(-100%);
-	background: var(--color-primary);
 	transition: var(--transition);
+	translate: calc(-100%);
+	width: min(600px, 100vw);
 	z-index: 2;
 
 	&.open {
 		translate: initial;
 	}
 
-	& ul {
+	> ul {
+		align-items: center;
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
-		align-items: center;
-	}
 
-	& a {
-		color: var(--color-bg);
-		font-size: 1.8rem;
-		transition: none;
+		a {
+			color: var(--color-bg);
+			font-size: 1.8rem;
+			transition: none;
 
-		&:hover {
-			cursor: pointer;
-			color: var(--color-white);
-			text-shadow: var(--text-shadow);
+			:hover {
+				color: var(--color-white);
+				cursor: pointer;
+				text-shadow: var(--text-shadow);
+			}
 		}
 	}
 `;
@@ -248,82 +247,28 @@ export const menu = styled.nav`
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 export const ThemeToggleButton = styled.div`
-	/* width: min(600px, 100vw); */
-	position: absolute;
-	z-index: 3;
-	/*Positioning stuff*/
-	right: 2rem;
 	display: flex;
 	justify-content: end;
+	position: absolute;
+	right: 2rem;
 	top: 1.7rem;
-	/* translate: calc(-100%); */
 	transition: var(--transition);
+	z-index: 3;
 
-	&.open {
-		/* translate: initial; */
-	}
-
-	& label {
-		/*Display stuff*/
-		display: flex;
+	> label {
 		align-items: center;
-		justify-content: space-between;
-		/*Box model stuff*/
-		/* padding: 15px; */
-		/*Miscellaneous*/
 		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
 
-		& .moon {
+		.moon {
 			color: var(--color-bg);
-			transition: var(--transition);
 			font-size: 1.8rem;
+			transition: var(--transition);
 
-			&:hover {
+			:hover {
 				scale: 1.15;
 			}
 		}
-	}
-`;
-
-////////////////////////////////////////////////////////////////////////////////////////////
-//
-//    SOCIALS
-//
-////////////////////////////////////////////////////////////////////////////////////////////
-export const SocialsLinks = styled.div`
-	/*Display stuff*/
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	/*Positioning stuff*/
-	position: fixed;
-	left: 2rem;
-	bottom: 3rem;
-	/*Typography stuff*/
-	font-size: 1.5rem;
-	/*Miscellaneous*/
-	gap: 0.8rem;
-
-	&:before {
-		/*Display stuff*/
-		content: '';
-		/*Box model stuff*/
-		width: 1px;
-		height: 2rem;
-		background: var(--color-primary);
-	}
-
-	&:after {
-		/*Display stuff*/
-		content: '';
-		/*Box model stuff*/
-		width: 1px;
-		height: 2rem;
-		background: var(--color-primary);
-	}
-
-	@media ${deviceSize.tablet} {
-		/*Display stuff*/
-		display: none;
 	}
 `;

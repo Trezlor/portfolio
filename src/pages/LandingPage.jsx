@@ -4,7 +4,7 @@ import Contact from './landingPage/components/contact/Contact';
 import Header from './landingPage/components/header/Header';
 import Navbar from './landingPage/components/nav/Nav';
 import Projects from './landingPage/components/projects/Projects';
-import Socials from './landingPage/components/Socials';
+import Socials from './landingPage/components/socials/Socials';
 
 const LandingPage = () => {
 	let columns = Math.floor(document.body.clientWidth / 50),
