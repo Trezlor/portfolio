@@ -56,16 +56,6 @@
 	--text-shadow: none;
 }
 
-:root:not(.light) .sun {
-	/*Display stuff*/
-	/* display: none; */
-}
-
-:root.light .moon {
-	/*Display stuff*/
-	/* display: none; */
-}
-
 html {
 	/*Manipulations stuff*/
 	transition: var(--transition);

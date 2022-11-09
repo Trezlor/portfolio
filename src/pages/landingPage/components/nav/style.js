@@ -151,8 +151,8 @@ const moonLightMode = keyframes`
 }
 
 50% {
-	width: 0%;
 	transform: none;
+	width: 0%;
 }
 
 100% {
@@ -166,8 +166,8 @@ const moonDarkMode = keyframes`
 }
 
 50% {
-	width: 0%;
 	transform: none;
+	width: 0%;
 }
 
 100% {
@@ -181,8 +181,8 @@ const sunLightMode = keyframes`
 }
 
 50% {
-	width: 0%;
 	transform: none;
+	width: 0%;
 }
 
 100% {
@@ -196,8 +196,8 @@ const sunDarkMode = keyframes`
 }
 
 50% {
-	width: 0%;
 	transform: none;
+	width: 0%;
 }
 
 100% {
@@ -211,6 +211,7 @@ const sunDarkMode = keyframes`
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 export const burgerMenuContainer = styled.div`
+	backdrop-filter: blur(2px);
 	display: flex;
 	height: 1.2rem;
 	justify-content: center;
@@ -222,6 +223,10 @@ export const burgerMenuContainer = styled.div`
 
 	:hover {
 		cursor: pointer;
+	}
+
+	> * {
+		box-shadow: 0 0 3px var(--color-bg);
 	}
 `;
 
@@ -323,27 +328,27 @@ export const ThemeToggleButton = styled.div`
 
 	> label {
 		align-items: center;
+		align-items: center;
 		cursor: pointer;
 		display: flex;
 		justify-content: center;
-		align-items: center;
 
 		.moon {
 			color: var(--color-bg);
 			font-size: 1.8rem;
-			transition: var(--transition);
 			position: relative;
-			top: 0;
 			right: 0;
+			top: 0;
+			transition: var(--transition);
 		}
 
 		.sun {
 			color: var(--color-bg);
 			font-size: 1.8rem;
-			transition: var(--transition);
 			position: relative;
-			top: 0;
 			right: 0;
+			top: 0;
+			transition: var(--transition);
 		}
 	}
 

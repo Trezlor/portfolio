@@ -38,7 +38,7 @@ export const Main = styled.main`
 	padding-top: 7rem;
 
 	@media ${deviceSize.mobile} {
-		padding-top: 1rem;
+		padding-top: 2rem;
 	}
 `;
 
