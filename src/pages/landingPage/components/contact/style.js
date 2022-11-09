@@ -1,165 +1,142 @@
 import styled from 'styled-components';
 import { deviceSize } from '../../../../utils/deviceSize';
 
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    CONTAINER
+//
+////////////////////////////////////////////////////////////////////////////////////////////
 export const Container = styled.div`
-	/*Display stuff*/
 	display: grid;
-	grid-template-columns: 30% 58%;
-	/*Box model stuff*/
-	width: 58%;
-	/*Miscellaneous*/
 	gap: 12%;
+	grid-template-columns: 30% 58%;
+	width: 58%;
 
 	@media ${deviceSize.tablet} {
-		/*Display stuff*/
-		grid-template-columns: 1fr;
-		/*Box model stuff*/
-		margin-bottom: 5rem;
-		/*Miscellaneous*/
 		gap: 2rem;
+		grid-template-columns: 1fr;
+		margin-bottom: 5rem;
 	}
 
 	@media ${deviceSize.mobile} {
-		/*Box model stuff*/
 		width: var(--container-width-small);
 	}
 `;
 
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    CARDS
+//
+////////////////////////////////////////////////////////////////////////////////////////////
 export const ContactOptions = styled.div`
-	/*Display stuff*/
 	display: flex;
 	flex-direction: column;
-	/*Miscellaneous*/
 	gap: 1.2rem;
 `;
 
 export const ContactOption = styled.article`
-	/*Display stuff*/
+	background: var(--color-bg-variant);
+	border-radius: var(--border-radius);
+	border: var(--border) solid var(--color-primary);
 	display: flex;
 	flex-direction: column;
-	/*Box model stuff*/
-	padding: 1rem;
-	border: var(--border) solid var(--color-primary);
-	border-radius: var(--border-radius);
-	background: var(--color-bg-variant);
-	/*Typography stuff*/
-	text-align: center;
-	/*Manipulations stuff*/
-	transition: var(--transition);
-	/*Miscellaneous*/
 	gap: 0.5rem;
+	padding: 1rem;
+	text-align: center;
+	transition: var(--transition);
 
-	& .icon {
-		/*Typography stuff*/
+	.icon {
+		color: var(--color-white);
 		font-size: 1.5rem;
+	}
+
+	> h4 {
 		color: var(--color-white);
 	}
 
-	& h4 {
-		/*Typography stuff*/
-		color: var(--color-white);
-	}
-
-	& h5 {
-		/*Typography stuff*/
-		font-size: 0.8rem;
+	> h5 {
 		color: var(--color-primary);
-		/*Manipulations stuff*/
+		font-size: 0.8rem;
 		transition: var(--transition);
 	}
 
-	& p {
-		/*Positioning stuff*/
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		/*Box model stuff*/
-		width: fit-content;
-		padding: 0.5rem 1rem;
-		border-radius: 0.25rem;
+	> p {
 		background: var(--color-primary);
-		/*Typography stuff*/
+		border-radius: 0.25rem;
 		color: var(--color-bg);
-		/*Manipulations stuff*/
+		left: 50%;
+		opacity: 0;
+		padding: 0.5rem 1rem;
+		position: absolute;
+		top: 50%;
 		transform: translate(-50%, -50%);
 		transition: var(--transition);
-		opacity: 0;
+		width: fit-content;
 
 		&.active {
-			/*Manipulations stuff*/
 			opacity: 1;
 		}
 	}
 
-	&:hover {
-		/*Box model stuff*/
-		border-color: var(--color-primary-variant);
-		background: transparent;
-		/*Miscellaneous*/
+	:hover {
 		backdrop-filter: blur(5px);
+		background: transparent;
+		border-color: var(--color-primary-variant);
 		cursor: pointer;
 
-		& h5 {
-			/*Miscellaneous*/
+		> h5 {
 			scale: 1.2;
 		}
 	}
 `;
 
 export const ContactOptionHeader = styled.div`
-	/*Display stuff*/
+	align-items: center;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	/*Miscellaneous*/
 	gap: 0.5rem;
 
 	@media ${deviceSize.mobile} {
-		/*Display stuff*/
 		flex-direction: row;
-		justify-content: center;
-		/*Miscellaneous*/
 		gap: 1rem;
+		justify-content: center;
 
-		& h4 {
-			/*Box model stuff*/
+		> h4 {
 			margin: 0;
 		}
 	}
 `;
 
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    FORM
+//
+////////////////////////////////////////////////////////////////////////////////////////////
 export const Form = styled.form`
-	/*Display stuff*/
 	display: flex;
 	flex-direction: column;
-	/*Miscellaneous*/
 	gap: 1.2rem;
 	margin-bottom: 2rem;
 
-	& input,
+	> input,
 	textarea {
-		/*Box model stuff*/
-		width: 100%;
-		padding: 1.5rem;
-		border: var(--border) solid var(--color-primary-variant);
-		border-radius: var(--border-radius);
-		background: var(--color-bg-transparent);
-		/*Typography stuff*/
-		font-size: 1rem;
-		color: var(--color-white);
-		/*Manipulations stuff*/
-		transition: var(--transition);
-		/*Miscellaneous*/
 		backdrop-filter: blur(2px);
+		background: var(--color-bg-transparent);
+		border-radius: var(--border-radius);
+		border: var(--border) solid var(--color-primary-variant);
+		color: var(--color-white);
+		font-size: 1rem;
+		padding: 1.5rem;
 		resize: none;
+		transition: var(--transition);
+		width: 100%;
 
-		&:focus {
-			/*Box model stuff*/
+		:focus {
 			border-color: var(--color-primary);
 		}
 	}
 
-	& button {
+	> button {
 		@media ${deviceSize.tablet} {
 			margin: 0 auto;
 		}

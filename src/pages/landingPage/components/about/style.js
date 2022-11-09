@@ -161,7 +161,7 @@ export const AboutMeCard = styled.article`
 			}
 		}
 
-		& h5 {
+		> h5 {
 			font-size: 0.95rem;
 
 			@media (max-width: 470px) {
@@ -177,7 +177,7 @@ export const AboutMeCard = styled.article`
 		}
 	}
 
-	& small {
+	> small {
 		color: var(--color-light);
 		font-size: 0.7rem;
 	}
