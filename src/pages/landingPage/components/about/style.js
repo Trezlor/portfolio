@@ -55,6 +55,10 @@ export const Container = styled.div`
 	@media ${deviceSize.tablet} {
 		gap: 0;
 		grid-template-columns: 1fr;
+
+		.content__wrapper {
+			text-align: center;
+		}
 	}
 `;
 
@@ -214,10 +218,6 @@ export const InfoContainer = styled.div`
 
 	> div {
 		backdrop-filter: none;
-	}
-
-	@media ${deviceSize.tablet} {
-		text-align: center;
 	}
 `;
 

@@ -30,7 +30,7 @@ const About = () => {
 					/>
 				</style.AboutMeImg>
 
-				<div>
+				<div className='content__wrapper'>
 					<style.AboutMeCards>
 						<style.AboutMeCard
 							className={activeCard === 'coding' ? 'card__active' : ''}
