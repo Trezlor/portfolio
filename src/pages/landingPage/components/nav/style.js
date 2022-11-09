@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { deviceSize } from '../../../../utils/deviceSize';
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -270,5 +271,64 @@ export const ThemeToggleButton = styled.div`
 				scale: 1.15;
 			}
 		}
+	}
+`;
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    SOCIALS
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+export const SocialsLinks = styled.div`
+	align-items: center;
+	bottom: 2rem;
+	display: flex;
+	font-size: 2rem;
+	gap: 2rem;
+	justify-content: space-between;
+	left: 4rem;
+	position: absolute;
+	right: 4rem;
+
+	> a {
+		color: var(--color-bg);
+		transition: none;
+
+		:hover {
+			color: var(--color-white);
+		}
+
+		> * {
+			vertical-align: middle;
+		}
+	}
+
+	:before {
+		background: var(--color-bg);
+		content: '';
+		height: 2px;
+		width: 3rem;
+	}
+
+	:after {
+		background: var(--color-bg);
+		content: '';
+		height: 2px;
+		width: 3rem;
+	}
+
+	@media ${deviceSize.mobile} {
+		:before {
+			width: 2rem;
+		}
+
+		:after {
+			width: 2rem;
+		}
+	}
+
+	@media (max-width: 470px) {
+		left: 2rem;
+		right: 2rem;
 	}
 `;

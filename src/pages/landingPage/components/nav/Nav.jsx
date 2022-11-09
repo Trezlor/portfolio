@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
+import NavSocials from './components/NavSocials';
 import ThemeToggleButton from './components/ThemeToggleButton';
 import * as style from './style';
 
@@ -83,6 +84,7 @@ const Navbar = () => {
 						</Link>
 					</li>
 				</ul>
+				<NavSocials />
 			</style.menu>
 		</>
 	);
