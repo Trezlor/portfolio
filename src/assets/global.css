@@ -16,13 +16,12 @@
 }
 
 :root {
+	/*Miscellaneous*/
 	--container-width-large: 75%;
 	--container-width-medium: 86%;
 	--container-width-small: 90%;
-
 	--border: 2px;
 	--border-radius: 0.4rem;
-
 	--transition: all 400ms ease;
 }
 
@@ -38,7 +37,6 @@
 	--color-light: rgb(200, 200, 200);
 	--color-g1: #00f0e0;
 	--color-g2: #00f0e0;
-
 	--text-shadow: 0 0 10px black;
 }
 
@@ -55,14 +53,14 @@
 	--color-primary: #0052e1;
 	--color-primary: #0076ad;
 	--color-white: rgb(5, 5, 5);
-
 	--text-shadow: none;
 }
 
 html {
+	/*Manipulations stuff*/
+	transition: var(--transition);
 	/*Miscellaneous*/
 	scroll-behavior: smooth;
-	transition: var(--transition);
 }
 
 ::-webkit-scrollbar {
@@ -72,10 +70,12 @@ html {
 
 @keyframes background-pan {
 	from {
+		/*Box model stuff*/
 		background-position: 0% center;
 	}
 
 	to {
+		/*Box model stuff*/
 		background-position: -200% center;
 	}
 }
@@ -248,36 +248,43 @@ img {
 /* MEDIA QUERIES (TABLET DEVICES) */
 @media screen and (max-width: 1130px) {
 	.container {
+		/*Box model stuff*/
 		width: var(--container-width-medium);
 	}
 
 	section {
+		/*Box model stuff*/
 		margin-top: 5rem;
 		padding-top: 1rem;
 	}
 
 	#tiles {
-		height: calc(100% + 300px - 1px);
-
+		/*Display stuff*/
 		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 		grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+		/*Box model stuff*/
+		height: calc(100% + 300px - 1px);
 	}
 }
 
 /* MEDIA QUERIES (PHONE DEVICES) */
 @media screen and (max-width: 600px) {
 	.container {
+		/*Box model stuff*/
 		width: var(--container-width-small);
 	}
 
 	section > h2 {
+		/*Box model stuff*/
 		margin-bottom: 2rem;
 	}
 
 	#tiles {
-		height: calc(100% + 200px - 1px);
+		/*Display stuff*/
 		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 		grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+		/*Box model stuff*/
+		height: calc(100% + 200px - 1px);
 	}
 }
 
