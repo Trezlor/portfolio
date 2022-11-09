@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import ThemeToggleButton from './components/ThemeToggleButton';
 import * as style from './style';
@@ -6,15 +6,14 @@ import * as style from './style';
 const Navbar = () => {
 	const [navState, setNavState] = useState('closed');
 
-	const menu = useRef(null);
-
-	const closeMenu = (e) => {
-		if (menu.current && navState === 'open' && !menu.current.contains(e.target)) {
-			setNavState('closed');
-		}
+	const closeMenu = () => {
+		setNavState('closed');
 	};
 
-	document.addEventListener('mousedown', closeMenu);
+	const pageSections = document.querySelectorAll('#home, #about, #projects, #contact');
+	pageSections.forEach((e) => {
+		e.addEventListener('mousedown', closeMenu);
+	});
 
 	return (
 		<>
@@ -28,10 +27,7 @@ const Navbar = () => {
 				<style.line3 className={navState} />
 			</style.burgerMenuContainer>
 
-			<style.menu
-				className={navState}
-				ref={menu}
-			>
+			<style.menu className={navState}>
 				<ThemeToggleButton />
 
 				<ul>
@@ -42,9 +38,7 @@ const Navbar = () => {
 							smooth={true}
 							offset={0}
 							duration={400}
-							onClick={() => {
-								setNavState('closed');
-							}}
+							onClick={() => closeMenu()}
 						>
 							Hjem
 						</Link>
@@ -57,7 +51,7 @@ const Navbar = () => {
 							smooth={true}
 							offset={0}
 							duration={400}
-							onClick={() => setNavState('closed')}
+							onClick={() => closeMenu()}
 						>
 							Om Meg
 						</Link>
@@ -70,7 +64,7 @@ const Navbar = () => {
 							smooth={true}
 							offset={0}
 							duration={400}
-							onClick={() => setNavState('closed')}
+							onClick={() => closeMenu()}
 						>
 							Prosjekter
 						</Link>
@@ -83,7 +77,7 @@ const Navbar = () => {
 							smooth={true}
 							offset={0}
 							duration={400}
-							onClick={() => setNavState('closed')}
+							onClick={() => closeMenu()}
 						>
 							Kom i Kontakt
 						</Link>
