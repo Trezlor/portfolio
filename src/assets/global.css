@@ -44,17 +44,17 @@
 
 :root.light {
 	/*Miscellaneous*/
-	--color-bg: rgb(225, 225, 225);
-	--color-bg-variant: rgb(205, 205, 205);
 	--color-bg-contrast: rgba(100, 100, 100, 0.4);
 	--color-bg-transparent: rgba(80, 80, 80, 0.4);
-	--color-primary: #0076ad;
-	--color-primary: #0052e1;
-	--color-primary-variant: #0076ad66;
-	--color-white: rgb(5, 5, 5);
-	--color-light: rgb(50, 50, 50);
+	--color-bg-variant: rgb(205, 205, 205);
+	--color-bg: rgb(225, 225, 225);
 	--color-g1: #000;
 	--color-g2: #000;
+	--color-light: rgb(50, 50, 50);
+	--color-primary-variant: #0076ad66;
+	--color-primary: #0052e1;
+	--color-primary: #0076ad;
+	--color-white: rgb(5, 5, 5);
 
 	--text-shadow: none;
 }
