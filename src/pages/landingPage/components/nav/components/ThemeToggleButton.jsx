@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BsMoonStarsFill } from 'react-icons/bs';
+import { BsMoonStars, BsSun } from 'react-icons/bs';
 import * as style from '../style';
 import { load, save } from '../utils/localStorage/checkBox';
 import { isLight, toggleLocalStorageItem, toggleRootClass } from '../utils/localStorage/themeColor';
@@ -29,7 +29,8 @@ const ThemeToggleButton = () => {
 					}}
 				/>
 				<label htmlFor='themeToggle'>
-					<BsMoonStarsFill className='moon' />
+					<BsMoonStars className='moon' />
+					<BsSun className='sun' />
 				</label>
 			</style.ThemeToggleButton>
 		</>

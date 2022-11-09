@@ -32,6 +32,7 @@
 	--color-bg-contrast: rgba(150, 150, 150, 0.3);
 	--color-bg-transparent: rgba(0, 0, 0, 0.4);
 	--color-primary: #00f0e0;
+	--color-primary: #00d5d5;
 	--color-primary-variant: #00b18866;
 	--color-white: rgb(245, 245, 245);
 	--color-light: rgb(200, 200, 200);
@@ -50,10 +51,19 @@
 	--color-g2: #000;
 	--color-light: rgb(50, 50, 50);
 	--color-primary-variant: #0076ad66;
-	--color-primary: #0052e1;
-	--color-primary: #0076ad;
+	--color-primary: #009a9a;
 	--color-white: rgb(5, 5, 5);
 	--text-shadow: none;
+}
+
+:root:not(.light) .sun {
+	/*Display stuff*/
+	/* display: none; */
+}
+
+:root.light .moon {
+	/*Display stuff*/
+	/* display: none; */
 }
 
 html {

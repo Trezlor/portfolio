@@ -3,7 +3,7 @@ import { deviceSize } from '../../../../utils/deviceSize';
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 //
-//    KEYFRAMES ANIMATIONS
+//    KEYFRAMES BURGERMENU
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 const menuOpenLine1 = keyframes`
@@ -142,6 +142,71 @@ const menuCloseLine3 = keyframes`
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 //
+//    KEYFRAMES THEME ICONS
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+const moonLightMode = keyframes`
+0% {
+	width: 0%;
+}
+
+50% {
+	width: 0%;
+	transform: none;
+}
+
+100% {
+	transform: rotate(-110deg);
+}
+`;
+
+const moonDarkMode = keyframes`
+0% {
+	transform: rotate(-110deg);
+}
+
+50% {
+	width: 0%;
+	transform: none;
+}
+
+100% {
+	width: 0%;
+}
+`;
+
+const sunLightMode = keyframes`
+0% {
+	transform: rotate(110deg);
+}
+
+50% {
+	width: 0%;
+	transform: none;
+}
+
+100% {
+	width: 0%;
+}
+`;
+
+const sunDarkMode = keyframes`
+0% {
+	width: 0%;
+}
+
+50% {
+	width: 0%;
+	transform: none;
+}
+
+100% {
+	transform: rotate(110deg);
+}
+`;
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//
 //    HAMBURGER MENU
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -260,17 +325,42 @@ export const ThemeToggleButton = styled.div`
 		align-items: center;
 		cursor: pointer;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
+		align-items: center;
 
 		.moon {
 			color: var(--color-bg);
 			font-size: 1.8rem;
 			transition: var(--transition);
-
-			:hover {
-				scale: 1.15;
-			}
+			position: relative;
+			top: 0;
+			right: 0;
 		}
+
+		.sun {
+			color: var(--color-bg);
+			font-size: 1.8rem;
+			transition: var(--transition);
+			position: relative;
+			top: 0;
+			right: 0;
+		}
+	}
+
+	input:checked + label .moon {
+		animation: ${moonLightMode} 0.4s forwards;
+	}
+
+	input:not(:checked) + label .moon {
+		animation: ${moonDarkMode} 0.4s forwards;
+	}
+
+	input:checked + label .sun {
+		animation: ${sunLightMode} 0.4s forwards;
+	}
+
+	input:not(:checked) + label .sun {
+		animation: ${sunDarkMode} 0.4s forwards;
 	}
 `;
 
