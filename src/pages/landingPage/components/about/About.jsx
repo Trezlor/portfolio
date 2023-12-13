@@ -101,9 +101,8 @@ const About = () => {
 							{/* I have a big fascination with programming, and have been learning how to
 						code for about 6 months! I love a challenge and strive to learn new coding
 						skills. My current skills involves HTML, CSS, Javascript & React. */}
-							Jeg har stor fascinasjon for frontend programmering, det å realisere koden man
-							skriver er veldig artig. Er lærevillig og tar en utfordring på strak arm. Jeg er
-							for det meste glad i css styling og å jobbe med javascript, og syns alltid det er
+							Jeg har stor fascinasjon for frontend programmering, det å realisere koden man skriver er veldig artig. Er lærevillig og
+							tar en utfordring på strak arm. Jeg er for det meste glad i css styling og å jobbe med javascript, og syns alltid det er
 							gøy å lære nye lettere måter å jobbe på.
 						</p>
 
@@ -150,18 +149,11 @@ const About = () => {
 						</style.AboutMeSkills>
 
 						<p className={activeText === 'hobbiesText' ? 'text__active' : ''}>
-							{/* My biggest hobby is gaming, and has been ever since i was a kid. Some of the
-						games are League of Legends, Apex, Overwatch and Valorant. Gaming has taught
-						me many things, such as risk-taking, patience, problem solving,
-						concentration, critical thinking and the value of working together with
-						others. */}
-							På fritiden liker jeg å game, og har holdt på med det så lenge jeg kan huske. Et
-							par av spillene jeg liker å holde på med er League of Legends, Overwatch og
-							Valorant. Er også glad i hjernetrim og skrekk-spill.
+							På fritiden liker jeg å trene aktivt, sosialisere meg og game. Synes det er viktig å holde meg i form men og samtidig ha
+							det gøy med venner både online og offline.
 							<br style={{ marginBottom: '1rem' }} />
-							Jeg har lært mye fra gaming, som risikotagning, tålmodighet, problemløsning, være
-							konsentrert, ha kritisk tenkning og forståelse for hvor bra det kan være å jobbe
-							som et team.
+							Jeg har lært en del fra gaming, for eksempel å være en lagspiller, løse problemer på en effektiv måte, ha god
+							konsentrasjon og kritisk tenkning.
 						</p>
 					</style.InfoContainer>
 
