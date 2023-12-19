@@ -11,13 +11,12 @@ export const Container = styled.div`
 	gap: 15%;
 	grid-template-columns: 35% 1fr 1fr; //added extra 1fr to give icons-container same width as the cards
 
-	@media ${deviceSize.tablet} {
-		gap: 0;
+	@media ${deviceSize.tablet_1130} {
+		gap: 4rem;
 		grid-template-columns: 1fr;
-
-		.content__wrapper {
-			text-align: center;
-		}
+		margin-top: 2rem;
+		place-items: center;
+		text-align: center;
 	}
 `;
 
@@ -26,10 +25,10 @@ export const Container = styled.div`
 //    IMG
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
-export const AboutMeImg = styled.div`
+export const MeImgContainer = styled.div`
 	aspect-ratio: 1/1;
 	background: linear-gradient(-45deg, transparent, var(--color-primary-variant), transparent);
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 	border: 1px solid var(--color-primary);
 	width: min(28rem, 100%);
 
@@ -46,15 +45,15 @@ export const AboutMeImg = styled.div`
 			box-shadow: 0px 0px 40px var(--color-primary);
 			transform: rotate(0);
 		}
+		@media ${deviceSize.tablet_1130} {
+			transform: rotate(-4deg);
+		}
 	}
 
-	@media ${deviceSize.tablet} {
-		margin: 2rem auto 4rem;
+	@media ${deviceSize.tablet_1130} {
 		width: 50%;
 	}
-
-	@media ${deviceSize.mobile} {
-		margin: 0 auto 3rem;
+	@media ${deviceSize.mobile_600} {
 		width: 65%;
 	}
 `;
@@ -64,34 +63,27 @@ export const AboutMeImg = styled.div`
 //    INFO CARDS/CONTENT
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
-export const AboutMeCards = styled.div`
-	display: grid;
+export const CardsContainer = styled.div`
+	display: flex;
 	gap: 1.5rem;
-	grid-template-columns: repeat(3, 200px);
+	justify-content: center;
 
-	@media (max-width: 1730px) {
+	@media ${deviceSize.pc_1500} {
 		gap: 1rem;
-		grid-template-columns: repeat(3, 130px);
 	}
-
-	@media ${deviceSize.tablet} {
-		justify-content: center;
-	}
-
-	@media (max-width: 470px) {
-		gap: 1rem;
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(3, 1fr);
+	@media ${deviceSize.mobile_600} {
+		flex-direction: column;
 	}
 `;
 
-export const AboutMeCard = styled.article`
+export const Card = styled.article`
 	background: var(--color-bg-variant);
 	border-radius: var(--border-radius);
 	border: var(--border) solid var(--color-primary-variant);
 	padding-block: 2rem;
 	text-align: center;
 	transition: var(--transition);
+	width: 200px;
 
 	:hover {
 		backdrop-filter: blur(2px);
@@ -99,7 +91,6 @@ export const AboutMeCard = styled.article`
 		border-color: var(--color-primary);
 		cursor: pointer;
 	}
-
 	&.card__active {
 		backdrop-filter: blur(2px);
 		background: var(--color-bg-transparent);
@@ -107,50 +98,39 @@ export const AboutMeCard = styled.article`
 		cursor: initial;
 		scale: 1.1;
 
-		@media (max-width: 470px) {
+		@media ${deviceSize.mobile_600} {
 			scale: 1.05;
 		}
 	}
 
-	.card__header {
-		.card__icon {
-			color: var(--color-primary);
-			font-size: 1.4rem;
-			margin-bottom: 1rem;
-			vertical-align: middle;
+	.card__icon {
+		color: var(--color-primary);
+		font-size: 1.4rem;
+		margin-bottom: 1rem;
+		vertical-align: middle;
 
-			@media (max-width: 1730px) {
-				margin-bottom: 0;
-			}
+		@media ${deviceSize.pc_1500} {
+			margin-bottom: 0;
 		}
+	}
+	> h5 {
+		font-size: 0.95rem;
 
-		> h5 {
-			font-size: 0.95rem;
-
-			@media (max-width: 470px) {
-				margin: 0 30px 0 0;
-			}
-		}
-
-		@media (max-width: 470px) {
-			align-items: center;
-			display: flex;
-			gap: 0.5rem;
-			justify-content: center;
+		@media ${deviceSize.mobile_600} {
+			margin: 0 30px 0 0;
 		}
 	}
 
-	> small {
-		color: var(--color-light);
-		font-size: 0.7rem;
+	@media ${deviceSize.pc_1500} {
+		width: 150px;
 	}
-
-	@media (max-width: 1730px) {
+	@media ${deviceSize.mobile_600} {
+		align-items: center;
+		display: flex;
+		gap: 0.5rem;
+		justify-content: center;
 		padding-block: 1rem;
-	}
-
-	@media ${deviceSize.mobile} {
-		padding-block: 1rem;
+		width: initial;
 	}
 `;
 
@@ -166,11 +146,11 @@ export const InfoContainer = styled.div`
 			display: flex;
 		}
 
-		@media ${deviceSize.tablet} {
+		@media ${deviceSize.tablet_1130} {
 			margin: 1rem 0 1.5rem;
 		}
 
-		@media ${deviceSize.mobile} {
+		@media ${deviceSize.mobile_600} {
 			margin: 1.5rem 0 1.5rem;
 		}
 	}
@@ -180,11 +160,12 @@ export const InfoContainer = styled.div`
 	}
 `;
 
-export const AboutMeSkills = styled.div`
+export const SkillsInfo = styled.div`
 	justify-content: space-between;
 	padding: 0 1rem;
 
 	.icon {
+		margin-top: 1rem;
 		font-size: 4rem;
 
 		&.html {
@@ -200,12 +181,28 @@ export const AboutMeSkills = styled.div`
 			color: #60d8f9;
 		}
 
-		@media (max-width: 1730px) {
+		@media ${deviceSize.pc_1500} {
 			font-size: 2.5rem;
+		}
+		@media ${deviceSize.mobile_600} {
+			margin-top: 0;
+		}
+	}
+	img {
+		margin-top: 1rem;
+		height: 4rem;
+		object-fit: contain;
+		width: auto;
+
+		@media ${deviceSize.pc_1500} {
+			height: 2.5rem;
+		}
+		@media ${deviceSize.mobile_600} {
+			margin-top: 0;
 		}
 	}
 
-	@media ${deviceSize.tablet} {
+	@media ${deviceSize.tablet_1130} {
 		justify-content: center;
 	}
 `;

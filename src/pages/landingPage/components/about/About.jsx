@@ -5,6 +5,7 @@ import { IoMdBriefcase } from 'react-icons/io';
 import { RiCodeBoxFill } from 'react-icons/ri';
 import { SiJavascript, SiReact } from 'react-icons/si';
 import * as style from './style';
+import figmalogo from '../../../../assets/figma.png';
 
 const About = () => {
 	const [activeCard, setActiveCard] = useState('coding');
@@ -17,63 +18,51 @@ const About = () => {
 			<h2>Om Meg</h2>
 
 			<style.Container className='container'>
-				<style.AboutMeImg>
+				<style.MeImgContainer>
 					<img
 						src='https://ik.imagekit.io/sondre/tr:w-448px/Portfolio/about-me.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1667296671962'
 						alt='me'
 					/>
-				</style.AboutMeImg>
+				</style.MeImgContainer>
 
-				<div className='content__wrapper'>
-					<style.AboutMeCards>
-						<style.AboutMeCard
+				<div>
+					<style.CardsContainer>
+						<style.Card
 							className={activeCard === 'coding' ? 'card__active' : ''}
 							onClick={() => {
 								setActiveCard('coding');
 								setActiveText('codingText');
 							}}
 						>
-							<div className='card__header'>
-								<RiCodeBoxFill className='card__icon' />
+							<RiCodeBoxFill className='card__icon' />
 
-								<h5>Koding</h5>
-							</div>
+							<h5>Koding</h5>
+						</style.Card>
 
-							<small>Interesse</small>
-						</style.AboutMeCard>
-
-						<style.AboutMeCard
+						<style.Card
 							className={activeCard === 'skills' ? 'card__active' : ''}
 							onClick={() => {
 								setActiveCard('skills');
 								setActiveText('skillsText');
 							}}
 						>
-							<div className='card__header'>
-								<IoMdBriefcase className='card__icon' />
+							<IoMdBriefcase className='card__icon' />
 
-								<h5>Ferdigheter</h5>
-							</div>
+							<h5>Kodespråk</h5>
+						</style.Card>
 
-							<small>Språk</small>
-						</style.AboutMeCard>
-
-						<style.AboutMeCard
+						<style.Card
 							className={activeCard === 'hobbies' ? 'card__active' : ''}
 							onClick={() => {
 								setActiveCard('hobbies');
 								setActiveText('hobbiesText');
 							}}
 						>
-							<div className='card__header'>
-								<GiConsoleController className='card__icon' />
+							<GiConsoleController className='card__icon' />
 
-								<h5>Hobby</h5>
-							</div>
-
-							<small>Gaming</small>
-						</style.AboutMeCard>
-					</style.AboutMeCards>
+							<h5>Hobby</h5>
+						</style.Card>
+					</style.CardsContainer>
 
 					<style.InfoContainer>
 						<p className={activeText === 'codingText' ? 'text__active' : ''}>
@@ -82,12 +71,16 @@ const About = () => {
 							gøy å lære nye lettere måter å jobbe på.
 						</p>
 
-						<style.AboutMeSkills className={activeText === 'skillsText' ? 'text__active' : ''}>
+						<style.SkillsInfo className={activeText === 'skillsText' ? 'text__active' : ''}>
 							<ImHtmlFive className='icon html' />
 							<ImCss3 className='icon css' />
 							<SiJavascript className='icon js' />
 							<SiReact className='icon react' />
-						</style.AboutMeSkills>
+							<img
+								src={figmalogo}
+								alt='figma logo'
+							/>
+						</style.SkillsInfo>
 
 						<p className={activeText === 'hobbiesText' ? 'text__active' : ''}>
 							På fritiden liker jeg å trene aktivt, sosialisere meg og game. Synes det er viktig å holde meg i form men og samtidig ha
