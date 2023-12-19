@@ -12,15 +12,9 @@ const About = () => {
 
 	return (
 		<section id='about'>
-			<h5>
-				{/* Get to know */}
-				Finn ut mer
-			</h5>
+			<h5>Finn ut mer</h5>
 
-			<h2>
-				{/* About Me */}
-				Om Meg
-			</h2>
+			<h2>Om Meg</h2>
 
 			<style.Container className='container'>
 				<style.AboutMeImg>
@@ -42,16 +36,10 @@ const About = () => {
 							<div className='card__header'>
 								<RiCodeBoxFill className='card__icon' />
 
-								<h5>
-									Koding
-									{/* Coding */}
-								</h5>
+								<h5>Koding</h5>
 							</div>
 
-							<small>
-								Interesse
-								{/* Interest */}
-							</small>
+							<small>Interesse</small>
 						</style.AboutMeCard>
 
 						<style.AboutMeCard
@@ -64,16 +52,10 @@ const About = () => {
 							<div className='card__header'>
 								<IoMdBriefcase className='card__icon' />
 
-								<h5>
-									Ferdigheter
-									{/* Skills */}
-								</h5>
+								<h5>Ferdigheter</h5>
 							</div>
 
-							<small>
-								Språk
-								{/* Languages */}
-							</small>
+							<small>Språk</small>
 						</style.AboutMeCard>
 
 						<style.AboutMeCard
@@ -86,10 +68,7 @@ const About = () => {
 							<div className='card__header'>
 								<GiConsoleController className='card__icon' />
 
-								<h5>
-									Hobby
-									{/* Hobbies */}
-								</h5>
+								<h5>Hobby</h5>
 							</div>
 
 							<small>Gaming</small>
@@ -98,54 +77,16 @@ const About = () => {
 
 					<style.InfoContainer>
 						<p className={activeText === 'codingText' ? 'text__active' : ''}>
-							{/* I have a big fascination with programming, and have been learning how to
-						code for about 6 months! I love a challenge and strive to learn new coding
-						skills. My current skills involves HTML, CSS, Javascript & React. */}
 							Jeg har stor fascinasjon for frontend programmering, det å realisere koden man skriver er veldig artig. Er lærevillig og
 							tar en utfordring på strak arm. Jeg er for det meste glad i css styling og å jobbe med javascript, og syns alltid det er
 							gøy å lære nye lettere måter å jobbe på.
 						</p>
 
 						<style.AboutMeSkills className={activeText === 'skillsText' ? 'text__active' : ''}>
-							<div className='skill_scale'>
-								<p>
-									{/* Novice */}
-									Nybegynner
-								</p>
-
-								<p>
-									{/* Expert */}
-									Ekspert
-								</p>
-							</div>
-
-							<div className='skill'>
-								<ImHtmlFive className='icon html' />
-								<div className='skill_bar_bg'>
-									<div className='skill_bar_html'></div>
-								</div>
-							</div>
-
-							<div className='skill'>
-								<ImCss3 className='icon css' />
-								<div className='skill_bar_bg'>
-									<div className='skill_bar_css'></div>
-								</div>
-							</div>
-
-							<div className='skill'>
-								<SiJavascript className='icon js' />
-								<div className='skill_bar_bg'>
-									<div className='skill_bar_js'></div>
-								</div>
-							</div>
-
-							<div className='skill skill__react'>
-								<SiReact className='icon react' />
-								<div className='skill_bar_bg'>
-									<div className='skill_bar_react'></div>
-								</div>
-							</div>
+							<ImHtmlFive className='icon html' />
+							<ImCss3 className='icon css' />
+							<SiJavascript className='icon js' />
+							<SiReact className='icon react' />
 						</style.AboutMeSkills>
 
 						<p className={activeText === 'hobbiesText' ? 'text__active' : ''}>
@@ -161,7 +102,6 @@ const About = () => {
 						href='#contact'
 						className='btn btn-primary'
 					>
-						{/* Let's Talk */}
 						Kom i kontakt
 					</a>
 				</div>
