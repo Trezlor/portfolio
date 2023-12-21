@@ -79,6 +79,7 @@ const About = () => {
 							<img
 								src={figmalogo}
 								alt='figma logo'
+								className='icon figma'
 							/>
 						</style.SkillsInfo>
 

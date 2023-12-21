@@ -1,5 +1,21 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { deviceSize } from '../../../../utils/deviceSize';
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    KEYFRAMES
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+const fadeInIcon = keyframes`
+0% {
+	top: -15px;
+
+}
+100% {
+	top: 0;
+	opacity: 1;
+}
+`;
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -11,7 +27,7 @@ export const Container = styled.div`
 	gap: 15%;
 	grid-template-columns: 35% 1fr 1fr; //added extra 1fr to give icons-container same width as the cards
 
-	@media ${deviceSize.tablet_1130} {
+	@media ${deviceSize.tablet} {
 		gap: 4rem;
 		grid-template-columns: 1fr;
 		margin-top: 2rem;
@@ -45,15 +61,15 @@ export const MeImgContainer = styled.div`
 			box-shadow: 0px 0px 40px var(--color-primary);
 			transform: rotate(0);
 		}
-		@media ${deviceSize.tablet_1130} {
+		@media ${deviceSize.tablet} {
 			transform: rotate(-4deg);
 		}
 	}
 
-	@media ${deviceSize.tablet_1130} {
+	@media ${deviceSize.tablet} {
 		width: 50%;
 	}
-	@media ${deviceSize.mobile_600} {
+	@media ${deviceSize.mobile} {
 		width: 65%;
 	}
 `;
@@ -68,10 +84,10 @@ export const CardsContainer = styled.div`
 	gap: 1.5rem;
 	justify-content: center;
 
-	@media ${deviceSize.pc_1500} {
+	@media ${deviceSize.pc} {
 		gap: 1rem;
 	}
-	@media ${deviceSize.mobile_600} {
+	@media ${deviceSize.mobile} {
 		flex-direction: column;
 	}
 `;
@@ -98,7 +114,7 @@ export const Card = styled.article`
 		cursor: initial;
 		scale: 1.1;
 
-		@media ${deviceSize.mobile_600} {
+		@media ${deviceSize.mobile} {
 			scale: 1.05;
 		}
 	}
@@ -109,22 +125,22 @@ export const Card = styled.article`
 		margin-bottom: 1rem;
 		vertical-align: middle;
 
-		@media ${deviceSize.pc_1500} {
+		@media ${deviceSize.pc} {
 			margin-bottom: 0;
 		}
 	}
 	> h5 {
 		font-size: 0.95rem;
 
-		@media ${deviceSize.mobile_600} {
+		@media ${deviceSize.mobile} {
 			margin: 0 30px 0 0;
 		}
 	}
 
-	@media ${deviceSize.pc_1500} {
+	@media ${deviceSize.pc} {
 		width: 150px;
 	}
-	@media ${deviceSize.mobile_600} {
+	@media ${deviceSize.mobile} {
 		align-items: center;
 		display: flex;
 		gap: 0.5rem;
@@ -146,11 +162,11 @@ export const InfoContainer = styled.div`
 			display: flex;
 		}
 
-		@media ${deviceSize.tablet_1130} {
+		@media ${deviceSize.tablet} {
 			margin: 1rem 0 1.5rem;
 		}
 
-		@media ${deviceSize.mobile_600} {
+		@media ${deviceSize.mobile} {
 			margin: 1.5rem 0 1.5rem;
 		}
 	}
@@ -165,44 +181,48 @@ export const SkillsInfo = styled.div`
 	padding: 0 1rem;
 
 	.icon {
+		opacity: 0;
+
 		margin-top: 1rem;
 		font-size: 4rem;
+		position: relative;
 
 		&.html {
 			color: #e44d26;
+			animation: ${fadeInIcon} 1s forwards;
 		}
 		&.css {
 			color: #2965f1;
+			animation: ${fadeInIcon} 1s forwards;
+			animation-delay: 0.15s;
 		}
 		&.js {
 			color: #f7df1e;
+			animation: ${fadeInIcon} 1s forwards;
+			animation-delay: 0.3s;
 		}
 		&.react {
 			color: #60d8f9;
+			animation: ${fadeInIcon} 1s forwards;
+			animation-delay: 0.45s;
+		}
+		&.figma {
+			height: 4rem;
+			object-fit: contain;
+			width: auto;
+			animation: ${fadeInIcon} 1s forwards;
+			animation-delay: 0.6s;
 		}
 
-		@media ${deviceSize.pc_1500} {
+		@media ${deviceSize.pc} {
 			font-size: 2.5rem;
 		}
-		@media ${deviceSize.mobile_600} {
-			margin-top: 0;
-		}
-	}
-	img {
-		margin-top: 1rem;
-		height: 4rem;
-		object-fit: contain;
-		width: auto;
-
-		@media ${deviceSize.pc_1500} {
-			height: 2.5rem;
-		}
-		@media ${deviceSize.mobile_600} {
+		@media ${deviceSize.mobile} {
 			margin-top: 0;
 		}
 	}
 
-	@media ${deviceSize.tablet_1130} {
+	@media ${deviceSize.tablet} {
 		justify-content: center;
 	}
 `;
