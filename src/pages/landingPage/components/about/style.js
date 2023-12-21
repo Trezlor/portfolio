@@ -182,40 +182,39 @@ export const SkillsInfo = styled.div`
 
 	.icon {
 		opacity: 0;
-
 		margin-top: 1rem;
 		font-size: 4rem;
 		position: relative;
+		animation: ${fadeInIcon} 1s forwards;
 
 		&.html {
 			color: #e44d26;
-			animation: ${fadeInIcon} 1s forwards;
 		}
 		&.css {
 			color: #2965f1;
-			animation: ${fadeInIcon} 1s forwards;
 			animation-delay: 0.15s;
 		}
 		&.js {
 			color: #f7df1e;
-			animation: ${fadeInIcon} 1s forwards;
 			animation-delay: 0.3s;
 		}
 		&.react {
 			color: #60d8f9;
-			animation: ${fadeInIcon} 1s forwards;
 			animation-delay: 0.45s;
 		}
 		&.figma {
 			height: 4rem;
 			object-fit: contain;
 			width: auto;
-			animation: ${fadeInIcon} 1s forwards;
 			animation-delay: 0.6s;
 		}
 
 		@media ${deviceSize.pc} {
 			font-size: 2.5rem;
+
+			&.figma {
+				height: 2.5rem;
+			}
 		}
 		@media ${deviceSize.mobile} {
 			margin-top: 0;
