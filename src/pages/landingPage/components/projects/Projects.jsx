@@ -1,4 +1,4 @@
-import { EffectFlip, Navigation, Pagination } from 'swiper';
+import { EffectFlip, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-flip';
 import 'swiper/css/navigation';
