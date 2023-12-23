@@ -96,6 +96,7 @@ export const Card = styled.article`
 	background: var(--color-bg-variant);
 	border-radius: var(--border-radius);
 	border: var(--border) solid var(--color-primary-variant);
+	cursor: pointer;
 	padding-block: 2rem;
 	text-align: center;
 	transition: var(--transition);
@@ -105,7 +106,6 @@ export const Card = styled.article`
 		backdrop-filter: blur(2px);
 		background: transparent;
 		border-color: var(--color-primary);
-		cursor: pointer;
 	}
 	&.card__active {
 		backdrop-filter: blur(2px);

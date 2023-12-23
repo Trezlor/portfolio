@@ -66,10 +66,16 @@ const About = () => {
 
 					<style.InfoContainer>
 						<p className={activeText === 'codingText' ? 'text__active' : ''}>
-							Liker godt å Jeg har stor fascinasjon for frontend programmering, det å realisere
-							koden man skriver er veldig artig. Er lærevillig og tar en utfordring på strak
-							arm. Jeg er for det meste glad i css styling og å jobbe med javascript, og syns
-							alltid det er gøy å lære nye lettere måter å jobbe på.
+							Har holdt på med front-end programmering i litt over et år, og prøver stadig å
+							lære nye ting.
+							<br style={{ marginBottom: '1rem' }} />
+							På fritiden lager jeg nettsider som kan brukes til forskjellige ting jeg er
+							interessert i, som oftest er dette for diverse spill og kan også tas i bruk av
+							andre.
+							<br style={{ marginBottom: '1rem' }} />
+							Jobber godt med HTML og Javascript, men er mest dreven i CSS. Bruker for
+							øyeblikket rammeverket React, og har nylig begynt å lære meg Typescript for en
+							bedre kode.
 						</p>
 
 						<style.SkillsInfo className={activeText === 'skillsText' ? 'text__active' : ''}>
@@ -85,11 +91,11 @@ const About = () => {
 						</style.SkillsInfo>
 
 						<p className={activeText === 'hobbiesText' ? 'text__active' : ''}>
-							Liker jeg å trene aktivt, game og være sosial. Synes det er viktig å holde meg i
-							form men og samtidig ha det gøy med venner både online og offline.
+							Liker å trene aktivt, game og være sosial. Synes det er viktig å holde meg i form
+							men og samtidig ha det gøy med venner både online og offline.
 							<br style={{ marginBottom: '1rem' }} />
-							Har lært et par fra gaming; Være en lagspiller, løse problemer på en effektiv
-							måte, tenkte kritisk og være tålmodig/observant.
+							Gjennom gaming har jeg lært hvor viktig det kan være å samarbeide, løse problemer
+							på en effektiv måte, tenkte kritisk og være tålmodig / observant.
 						</p>
 					</style.InfoContainer>
 
